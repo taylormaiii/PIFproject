@@ -1,0 +1,742 @@
+65: Pokemon Center
+196: Saffron City
+327: New Bark Town
+458: Pokémon Academy
+589: Sinjoh ruins
+720: \PN's Room?
+131: 9F --old--
+262: Route 30
+393: Celadon City
+524: Goldenrod City Gym
+655: Hidden Forest
+786: Prize Exchange
+66: Eastern Gate
+197: Power Plant
+328: Champion
+459: Pewter Hotel
+590: Sinjoh Ruins
+721: Cinnabar Lab
+263: Gate
+394: Vermillion City
+525: Sevii
+787: Battle Tower
+1: Cerulean City
+198: Power Plant
+329: Blackthorn City
+460: Pewter Hotel
+591: Sinjoh Ruins
+722: \PN's House?
+67: \PN's Room
+133: Rocket Mart
+264: Pokémon Center
+395: Vermillion City
+526: Knot Island
+788: Art Gallery
+2: Route 101
+199: Saffron City
+330: Pokémon Center
+461: Cerulean Hotel
+723: Pallet Town?
+68: \PN's Room
+265: Route 34
+396: Underground Gate
+527: Knot Island Harbor
+658: new
+789: Battle Tower Arena
+3: \PN's House
+134: Johto
+200: Saffron City
+331: Blackthorn Hotel
+462: Cerulean Hotel
+593: Oak's Lab _Sinnoh
+724: Oak's Lab?
+69: \PN's Room
+266: Ilex Forest
+397: Underground Gate
+528: Treasure Beach
+659: Oak's Lab _Custom
+790: Hoenn
+4: Cerulean City Gym
+135: Cinnabar Hotel
+332: Blackthorn Hotel
+463: Vermillion Hotel
+594: Water Labyrinth
+70: \PN's Room
+201: S.S. Anne
+267: Route 36
+398: Diglett's Cave
+529: Mt. Silver
+660: 2F
+791: Unova
+5: Cerulean City
+136: Cinnabar Hotel
+464: Vermillion Hotel
+595: Dungeons
+71: \PN's Room
+202: backup
+399: Diglett's Cave
+530: Pokemon Center
+661: 3F
+792: Routes
+6: Team Rocket HQ
+137: New Bark Town
+268: Violet City
+334: Blackthorn City
+465: Celadon Hotel
+596: Sky Pillar
+72: Celadon Sewers
+203: TEST
+400: Pokémon Tower
+531: Pinkan Forest
+662: 4F
+793: Dungeons
+7: Bike Shop
+138: Olivine City
+269: Violet City
+466: Celadon Hotel
+597: Sky Pillar
+73: \PN's Room
+204: Farmhouse
+335: Dragon's Den
+401: Pokemon Tower F2
+532: Pokémon Center
+663: 5F
+794: Route 131
+8: Route 24
+139: letter
+270: Violet City
+467: Pokemon Tower F5
+598: Boon Island Harbor
+74: Area 1
+336: Dragon's Den
+533: Knot Island
+795: Cities
+9: Route 25
+140: Diglett's Cave
+271: Gate
+402: Pokemon Tower F3
+468: Pokemon Tower F6
+599: Kin Island Harbor
+730: Route 38
+75: Area 2
+206: Cinnabar Lab
+337: Azalea Town Gym
+665: 7F
+796: Pacifidlog Town
+10: Cerulean Cape
+141: Saffron City
+272: Sprout Tower
+403: Pokemon Tower F4
+600: Bond Bridge
+731: Triple Battle Lounge
+76: Pallet Town
+207: Cinnabar Island
+338: Azalea Town
+469: Pokemon Tower F7
+666: 8F
+797: Unknown location
+11: Bill's Lighthouse
+142: Pokémon Tower B1
+273: Violet Hotel
+732: Triple Battle Lounge
+77: Oak's Lab
+208: Cinnabar Lab
+339: Pokémon Center
+667: 9F
+798: Unknown location
+12: Route 5
+143: Route 23
+274: Violet Hotel
+405: Game Corner
+536: Sprout Tower
+78: Route 1
+209: Cinnabar Lab
+340: Slowpoke Well (flooded)
+471: Fishing Hut
+668: 10F
+799: Debug Arena
+13: Day Care Center
+144: Power Plant
+406: Celadon Café
+537: Sprout Tower
+734: Battle Factory
+79: Viridian City
+341: Hall of Fame
+472: Fuchsia City
+603: Chrono Island
+669: Viridian River
+800: Rock Tunnel
+14: Underground
+145: Route 26
+276: Gate
+407: Celadon Café Backstore
+538: Sprout Tower
+735: Battle Factory
+80: Pokemon Center
+342: Ruins of Alph
+473: Safari Zone Gate
+604: Pokémon Center
+801: Mt. Moon
+15: Northern Gate
+146: Route 17
+277: Gate
+408: Pokemon Center
+539: Sprout Tower
+670: Ice Mountains
+736: Battle Factory
+81: PokeMart
+212: Silph Co.
+343: Gate
+474: Gate
+605: Chrono Island Harbor
+802: Mt. Moon
+16: Route 6
+147: Route 27
+278: Azalea Town
+409: Route 8
+540: Route 30
+671: Ecruteak City
+82: Area 3
+213: Gate
+344: Gate
+475: Gate
+606: Underwater
+737: Battle Factory Arena
+803: Saffron City
+17: S.S. Anne
+148: Pokemon League Entrance
+279: Pokémon Center
+410: Underground Gate
+541: Blackthorn City
+672: Ecruteak City
+83: Viridian City
+214: Day Care Center
+345: Chamber A
+476: Pokemon Center
+607: Birth Island
+18: Southern Gate
+149: Flooded Cave
+280: PokeMart
+411: Underground
+542: Celadon City Gym
+673: Ecruteak City
+804: Safari Zone Gate
+84: Viridian City
+346: Ruins of Alph
+477: Fuchsia Hotel
+608: Ember Spa
+19: Vermillion City
+281: Azalea Town
+412: Gate (East)
+674: Ecruteak City
+805: Waterfall Cave
+85: Viridian City Gym
+216: Gates
+347: Chamber B
+478: Fuchsia Hotel
+609: Underwater
+740: Oak's Lab.old
+20: Pokemon Center
+151: Saffron Boutique
+282: Azalea Town
+413: Route 7
+544: Cerulean Cave WTF
+675: Ecruteak City
+806: Old Shipwreck
+86: Route 2
+348: Chamber C
+479: Fuchsia City Gym
+610: Old Shipwreck
+152: Saffron City Gym
+283: Slowpoke Well
+545: Cherrygrove City
+676: Ecruteak City
+807: 11F
+87: Fuchsia City
+349: Rock Tunnel
+480: Underwater
+611: Burned Tower
+22: Vermillion City
+153: Saffron City
+284: Route 33
+415: Western Gate
+546: Fighting Arena
+677: Hidden Chamber
+808: Seafoam Islands B1
+88: Gate
+350: Rock Tunnel
+481: Fuchsia City
+612: Boon Island
+23: Vermillion City
+154: Route 10
+285: Union Cave
+416: Pokemon Center
+809: Creepy House_backup
+89: Gate
+220: Underwater
+351: Route 9
+482: Fuchsia City
+744: Radio Tower
+24: Vermillion City Gym
+155: Route 11
+286: Union Cave B1
+417: Gate
+679: Underwater
+810: Sealed Chamber
+90: Route 2
+221: Cinnabar Island Gym
+352: Chamber D
+483: Gate
+745: Radio Tower
+25: Pokémon Fan Club
+156: Saffron City
+287: Union Cave B2
+418: Pokémon House
+680: Underwater
+811: Submerged Temple
+91: Pewter City
+222: Route 2
+353: Chamber E
+484: Area 2
+746: Viridian City
+26: Harbour
+157: Game intro
+288: Route 32
+419: Lavender Town
+681: Underwater
+812: Submerged Temple
+92: Route 2
+223: Routes
+354: Ruins of Alph
+485: Area 3
+616: Cinnabar Island Harbor
+747: Radio Tower
+27: S.S. Anne
+158: Gate
+289: Pokémon Center
+420: Lavender Town
+551: Oak's Lab _Johto
+682: Underwater
+813: Sealed Chamber
+93: Pewter City
+224: Cities
+355: Testing Room
+486: Area 4
+617: Chrono Island
+28: S.S. Anne
+159: Route 12
+290: BW2
+421: Nicknaming Club
+552: Oak's Lab _Hoenn
+683: Underwater
+814: Sealed Chamber
+94: Soaring
+225: Dungeons
+356: Debug Island
+487: Area 5
+618: Chrono Island
+29: S.S. Anne
+160: Messages
+291: Route 4
+684: Underwater
+815: Submerged Temple
+95: Celadon City
+357: PokéMart
+488: Area 5
+619: Berry Forest
+30: S.S. Anne
+292: Dept. Store
+423: Cyberspace
+685: Underwater
+816: Dressing Room
+96: Pewter City Museum
+227: Underwater
+358: Art Gallery
+489: Seafoam Islands.old
+620: Berry Forest
+751: Credits
+31: S.S. Anne
+162: Underwater
+293: Dept. Store
+424: Cyberspace_backup
+686: Underwater
+97: Route 1
+228: Underwater
+359: Ecruteak City
+490: Route 3
+621: P2 Laboratory
+752: Mt. Ember
+294: Dept. Store
+425: Underground Gate
+556: Pokemon Tower F3
+687: Underwater
+98: Cinnabar Island
+229: Underwater
+360: Pokémon School
+491: Viridian Forest
+622: P2 Laboratory
+753: Mt. Ember
+295: Intro
+426: Blackthorn City Gym
+557: Routes
+688: Underwater
+819: Halfmoon Island
+33: Kanto
+230: Violet City
+361: Navel Rock
+492: Gate
+623: P2 Laboratory
+754: Mt. Ember
+296: Dept. Store
+558: Cities
+689: Underwater
+820: Route 39
+34: SS.Anne
+362: Navel Rock
+624: Boon Island
+755: Mt. Ember
+100: Cianwood City Gym_prototype2
+35: Captain's Room
+559: Kindle Road
+297: Dept Store
+428: Ranger Cabin
+690: Underwater
+821: Newmoon Island
+756: Mt. Ember
+625: Rocket Warehouse
+494: Mt. Moon Square
+363: Violet City Gym
+232: Saffron City
+101: Littleroot Town
+167: Crimson City
+36: SS. Anne
+298: Dept. Store Basement
+822: Moonlit Forest
+691: Underwater
+560: Underwater
+757: 11F
+626: Kin Island
+495: Route 9
+364: Dark Cave
+233: Route 4
+102: Mt. Moon
+168: Crimson City
+37: Vermillion City
+430: Oak's Lab.oldest
+299: Goldenrod Tunnel
+823: Fullmoon Island
+692: Route 44
+561: Mt. Ember
+758: 6F
+627: Kin Island
+496: Mt. Moon
+103: Mt. Moon B1F
+169: Crimson City
+431: Celadon Sewers
+300: National Park
+824: Moonlit Forest
+693: Ice Cavern
+562: Boon Island
+628: Kin Island
+497: Cutscene
+366: Cherrygrove City
+235: Ruins of Alph
+104: Mt. Moon
+301: Gate
+170: Crimson City
+39: Trainer House
+432: Celadon Dpt. Store
+825: Saffron Bar
+694: Ice Mountains Peak
+563: Kin Island
+629: Kin Island
+498: Celadon City
+367: Cherrygrove City
+236: Route 4
+105: Mt. Moon B2F
+302: Gate
+171: Route 22
+40: Viridian River
+433: Celadon Dpt. Store
+826: Oricorio Clearing
+564: Brine Road
+761: Cinnabar Island Harbor
+630: Resort Gorgeous
+368: Pokémon Center
+237: Goldenrod City
+106: Route 4
+303: Indigo Plateau
+41: Goldenrod Waterway
+434: Celadon Dpt. Store
+827: Mt. Moon Summit
+696: Burned Tower
+565: Kin Hotel
+762: Offshore Road
+631: Mahogany Town
+500: Celadon City
+107: Area 4
+435: Celadon Dpt. Store
+304: Victory Road
+173: Pokémon Mansion
+42: Pallet Town
+566: Resort Gorgeous
+828: Mt. Moon Observatory
+697: Burned Tower
+763: Contest Hall
+632: Pokémon Center
+501: Celadon City
+370: PokeMart
+239: Pokémon Center
+108: Saffron City
+436: Celadon Dpt. Store
+305: 11F.old
+174: Pokémon Mansion
+43: \PN's House
+567: Pokémon Center
+829: Saffron Bar
+698: Ice Cavern
+764: Contest (Normal)
+633: Sky Pillar
+502: Celadon City
+371: Pokemon Center
+240: Goldenrod Tunnel
+109: Hidden Tomb
+437: Route 13
+306: Victory Road
+175: COMMON
+568: Pokémon Center
+830: Nightsky
+765: Knot Island
+634: Sky Pillar
+503: Celadon City
+372: Celadon Sewers
+241: Goldenrod City
+110: Saffron Hotel
+569: Ruby Chamber
+438: Route 16
+307: Victory Road
+176: Crimson Hotel
+45: Team Rocket Hideout
+831: Nightsky
+766: Boon Island
+635: Route 43
+504: Celadon City
+373: Intro_TR
+242: Goldenrod City
+111: Saffron Hotel
+570: Deep Sea
+439: House
+308: Day Care Center
+177: Crimson Hotel
+46: Pinkan Hollow
+832: Ecruteak City
+701: Saffron Hotel
+636: Gate
+767: Mt. Moon
+505: Celadon Condominiums
+374: Tests
+243: Goldenrod Hotel
+112: Saffron Bar
+440: Route 14
+309: Goldenrod City
+178: Bill's garden
+47: Mt. Mortar
+833: Dressing room
+702: Saffron Hotel
+637: Gate
+768: Celadon Café
+506: Celadon Condominiums
+244: Goldenrod Hotel
+113: Saffron Bar
+441: Gate
+310: Cherrygrove City
+179: Police Station
+48: \PN's Room
+834: PokeMart (Olivine)
+703: Cinnabar Lab
+638: Lake of Rage
+769: Route 40
+507: Celadon Condominiums
+376: Hall of Origin
+114: Saffron Nightclub
+442: Sunken Ship
+311: Route 29
+180: Saffron City
+49: Mahogany Town
+835: Newmoon Island
+704: Burned Tower
+770: Pokémon Center
+639: Sky Pillar
+508: Celadon Condominiums
+377: Blackthorn City Gym
+246: Radio Tower
+115: Saffron Bar
+443: Safari Zone
+312: Route 46
+181: Pokémon Mansion
+50: Lavender Town
+836: Route 39
+771: Celadon City
+640: Sky Pillar
+509: Celadon Condominiums
+378: Mewtwo Intro
+247: Radio Tower
+575: Ecruteak Hotel
+444: Route 15
+313: Gate
+182: Saffron City
+51: Pinkan Island
+837: Lighthouse
+772: Saffron City
+641: Sky Pillar
+510: Game Corner
+379: Pokemon Center
+248: Train Station
+707: Unknown location
+576: Ecruteak Hotel
+445: Area 1
+314: Pokémon League
+183: Saffron City
+52: Seafoam Islands.old
+838: Elevator
+773: Knot Island Harbor
+642: Sky Pillar
+511: Gate
+380: Pewter City
+249: Goldenrod City
+118: debug
+708: Blank
+577: Pokémon Center
+446: Celadon Sewers
+315: Elite 1
+184: Saffron City
+53: Seafoam Islands B2
+839: 1F
+774: Mt. Ember
+643: Rocket Warehouse
+512: Rock Tunnel
+381: Pewter City Museum
+250: Goldenrod City
+709: Cianwood City
+447: Control Room
+316: Elite 2
+185: Secret Garden
+54: Seafoam Islands B3
+840: 2F
+644: Mahogany Town
+513: Rock Tunnel
+251: Goldenrod City
+579: Ecruteak City
+448: Control Room
+317: Elite 3
+186: letter2
+55: Seafoam Islands B4
+841: 3F
+776: Mt. Silver
+645: Lake of Rage
+514: Celadon Dpt. Store
+383: Gate
+252: Cities
+121: Silph Co.
+580: Route 42
+449: Team Rocket Hideout
+318: Elite 4
+187: Pokémon Mansion
+56: Surf Race
+842: 4F
+777: Mt. Silver
+646: Lake of Rage
+515: Mt. Moon Square
+384: Bill's Lighthouse
+253: Routes
+122: Pokemon Center
+712: Creepy House
+581: Gate
+319: Route 30
+57: Route 19
+843: 5F
+778: Mt Silver
+647: Magogany Town Gym
+516: Route 16
+385: Pewter City Museum
+254: Route 35
+123: Littleroot Interiors
+713: Creepy House
+582: Ecruteak City
+451: Celadon City
+320: Route 30
+189: Cinnabar Island
+58: Route 20
+844: Light Room
+779: Mt Silver
+648: Ecruteak City Gym
+517: Route 18
+386: Pewter City Gym
+255: Gate
+714: Creepy House
+583: Ecruteak City
+321: Route 27
+190: Cinnabar Island
+59: Route 21
+845: Hotel
+780: Mt. Silver
+649: Bell Tower 1F
+518: Gate
+387: Cerulean City
+256: Gate
+125: Cinnabar Island
+584: Ecruteak City
+453: Celadon City
+322: Cerulean Cave
+191: Fighting Dojo
+846: Hotel 2nd Floor
+781: Mt. Silver
+650: Bell Tower 4F
+519: Azalea Town
+388: Cerulean City
+716: Goldenrod City
+585: Bell Tower
+454: Celadon City
+323: Cerulean Cave
+192: Train Station
+61: Vermillion City Gym
+847: Oak's Lab_backup
+782: Mt. Silver
+651: Bell Tower
+520: New Bark Town
+389: Cerulean City
+258: Tohjo Falls
+717: Area 5
+586: Route 37
+455: Team Rocket Hideout
+324: Cerulean Cave
+193: Gate
+62: Celadon City
+783: Mt. Silver Summit
+652: Bell Tower 3F
+521: New Bark Town
+390: connection
+259: Route 26
+587: Gate
+456: Team Rocket Hideout
+325: Prof. Elm Lab.
+194: Saffron City
+63: Celadon City
+784: Mt. Silver Summit (Future)
+653: Bell Tower 2F
+522: Sprout Tower
+391: Pokemon Center
+260: Pokemon League Gate
+129: Pokémon Trade Center
+719: dream sequence
+588: Sapphire Cave
+457: Team Rocket Hideout
+326: New Bark Town
+195: Saffron Bar
+64: Celadon City
+785: Power Plant.old
+654: Kin Island
+523: Waterfall Cave
+392: Pokémon Center
+261: Route 31
+130: Pokemon Center
