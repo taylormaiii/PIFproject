@@ -61,6 +61,6 @@ def rxdata_to_json(rxdata_path, json_path):
         print(f"Successfully wrote JSON to: {json_path}")
 
 
-
-rxdata_path = r"C:\Users\tjkit\AppData\Roaming\infinitefusion\File A.rxdata"
-rxdata_to_json(rxdata_path, "output.json")
+save_slot = input("What letter save slot is it? ")
+rxdata_path = rf"C:\Users\tjkit\AppData\Roaming\infinitefusion\File {save_slot}.rxdata"
+rxdata_to_json(rxdata_path, f"output{save_slot}.json")
