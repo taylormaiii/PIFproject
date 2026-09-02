@@ -28,48 +28,73 @@ with open("locationsnamesids.txt", "w") as f:
 
 def extract_party_route():
     with open("output.json") as jf:
-        counter = 0
         j = json.load(jf)
 
         partymonroute = []
-        if j["player"]["attributes"]["@party"][counter]["attributes"]["@species_data"]["ruby_class_name"] == "GameData::FusedSpecies":
-            while counter < 6:
-                monbody = j["player"]["attributes"]["@party"][counter]["attributes"]["@species_data"]["attributes"]["@body_pokemon"]["attributes"]["@id"]["name"]
-                monhead = j["player"]["attributes"]["@party"][counter]["attributes"]["@species_data"]["attributes"]["@head_pokemon"]["attributes"]["@id"]["name"]
-                routebody = j
-                routehead = j
-                mons.append(monbody)
-                mons.append(monhead)
-                counter += 1
-        else:
-            mon = j[":storage_system"]["attributes"]["@party"][counter]["attributes"]["@species_data"]["attributes"]["@id"]["name"]
-            mons.append(mon)
+        party = j[":player"]["attributes"]["@party"]
+        for mon in party:
+            for name, route, hatched_map in mon_name_routeinfo(mon):
+                if hatched_map != 0:
+                    route = f"{route} Egg"
+                partymonroute.append(f"{name}: {route}")
+        print(partymonroute)
 
         
 
 def extract_box_route():
     with open("output.json") as jf:
-        counter = 0
         j = json.load(jf)
 
         boxmonroute = []
-        box = j[":storage_system"]["attributes"]["@boxes"][counter]
-        pokemon_list = box["attributes"]["@pokemon"]
-        for mon in pokemon_list:
-            if mon is not None:
-                species = mon["attributes"]["@species_data"]
-                species_type = species.get("ruby_class_name")
-                if species_type == "GameData::FusedSpecies":
-                    bodyname = species["attributes"]["@body_pokemon"]["attributes"]["@id"]["name"]
-                    headname = species["attributes"]["@head_pokemon"]["attributes"]["@id"]["name"]
-                    mons.append(bodyname)
-                    mons.append(headname)
-                elif species_type == "GameData::Species":
-                    bodyname = species["attributes"]["@id"]["name"]
-                    mons.append(bodyname)
-                else:
-                    continue
-        print(mons)
 
-extract_party_route()
+        boxes = j[":storage_system"]["attributes"]["@boxes"]
+        for box in boxes:
+            if not box:
+                continue
+
+            for mon in box["attributes"].get("@pokemon", []):
+                if mon is None:
+                    continue
+
+                for name, route, hatched_map in mon_name_routeinfo(mon):
+                    if hatched_map != 0:
+                        route = f"{route} Egg"
+                    boxmonroute.append(f"{name}: {route}")
+
+        print(boxmonroute)
+
+
+def mon_name_routeinfo(mon):
+    attrs = mon.get("attributes", {})
+    species = attrs.get("@species_data", {})
+
+    if species.get("ruby_class_name") == "GameData::FusedSpecies":
+        mon_names = [attrs.get("@original_body"), attrs.get("@original_head")]
+    elif species.get("ruby_class_name") == "GameData::Species":
+        mon_names = [mon]
+    else:
+        mon_names = []
+
+    routeinfo = []
+    for mon_name in mon_names:
+        if not mon_name:
+            continue
+
+        mon_name_attrs = mon_name.get("attributes", {})
+        mon_name_species = mon_name_attrs.get("@species_data", {})
+        name = mon_name_species.get("attributes", {}).get("@id", {}).get("name")
+        if name is None:
+            continue
+
+        routeinfo.append(
+            (
+                name,
+                mon_name_attrs.get("@obtain_map", attrs.get("@obtain_map")),
+                mon_name_attrs.get("@hatched_map", attrs.get("@hatched_map", 0)),
+            )
+        )
+
+    return routeinfo
+
 extract_box_route()
+extract_party_route()
