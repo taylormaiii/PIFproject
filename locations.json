@@ -30,6 +30,12 @@
     "description": "Optional area unlocked by defeating rival on Route 22"
   },
   {
+    "id": "custom_1783715169253_f0194df2-5b55-4931-8cf4-93fadc65db8f",
+    "name": "Secret Garden Egg",
+    "region": "Kanto",
+    "description": "Optional egg area unlocked by defeating rival on Route 22"
+  },
+  {
     "id": "2bfcf429-cddc-478e-9e66-5d2938c4b2ec",
     "name": "Route 2",
     "region": "Kanto",
@@ -40,6 +46,12 @@
     "name": "Viridian Forest",
     "region": "Kanto",
     "description": "Home of Bug-type Pokémon"
+  },
+  {
+    "id": "custom_1788201965557_e4cc8571-e02e-4d81-9a72-fb32cffd6500",
+    "name": "Viridian Forest Egg",
+    "region": "Kanto",
+    "description": "Egg in Forest, need cut"
   },
   {
     "id": "65e4a8ad-517d-4369-8922-2ce8676daa72",
@@ -54,10 +66,28 @@
     "description": "Pewter City is accessed from the South from Route 2 (After the Forest) and to the East from Route 3 "
   },
   {
+    "id": "custom_1783780967686_51f48cda-45eb-4f73-95d0-9721ec6f2028",
+    "name": "Pewter City Oricorio",
+    "region":"Kanto",
+    "description": "Oricorio from the flowers quest"
+  },
+  {
+    "id": "custom_1783826358758_3b21e9d8-0398-4351-9039-d0cf9034f7d0",
+    "name": "Pewter City Fossil",
+    "region": "Kanto",
+    "description": "Fossil from the Pewter City Museum"
+  },
+  {
     "id": "95829ddb-65b6-473d-8cc8-050597e07a56",
     "name": "Route 3",
     "region": "Kanto",
     "description": "Path to Mt. Moon"
+  },
+  {
+    "id": "53509ae6-3b87-4500-a013-9210d5fd60b3",
+    "name": "Pre-Mt Moon Egg",
+    "region": "Kanto",
+    "description": "Purchasable egg in the pokecenter before Mt Moon."
   },
   {
     "id": "eeceb211-68de-4a8a-a407-9230a16e6899",
@@ -96,16 +126,22 @@
     "description": "contains Bill's Lighthouse. It is connected to Route 25 and Route 23"
   },
   {
-    "id": "53509ae6-3b87-4500-a013-9210d5fd60b3",
-    "name": "Bill's garden",
-    "region": "Kanto",
-    "description": "Removed garden area next to Bill's Lighthouse at Cerulean Cape"
-  },
-  {
     "id": "e635f3bb-be57-40ae-b4ec-1267466c0642",
     "name": "Route 5",
     "region": "Kanto",
     "description": "South of Cerulean City"
+  },
+  {
+    "id": "custom_1788202027386_567dc9cf-d27d-41bb-b802-143821c4e1c5",
+    "name": "Route 5 Egg",
+    "region": "Kanto",
+    "description": "Egg from Route 5 trainer"
+  },
+  {
+    "id": "custom_1788202165986_d9ea435e-f231-44eb-b923-709f61d833a6",
+    "name": "Route 5 Daycare",
+    "region": "Kanto",
+    "description": "Egg behind cut in the daycare"
   },
   {
     "id": "c2c09845-8208-4d3f-9043-d4137c941e9a",
@@ -118,6 +154,24 @@
     "name": "Vermillion City",
     "region": "Kanto",
     "description": "This city contains Vermillion City's Gym, with Lt. Surge as its leader."
+  },
+  {
+    "id": "custom_1783801000047_4668f8f1-4521-4e10-b6e9-166fd9cd5342",
+    "name": "SS Anne",
+    "region": "Kanto",
+    "description": "SS Anne Swirlix"
+  },
+  {
+    "id": "custom_1783823365699_4372914d-ff51-4335-888b-6afaee85457a",
+    "name": "SS Anne 2",
+    "region": "Kanto",
+    "description": "SS Anne after the gym"
+  },
+  {
+    "id": "custom_1783799719411_7b3ac276-7d5b-43ec-b645-7f3629230c13",
+    "name": "Diglett's Cave",
+    "region": "Kanto",
+    "description": "Cave with only one encounter."
   },
   {
     "id": "60cce3f1-a2e5-4043-9e40-9c08a8ca5370",
@@ -138,10 +192,28 @@
     "description": "This route is a fork with a PokéCenter in its Center. It connects Route 9, Rock Tunnel and the Power Plant."
   },
   {
+    "id": "custom_1788202200421_b4753d99-365a-41cd-aea7-719346de9c15",
+    "name": "Power Plant",
+    "region": "Kanto",
+    "description": "Floor 1 encounter"
+  },
+  {
     "id": "c9372f33-fdfd-4226-b0bd-d7075612f731",
     "name": "Rock Tunnel",
     "region": "Kanto",
     "description": "Rock Tunnel is a dark cavern which splits the sections of Route 10."
+  },
+  {
+    "id": "custom_1783878091001_2fdd23d8-6616-4118-abe6-a8640d9dbe4e",
+    "name": "Rock Tunnel Static",
+    "region": "Kanto",
+    "description": "It's not safe to go alone, take this"
+  },
+  {
+    "id": "custom_1783890204859_ffa163fc-132a-4baf-bdd8-f422c9524517",
+    "name": "Rock Tunnel Egg",
+    "region": "Kanto",
+    "description": "Egg in Rock Tunnel"
   },
   {
     "id": "b53af7d4-1051-4241-816d-e684c667a2dd",
@@ -150,10 +222,22 @@
     "description": "Lavender Town can be accessed from the North by Route 10 (After Rock Tunnel), the West by Route 8, and the South by Route 12."
   },
   {
+    "id": "custom_1788202093826_9642be76-4e2f-4c4c-b0c1-5041c462341e",
+    "name": "Lavender Town Egg",
+    "region": "Kanto",
+    "description": "Purchasable egg in the Lavender Town Pokecenter"
+  },
+  {
     "id": "71716dce-89d4-46e5-80bc-c84b7aa96254",
     "name": "Route 8",
     "region": "Kanto",
     "description": "East of Celadon City, path to Lavender Town"
+  },
+  {
+    "id": "custom_1783890807617_2180474d-a0c1-4f2f-b090-656583e5a259",
+    "name": "Route 8 Egg",
+    "region": "Kanto",
+    "description": "Egg given by Route 8 Trainer"
   },
   {
     "id": "0be7b69c-59a4-4923-8cd5-2922b2e3d255",
@@ -168,10 +252,22 @@
     "description": "Celadon City is a big city, with two entries: Route 16 to the West and Route 7 to the East."
   },
   {
+    "id": "custom_1783892018494_cf2b4a45-665e-4791-93c1-04d46cd260f7",
+    "name": "Celadon Eevee",
+    "region": "Kanto",
+    "description": "Eevee sidequest"
+  },
+  {
     "id": "f1c84583-7bea-4a8c-ba9a-44d9152bbb1f",
     "name": "Celadon Sewers",
     "region": "Kanto",
     "description": "Team Rocket have a hideout within Celadon Sewers."
+  },
+  {
+    "id": "custom_1788202270920_cd5d323b-bab4-4a12-99ad-e8e50540504c",
+    "name": "Pallet Town Extra Starter",
+    "region": "Kanto",
+    "description": "Red gives you another mon in your house in Pallet Town"
   },
   {
     "id": "46953d30-f72c-415a-8ddb-5d4013eeaf1f",
@@ -210,6 +306,12 @@
     "description": "West toward Fuchsia City"
   },
   {
+    "id": "custom_1788202293121_1aba1175-65fd-41d8-961f-4a0df900984d",
+    "name": "Route 15 Egg",
+    "region": "Kanto",
+    "description": "Egg on Route 15"
+  },
+  {
     "id": "c05ff29d-823e-4ab9-a5ca-44e2e0775785",
     "name": "Route 16",
     "region": "Kanto",
@@ -246,6 +348,12 @@
     "description": "Saffron City is a big city, with two entries: Route 25 to the West and Route 24 to the East."
   },
   {
+    "id": "custom_1788203624084_eda10f30-8aad-496a-b9f3-28536217ff1d",
+    "name": "Saffron City Egg",
+    "region": "Kanto",
+    "description": "Egg in Saffron City"
+  },
+  {
     "id": "1a8af28d-41b8-41d6-b652-a222c9d76750",
     "name": "Creepy House",
     "region": "Kanto",
@@ -256,6 +364,12 @@
     "name": "Route 23",
     "region": "Kanto",
     "description": "Victory Road entrance"
+  },
+  {
+    "id": "custom_1788202313448_0422f3b6-b529-43ca-9af8-0ec962955367",
+    "name": "Route 23 Egg",
+    "region": "Kanto",
+    "description": "Egg on Route 23"
   },
   {
     "id": "84dda96e-93ca-4b60-a11c-57e4be46537d",
@@ -280,6 +394,18 @@
     "name": "Seafoam Islands",
     "region": "Kanto",
     "description": "Seafoam Islands are a group of islands in the Seafoam Islands. They are home to many wild Pokémon, including the legendary Pokémon, Articuno."
+  },
+  {
+    "id": "custom_1788203646274_5fa4f60b-5c7d-4a2d-9b51-69accc5de610",
+    "name": "Seafoam Islands Egg",
+    "region": "Kanto",
+    "description": "Nest egg in Seafoam Islands"
+  },
+  {
+    "id": "custom_1788204131929_afe13ef6-3aa4-4923-96c9-2ca4e4aa40e2",
+    "name": "Seafoam Legendary",
+    "region": "Kanto",
+    "description": "Seafoam Legendary"
   },
   {
     "id": "20337ff7-08a5-44ab-8a92-ef775e06726e",
@@ -310,6 +436,24 @@
     "name": "Offshore Road",
     "region": "Kanto",
     "description": "Offshore Road is a water route between Kanto's Cinnabar Island and Sevii Islands' Kindle Road."
+  },
+  {
+    "id": "custom_1788204008245_9db5a813-167e-4694-901f-b8f3e5e82f54",
+    "name": "Kindle Road",
+    "region": "Kanto",
+    "description": "Road to Mt. Ember"
+  },
+  {
+    "id": "custom_1788204017532_7e217775-a291-455c-a47f-56b06c5b6eab",
+    "name": "Kindle Road Egg",
+    "region": "Kanto",
+    "description": "Nest Egg on Kindle Road"
+  },
+  {
+    "id": "custom_1788204096672_7eb6aee5-de9e-4829-b894-da67a2c0bd03",
+    "name": "Knot Island Gift",
+    "region": "Kanto",
+    "description": "Gift on Knot Island"
   },
   {
     "id": "d62302d4-c980-4e3f-b8d9-0204226c106c",
@@ -364,6 +508,24 @@
     "name": "Route 35",
     "region": "Johto",
     "description": "Route 35 is a route that connects Goldenrod City to the National Park. There is also a small shortcut to reach Route 36 directly."
+  },
+  {
+    "id": "custom_1788203680251_790f0f6b-c532-4fff-85f3-4da17af33330",
+    "name": "Goldenrod DayCare Egg",
+    "region": "Johto",
+    "description": "Daycare Egg Route 35"
+  },
+  {
+    "id": "custom_1788203874955_d64495dc-6dfa-46af-af78-705646831c42",
+    "name": "National Park",
+    "region": "Johto",
+    "description": "Grass encounter in the park."
+  },
+  {
+    "id": "custom_1788203886544_75de2f46-079c-4632-b11d-3536cbcf85f2",
+    "name": "National Park Gift",
+    "region": "Johto",
+    "description": "Gift in National Park"
   },
   {
     "id": "bf250fc5-c8d8-4c7d-96b7-473910c166ec",
@@ -538,5 +700,137 @@
     "name": "Lake of Rage",
     "region": "Johto",
     "description": "The Lake of Rage can be accessed from Route 43."
+  },
+  {
+    "id": "custom_1788204264755_4b8ecac7-4e3f-4e2d-844b-59b9654472ae",
+    "name": "Diancie Legendary",
+    "region": "Johto",
+    "description": "Operation Shutdown, Goldenrod City"
+  },
+  {
+    "id": "custom_1788204429334_461335cf-939a-4046-bfcd-2013867c2a42",
+    "name": "Kyurem Legendary",
+    "region": "Kanto",
+    "description": "Light and Dark Stones, Dance Hall Ecruteak "
+  },
+  {
+    "id": "custom_1788204296721_9bf2ab3c-106d-407d-8ca0-6cf3cc370278",
+    "name": "Meloetta Legendary",
+    "region": "Kanto",
+    "description": "Saffron City Bar on Saturday"
+  },
+  {
+    "id": "custom_1788204309725_fbe5c180-de71-499a-86fe-d54a1b3fff51",
+    "name": "Necrozma Legendary",
+    "region": "Kanto",
+    "description": "Prism Quest"
+  },
+  {
+    "id": "custom_1788204322084_88ef5ba3-c1ed-4fe3-975b-83dc1258edb9",
+    "name": "Jirachi Legendary",
+    "region": "Kanto",
+    "description": "Encountered at least 777 unique Pokémon, Hotel + Sleep"
+  },
+  {
+    "id": "custom_1788204408355_60337099-ffdf-4b7f-9093-ab2ce1471c9d",
+    "name": "Deoxys Legendary",
+    "region": "Kanto",
+    "description": "Kin Island Hotel, Bond Bridge"
+  },
+  {
+    "id": "custom_1788204420528_0ba24937-fb40-48a6-b1d9-7db02c927bd8",
+    "name": "Latias/Latios Legendary",
+    "region": "Kanto",
+    "description": "Boon Island TV, roaming in Sevii Islands"
+  },
+  {
+    "id": "custom_1788204458089_41de22ad-aa61-4a90-b86f-5bdfdcaa7a45",
+    "name": "Reshiram/Zekrom",
+    "region": "custom_1788204322084_88ef5ba3-c1ed-4fe3-975b-83dc1258edb9",
+    "description": "Dance Hall, Ecruteak, Bell Tower"
+  },
+  {
+    "id": "custom_1788204469487_43d20705-ce26-4ac1-ba9c-e58907b6485e",
+    "name": "Genesect Legendary",
+    "region": "Kanto",
+    "description": "Rocket Warehouse Chrono Island"
+  },
+  {
+    "id": "custom_1788204478648_fb8ca551-e9e0-4072-ab18-c94a3b7c417f",
+    "name": "Arceus Legendary",
+    "region": "Johto",
+    "description": "Articuno, Zapdos, Moltres, Entei, Raikou and Suicune needed. Ruins of Alph"
+  },
+  {
+    "id": "custom_1788204517931_f3bce9c7-28d0-4bf7-be39-2341d2e45294",
+    "name": "Darkrai/Cresselia",
+    "region": "Kanto",
+    "description": "Bedroom Key, Goldenrod Department Store Basement, Lavender Orphanage"
+  },
+  {
+    "id": "custom_1788204529696_ce54b6f2-b9aa-4c4f-99b3-bb295149a3d1",
+    "name": "Dialga/Palkia/Giratina",
+    "region": "Johto",
+    "description": "Post Arceus, Mr. Pokemon Route 30 with Arceus in Party"
+  },
+  {
+    "id": "custom_1788204541277_ac774ecc-7093-4d0a-bb2e-9d070945a11b",
+    "name": "Regis Legendary",
+    "region": "Kanto",
+    "description": "Chrono Island Water Labrynth"
+  },
+  {
+    "id": "custom_1788204550615_58368021-9b55-4ad1-bb81-1aace35a12f9",
+    "name": "Rayquaza Legendary",
+    "region": "Kanto",
+    "description": "Kin Island Sky Pillar"
+  },
+  {
+    "id": "custom_1788204567358_88f1756a-f2b0-477b-baaf-8fdce9f5abb5",
+    "name": "Kyogre Legendary",
+    "region": "Kanto",
+    "description":"Sapphire Cave in Deep Sea Sevii Islands"
+  },
+  {
+    "id": "custom_1788204576902_a4426066-4ab4-4d22-945b-83e51b0cec72",
+    "name": "Groudon Legendary",
+    "region": "Kanto",
+    "description": "Mt. Ember, Ruby Chamber, Heat Cream (Cinnabar Mart for Fire Gem), Ruby"
+  },
+  {
+    "id": "custom_1788204594567_3911ce66-780d-4a5e-b51a-ebe80f573def",
+    "name": "Celebi Legendary",
+    "region": "Johto",
+    "description": "Ilex Forest after 50 hotel quests"
+  },
+  {
+    "id": "custom_1788204605613_3a9238e9-debf-429e-8ad4-6cc15583ae04",
+    "name": "Ho-oh/Lugia Legendary",
+    "region": "Johto",
+    "description": "Boon Island, North, Chuck, Navel Ticket, Navel Rock"
+  },
+  {
+    "id": "custom_1788204643617_0684dbf6-55ac-4d20-8a23-f5eed1e2de7a",
+    "name": "Mewtwo Legendary",
+    "region": "Kanto",
+    "description": "After beating the game, Professor Oak > Prof. Elm in New Bark Town"
+  },
+  {
+    "id": "custom_1788204653365_4615129a-aa03-4d8c-8d01-4f5b7272ab48",
+    "name": "Mew Legendary",
+    "region": "Kanto",
+    "description": "20 Karma, 8 Constellations. Mew encountered using the telescope in the Mt. Moon observatory. Hear it's cry only, you need more Positive Karma."
+  },
+  {
+    "id": "custom_1788204687696_03a85dd3-9a24-435a-aaa1-30c39cf11613",
+    "name": "Entei Legendary",
+    "region": "Johto",
+    "description": "Entei can be encountered on the second floor of Victory Road. If defeated, starts roaming Johto region. Tracked using Weather Tracker from Ruins of Alph"
+  },
+  {
+    "id": "custom_1788204695694_4ed235d1-e7ea-462b-8d7b-2f7c7ca3c91c",
+    "name": "Raikou/Suicune Roamer",
+    "region": "Johto",
+    "description": "Violet City Eusine questline"
   }
 ]

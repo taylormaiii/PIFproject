@@ -69,20 +69,34 @@ def mon_name_routeinfo(mon):
     species = attrs.get("@species_data", {})
 
     if species.get("ruby_class_name") == "GameData::FusedSpecies":
-        mon_names = [attrs.get("@original_body"), attrs.get("@original_head")]
+        species_attrs = species.get("attributes", {})
+        mon_names = [
+            (
+                attrs.get("@original_body"),
+                species_attrs.get("@body_pokemon", {}),
+            ),
+            (
+                attrs.get("@original_head"),
+                species_attrs.get("@head_pokemon", {}),
+            ),
+        ]
     elif species.get("ruby_class_name") == "GameData::Species":
-        mon_names = [mon]
+        mon_names = [(mon, {})]
     else:
         mon_names = []
 
     routeinfo = []
-    for mon_name in mon_names:
+    for original_mon, species_mon in mon_names:
+        mon_name = original_mon or species_mon
         if not mon_name:
             continue
 
         mon_name_attrs = mon_name.get("attributes", {})
         mon_name_species = mon_name_attrs.get("@species_data", {})
-        name = mon_name_species.get("attributes", {}).get("@id", {}).get("name")
+        if mon_name_species:
+            name = mon_name_species.get("attributes", {}).get("@id", {}).get("name")
+        else:
+            name = mon_name_attrs.get("@id", {}).get("name")
         if name is None:
             continue
 
@@ -98,3 +112,7 @@ def mon_name_routeinfo(mon):
 
 extract_box_route()
 extract_party_route()
+
+def route_id_to_name():
+    with open("locationsnamesids.txt") as lnif:
+        pass
