@@ -1,0 +1,562 @@
+# Changelog
+
+## [0.9.5](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.9.4...v0.9.5) (2026-08-05)
+
+
+### Bug Fixes
+
+* prevent location table scroll shifts ([#258](https://github.com/fbosch/infinite-fusion-nuzlocke/issues/258)) ([4df91cc](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/4df91cc933e127a229b6e4684b6adfda130f61bd))
+
+## [0.9.4](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.9.3...v0.9.4) (2026-08-04)
+
+
+### Performance Improvements
+
+* reduce layout work and sprite transfer ([#256](https://github.com/fbosch/infinite-fusion-nuzlocke/issues/256)) ([ac00941](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/ac00941e68b778cca7831e6c2ea8de1a93982f85))
+
+## [0.9.3](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.9.2...v0.9.3) (2026-08-03)
+
+
+### Bug Fixes
+
+* commitlint and devenv ([9c3dd2f](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/9c3dd2f7129f2b71f8b97c87cad7742511b9536b))
+
+## [0.9.2](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.9.1...v0.9.2) (2026-07-31)
+
+
+### Bug Fixes
+
+* **persistence:** recover malformed encounter cache ([#249](https://github.com/fbosch/infinite-fusion-nuzlocke/issues/249)) ([67ca878](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/67ca87875a84064be6c16f21a379a76912c0914a))
+
+## [0.9.1](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.9.0...v0.9.1) (2026-07-31)
+
+
+### Bug Fixes
+
+* **persistence:** recover missing IndexedDB store ([#247](https://github.com/fbosch/infinite-fusion-nuzlocke/issues/247)) ([a84823d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a84823df833f2738becf536172d0fb58076e66d6))
+
+## [0.9.0](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.8.0...v0.9.0) (2026-07-26)
+
+
+### Features
+
+* **fusion:** add combo shorthand ([#241](https://github.com/fbosch/infinite-fusion-nuzlocke/issues/241)) ([05038d6](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/05038d67d98ef4c2cffdf64b10c2d014701bdff4))
+* **header:** move GitHub engagement controls into top bar ([#243](https://github.com/fbosch/infinite-fusion-nuzlocke/issues/243)) ([8de6293](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/8de6293fd3dd2eb46bc40dbd8eb249919678f1b7))
+* **motion:** respect reduced motion ([#245](https://github.com/fbosch/infinite-fusion-nuzlocke/issues/245)) ([da52ed9](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/da52ed945d0f8f62aa371ab02a14c5042c0dc1d9))
+
+## [0.8.0](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.7.0...v0.8.0) (2026-06-21)
+
+
+### Features
+
+* add impeccable skills ([d4bfcbb](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/d4bfcbbf763dc3a64294da64b653177890de11ba))
+* add progress-bar ([e391179](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/e3911795f1aeeeb2948cbec5f05d365a8dc710c0))
+* **inf-125:** instrument lifecycle analytics ([#211](https://github.com/fbosch/infinite-fusion-nuzlocke/issues/211)) ([acc8762](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/acc8762e0c03fc915e080f64016ad0bc4b94270b))
+* **inf-127:** track game mode transitions ([d4c98a0](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/d4c98a0852c5c3b8bb6ca876276725e4abc5fd9c))
+* **inf-127:** track game mode transitions ([2e669c8](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/2e669c8ca10cee90fdf4f5e49e400cde19a07c08))
+
+
+### Bug Fixes
+
+* **ci:** correct data PR Pokemon links and icons ([6b56f56](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/6b56f56dcc6d33cb631d21c6715dd397a3d9cf3c))
+* **ci:** cover shared data PR entries ([30e1899](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/30e1899a0e3267705c029f2b0b037fbdf4b63a73))
+* **ci:** enrich data refresh PR body ([eff5239](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/eff523900f59ec47582630d9c04fae65ef57f4f9))
+* **ci:** enrich data refresh PR body ([23106c5](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/23106c5613dbc4d0a158ddeeca4a38403392acca))
+* **ci:** link Pokemon in data PR tables ([6e6f751](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/6e6f7513fcf2d5cfe68bd6aede0f84a40a4b094a))
+* **ci:** split data refresh tables by version ([4c41a68](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/4c41a68ae44ee5d8423771c6800d057d1501afcf))
+* **ci:** use generation vii PR icons ([60de5d1](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/60de5d13f10ce3ddee310e5cae161182488c9127))
+* **ci:** use national dex ids for PR icons ([17534d6](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/17534d693b56f59013b68c9213c9760e32fdfe5f))
+* **ci:** use PokeAPI icons in data PRs ([de0e3d1](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/de0e3d1afbd461ddb4928f6c66c13964335c30ca))
+* **components:** allow custom progress icons ([f62d3e3](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f62d3e3367f8ab5ad274fd73b3cb3f57b6f45d2c))
+* **components:** avoid duplicate header rule ([1593795](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/15937955e31f8c7d02b6d461abea476768cdb990))
+* **components:** offset progress header line ([c372188](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/c372188e2c87ef5b1449d6a61048568915ff772a))
+* **components:** polish progress bar labels ([10d9ea1](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/10d9ea14f5d8ec8f8cb1a8768678d59374917f38))
+* **components:** require status for captured progress ([45c680e](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/45c680e3b62bd20c66321528d1c6d2f1f8cdef5d))
+* **components:** sync tooltip state ([b529984](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/b529984ee6e9b3eb027ede1990c992195f5cd80f))
+* **components:** use lucide progress icons ([06154cc](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/06154cc36ed8dd925baf5c93cbbb21dccbb18ccb))
+* **contextmenu:** adjust separator colors ([4a2fdf7](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/4a2fdf7c6ab33864db027ef7d633e60a8ae9c5a5))
+* **data:** add missing encounter locations ([416b8be](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/416b8bed10158d2d7333d0af6f321dbf908695c4))
+* **data:** add missing encounter locations ([41302c8](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/41302c8d8cc1d221f067a7143ac4ec567bca2c15))
+* follow Pokédex subpages when scraping ([#226](https://github.com/fbosch/infinite-fusion-nuzlocke/issues/226)) ([6c9bddd](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/6c9bddd5dfe7e3ddce153f639940c3521502fd8a))
+* follow pokedex subpages when scraping ([#227](https://github.com/fbosch/infinite-fusion-nuzlocke/issues/227)) ([792cc65](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/792cc65f7635e407f1bcdcfd6907543f6e6c0681))
+* format generated data in refresh workflow ([#225](https://github.com/fbosch/infinite-fusion-nuzlocke/issues/225)) ([3e50905](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/3e509058b1ec3de2fea14effed8ba7403159c3df))
+* **inf-127:** avoid game mode analytics coercion ([2eeb756](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/2eeb7561c796dab1691990214970fc502ee85ffb))
+* **inf-138:** pin Impeccable detector version ([5aed26f](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/5aed26ffd66634a9741d24f8f0cb922cbe1ba8a0))
+* **inf-140:** centralize default game mode ([2fff67a](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/2fff67abe327115b4e13fbc36f714334a9137c7c))
+* **inf-140:** default new runs to randomized ([307b746](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/307b746c1df8d2eec46871c5883bbdfb28d264f6))
+* **inf-140:** default new runs to randomized ([bfeff02](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/bfeff02bd9af13be4489584afda96fe9775b692e))
+* **inf-141:** add menu width fallback ([3a131ee](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/3a131ee4032b518debf4e97c073058a93f43019a))
+* **inf-141:** reflow mobile header controls ([4f3d61e](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/4f3d61e29296e87407108a54bdcd022e1b3f5354))
+* **inf-141:** reflow mobile header controls ([eb4ff6c](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/eb4ff6ca7da53d8460e1e6daed76b0788e956add))
+* **inf-99:** address encounter gate feedback ([8a94693](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/8a946936c8148adcce85caaa1b30ab527e3d97e3))
+* **inf-99:** gate scraper encounter outputs ([9890fe1](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/9890fe1fb07c64560b5f837fd534919845164130))
+* **inf-99:** gate scraper encounter outputs ([85f0c5d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/85f0c5dc3fdedad012bdcdae16454e03aca70ac0))
+* **inf-99:** tighten encounter schema gate ([554f027](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/554f027b617f9b0c2f9969bc23b0f952099b6507))
+* restore playthrough menu animation colors ([#213](https://github.com/fbosch/infinite-fusion-nuzlocke/issues/213)) ([b52f4ef](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/b52f4efd8f976355d368080bbc958c59f87787fa))
+* skip hooks for data refresh PRs ([#219](https://github.com/fbosch/infinite-fusion-nuzlocke/issues/219)) ([c1c2ab6](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/c1c2ab655d4577a4ab74cc5f18e0c960f917445c))
+
+## [0.7.0](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.6.0...v0.7.0) (2026-05-07)
+
+
+### Features
+
+* **analytics:** track early funnel events ([ee54fe5](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/ee54fe5055c3e5db149d5efe8dfd817c175c2997))
+* **inf-131:** track import success and failure events ([8d5d51f](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/8d5d51f198708b2503ab33190c8ec3b38fc3e88a))
+
+
+### Bug Fixes
+
+* **analytics:** address PR feedback ([b6960b7](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/b6960b70e7b5c4a8ceaf6f0e9ff874d4554650b7))
+* **inf-115:** address review feedback for animation reset ([8ede43d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/8ede43dbe08b4fc371cbddcf00c5c9e32e49dbad))
+* **INF-115:** prevent evolution animation when switching playthroughs ([c67396e](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/c67396e9c153f0f218c359d4b4f04ad3972f6cdc))
+* **inf-115:** reset evolution animation state on playthrough switch ([eeab1ac](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/eeab1ac457621792467354cf9454635729619ee5))
+* **inf-128:** address PR review on canonical emit paths ([275202b](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/275202b56c5f33a19d1fc0a7941247c617f6d05f))
+* **inf-128:** route team actions through canonical emit points ([ba785b9](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/ba785b9e3be714a577aab31d975f8cc555a3a097))
+
+## [0.6.0](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.5.4...v0.6.0) (2026-04-13)
+
+
+### Features
+
+* **combobox:** add INF-15 duplicate indicator ([65a7c0f](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/65a7c0f1226040aad51533442666927078d813c7))
+
+
+### Bug Fixes
+
+* **combobox:** preserve INF-15 capture fallback ([ab673cf](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/ab673cfea9275280d0bf285a532bb29e6094574a))
+* **context-menu:** clamp INF-14 viewport overflow ([ce5ae53](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/ce5ae53e6e952b0a5e59bbe18596a57c4013c946))
+* **context-menu:** restore INF-14 click typing ([a8f392e](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a8f392e3a167dbd36262a49fa30eaa26ad7445e5))
+
+## [0.5.4](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.5.3...v0.5.4) (2026-04-10)
+
+
+### Bug Fixes
+
+* **analytics:** remove NODE_ENV dependency from prod gate ([e4c9424](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/e4c9424768581ea4dcf0f6975c5a8d7c8f42a6fb))
+* **analytics:** trust prod vercel env even if NODE_ENV differs ([3d36a2c](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/3d36a2c324bc1b0a432643a0c4720e274b3b6be3))
+
+## [0.5.3](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.5.2...v0.5.3) (2026-04-10)
+
+
+### Bug Fixes
+
+* **analytics:** allow production hostname fallback when env is missing ([6a092fc](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/6a092fc01217c8d5d7a383f3d2bf1aaa5e5657a0))
+* **analytics:** fallback production gating to known hostnames ([29e0dd1](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/29e0dd12a046c4379045f724d28cdf086f5bdf17))
+
+## [0.5.2](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.5.1...v0.5.2) (2026-04-10)
+
+
+### Bug Fixes
+
+* **ci:** set NEXT_PUBLIC_VERCEL_ENV for production deploy builds ([90f44e3](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/90f44e3f603f8a60e8421b0da8a05e3c87746532))
+* **ci:** set production Vercel env for client analytics ([39ad26b](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/39ad26b669aa27fbc2d63e1ef6064080ce9d447b))
+
+## [0.5.1](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.5.0...v0.5.1) (2026-04-10)
+
+
+### Bug Fixes
+
+* **analytics:** address PR feedback on dedupe and consent retry ([a9de284](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a9de2842c8789cae24989f8cf5dc5a87cdf88c4c))
+* **analytics:** mark one-time events tracked only after successful send ([7b1d4d8](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/7b1d4d8004e403329757ce33646b5d73655e77c6))
+* **analytics:** persist dedupe markers only after successful sends ([d0bff1c](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/d0bff1c7ce6339cfd78c8e574de3dc56cbf04a0d))
+
+## [0.5.0](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.4.1...v0.5.0) (2026-04-08)
+
+
+### Features
+
+* **inf-118:** add analytics guardrails and observability controls ([f8a0a6f](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f8a0a6f4b24e1fc49db2b616da0b978bf9618b01))
+* **inf-118:** harden analytics payload guardrails ([f84644a](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f84644a8202d0249075fc656388422308ef382e1))
+* **inf-70:** add typed analytics tracking foundation ([322162d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/322162d61c5578ec9ba9744004b519eb391eae2c))
+* **inf-70:** add typed analytics tracking foundation ([aa42588](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/aa425883c5dbd570d4dad2da41f1d2c9e9c5d3d3))
+
+
+### Bug Fixes
+
+* **ci:** centralize Vercel CLI install for deploy workflows ([d7ca868](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/d7ca86874f69bda1c8cbd6439ea36baae2e4fd1a))
+* **inf-116:** remove duplicate analytics foundation ([440c22c](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/440c22c623f25ff9b7eb4035ae5f586e53676404))
+* **INF-116:** remove duplicate analytics foundation ([cff5f70](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/cff5f70924498f921405bc0ca13184f7ba4a257d))
+* **inf-118:** harden debug snapshot and validation order ([424ccc6](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/424ccc6c2606fa8d08ff80a4f0b93b2dd0673b15))
+* **inf-70:** harden analytics consent storage access ([4839315](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/4839315102725de9ec7b496fae581d2fc08de8c5))
+
+## [0.4.1](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.4.0...v0.4.1) (2026-04-02)
+
+
+### Bug Fixes
+
+* **ci:** align production deploy with current Vercel CLI ([d4b562e](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/d4b562ecfda66fb62d817e3a6bef97ceb2265a57))
+* **test:** exclude opencode workspace from vitest discovery ([6a72b06](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/6a72b06a2ff57c10fd80b91c074dd9a4963fd21c))
+
+## [0.4.0](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.3.4...v0.4.0) (2026-04-02)
+
+
+### Features
+
+* **inf-105:** migrate wild encounters scraping to wikitext templates ([37a2273](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/37a2273374530eaa8c938650768dd93825a45106))
+
+
+### Bug Fixes
+
+* **analytics:** expose Vercel env for custom event tracking ([77b1a4d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/77b1a4d0a8e031d93cc847e63e8f61c61087142f))
+* **analytics:** expose vercel env to client tracking ([bdda11d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/bdda11dc518b7d27ba334eb02de9b62ab34afd0c))
+* **inf-105:** address PR review parser edge cases ([0cb0d82](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/0cb0d826384947bcefb89e8d64fe1fa9d7cda206))
+* **inf-110:** update preview workflow for newer Vercel CLI ([a40e9e1](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a40e9e100d0327d63a5105eb5846ad626354b2ae))
+* **inf-111:** tolerate zero-match grep in scope detection ([479ef36](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/479ef3619c5463b94100fb33071e2362318883d6))
+* **inf-114:** correct markdown-only regex matching ([5b7aeb9](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/5b7aeb9d8dd7a7b37ceefa8f60a1c4c7428eb5d9))
+* **inf-114:** harden vercel ignore command sha guards ([8caf509](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/8caf5096458607948f203a16c2f0dc465cf17123))
+* **inf-114:** remove unsupported vercel ignoreCommand ([5b10d6b](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/5b10d6bf2c6ce9ef43f3810a89eb6c4664caf41e))
+
+## [0.3.4](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.3.3...v0.3.4) (2026-03-30)
+
+
+### Bug Fixes
+
+* **ci:** handle protected Vercel health checks ([58e98b8](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/58e98b8e0efdec426fa082bacdea358cf3392903))
+* **ci:** handle protected Vercel health checks ([d510d32](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/d510d3275af6d7ff104fcf9131f1f1fbc7362a7e))
+
+## [0.3.3](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.3.2...v0.3.3) (2026-03-30)
+
+
+### Bug Fixes
+
+* **ci:** deploy production without prebuilt artifacts ([e2d7676](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/e2d7676a5d71ba495bf8e67c69e1050877a4ce55))
+* **ci:** deploy to Vercel production without prebuilt step ([e262c74](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/e262c74e243662b215d6afdd5a8b7bf620cb13de))
+
+## [0.3.2](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.3.1...v0.3.2) (2026-03-30)
+
+
+### Bug Fixes
+
+* **ci:** force bundled server trace for Vercel production deploy ([7ff1ce3](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/7ff1ce31d4dfb5d7246a02494d666cd186ebd105))
+* **ci:** force bundled server trace on production deploy ([9d589d8](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/9d589d88179a3c50187d588ef52c08d4429afa2e))
+
+## [0.3.1](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.3.0...v0.3.1) (2026-03-30)
+
+
+### Bug Fixes
+
+* **readme:** remove stale Node 24 requirement ([5d40faa](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/5d40faa0c7f6028149bcab4c6b5da30994669c1f))
+* **readme:** remove stale Node 24 requirement ([b8854e4](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/b8854e41ac6037ebd521e83e71a1f2ef23ebfdcb))
+
+## [0.3.0](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.2.3...v0.3.0) (2026-03-30)
+
+
+### Features
+
+* **INF-106:** update home title from active playthrough ([1ba0b5a](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/1ba0b5a9526fa52fee36998f61cdfb115fa4ee25))
+* **inf-73:** instrument analytics events and add coverage ([4ad520e](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/4ad520eb30fcfe72cfca8b920f330f9c0fb9739a))
+* **inf-77:** add shared analytics selectors and bucket helpers ([adc17ba](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/adc17ba0fc98024907b4c68c332ca259d5c943a3))
+* **inf-77:** split analytics selectors and bucket helpers ([4a77d9f](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/4a77d9fa48bb3467ecb07a889d3f717618643765))
+* **inf-81:** add gated analytics transport wrapper ([f6e41a4](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f6e41a4d2ea88bb61a5faf143ec506191d66a413))
+
+
+### Bug Fixes
+
+* **ci:** checkout before local setup action ([f10d93a](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f10d93a8e6de63048a6d259166f962c4136a3686))
+* **ci:** harden data PR body git command execution ([446ecde](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/446ecde1875e2a4bfe18c06aa8203671a6c8eb2d))
+* **INF-106:** align client title updates with Next metadata patterns ([29a61fa](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/29a61fa378f54b46dc1f55da0f5d763b53053a7e))
+* **inf-73:** normalize analytics game mode mapping ([687dffd](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/687dffd63e168b188c3463be519109f56c66ef9f))
+* **inf-81:** harden consent reads and env gating ([177622e](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/177622e9560f2169ffe42e4a9831c2e8533d43d9))
+* **inf-92:** restore keyboard activation for location table actions ([2cfb5ad](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/2cfb5ad1b15b729d4eb2c9ee244776bd7d39bcf5))
+* **inf-92:** restore keyboard activation for location table actions ([3c1f5ac](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/3c1f5ac49d91806c7186beda121e380797f6bdb5))
+* **INF-94:** address review feedback on static route handling ([bf2bec3](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/bf2bec3aa6c2a9ac5162c865a705fdd30dfd45e0))
+* **INF-94:** restore special encounter parsing from wiki markers ([d305215](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/d30521530ffcf370e3580cc86b73d2434d56efa3))
+
+## [0.2.3](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.2.2...v0.2.3) (2026-03-29)
+
+
+### Bug Fixes
+
+* **release:** ensure pnpm is available for Vercel production build ([c2e1d09](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/c2e1d0937e87720ae76ceb5d3a16fd3798eb4c7a))
+* **release:** install pnpm before vercel build ([6977731](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/697773162d65556a329ab9a3d3af6a852ee9d623))
+
+## [0.2.2](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.2.1...v0.2.2) (2026-03-29)
+
+
+### Bug Fixes
+
+* **footer:** show dynamic year and app version ([9f86af8](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/9f86af801efb3b6bf3905384f4ef629408cdd9c3))
+* **inf-91:** use dynamic year and app version in footer ([5b0f342](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/5b0f342222359201882c32c28e3b8d46c0dac238))
+
+## [0.2.1](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.2.0...v0.2.1) (2026-03-29)
+
+
+### Bug Fixes
+
+* **inf-89:** pin third-party actions and tighten permissions ([6218511](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/6218511c8378604dc414a21a38e698c86260b57d))
+* **inf-89:** pin third-party actions and tighten workflow permissions ([1d3317e](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/1d3317e0be022b7080de5e86012b6dc14052e05a))
+
+## [0.2.0](https://github.com/fbosch/infinite-fusion-nuzlocke/compare/v0.1.0...v0.2.0) (2026-03-29)
+
+
+### Features
+
+* add auto assignment of team members ([cee77c9](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/cee77c9f818fe3c24445792dbe506d7ef9e72384))
+* add delay group to tooltips ([51e2700](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/51e27001c1394d6819a37559381215418daca28d))
+* add functionality to restore original receival state ([a223c76](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a223c76da42166766e2d1d517e26d80208e5b364))
+* add move to box ([86786b3](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/86786b3de9a12f71842fbc81e7a2e483b37490b6))
+* add rule for team member logic ([8a5bf45](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/8a5bf45ed06fb465cd4b5f2c10413602f5697da2))
+* add settings modal ([9fcb934](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/9fcb9348a5a7df3cfe2532d058a1a4c45b998e46))
+* add support for moving to original location ([c81a854](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/c81a85498bac45d84e388ce3f087a21e974ca7d7))
+* add tooltips ([5d36891](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/5d3689156b5621a10a1551ffe588dc151a46719e))
+* add type indicators and nickname to team slots ([6efe13b](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/6efe13b5d19c4d8dd3754cdbee2b8c96e1fd6493))
+* added active styling to all buttons ([b9bc6b0](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/b9bc6b06a0cd8ae4d798568bc1b7173091ffb51b))
+* added active styling to all buttons ([3ffc394](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/3ffc394371f14c54f5ceddd83f6077c9b273942d))
+* added body part icons ([0e0eda0](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/0e0eda0c788ebb2326d2d991e67d95b854225adf))
+* added code coverage setup ([1d5eb36](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/1d5eb361ae7284ebb4ec56571152226cf3920626))
+* added code coverage setup ([38c10b1](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/38c10b1b80b4a615e53c698a9f313287dbb58322))
+* added context actions to pokemon summary ([492067c](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/492067cfbbb03d8aa17e084be524331402791a63))
+* added context menu to pokemon sheet ([9b683b0](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/9b683b0c1ca88e06333036c12e5cce0ff7371ad1))
+* added create new playthrough modal ([a25fa76](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a25fa76a9d3b071929e238e4f7a2252feda0089b))
+* added credits and licenses ([2d32ee3](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/2d32ee36df02ec59197200941a95ae23b0fec44b))
+* added credits and licenses ([84acab3](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/84acab36f42775f4d2b30d1c716834484df31273))
+* added defenses tooltip ([8ec26f8](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/8ec26f8ec94b3f023fb2594f1eb39c23d4fde936))
+* added empty team slots ([b6a21c0](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/b6a21c092f3c54457fa81daf108bf29a8884f452))
+* added evolution animation ([569396a](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/569396ae97e54e69a0faef3146ade03596b3e795))
+* added export button ([95093dd](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/95093dde523e69d7ab044480c650ac37fce326d6))
+* added fusion typing resolution ([0a2dd51](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/0a2dd51c0f001105b7071c92a8a26e33d5ac916b))
+* added fusion typing util ([8ce7f31](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/8ce7f319f847302ca29d5c762cbca252873b30b6))
+* added hook for valtio ([a4dcdb6](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a4dcdb67e11987efc56dd6a23c0943d46048f01a))
+* added import functionality ([8a7aa00](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/8a7aa0037b114a8dffd79ba71d5b38216c21f496))
+* added import validation ([a306cc2](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a306cc2945a1f6fd0bbcef18c55eec874ccb3937))
+* added menu items ([f1eab4a](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f1eab4aa14026b7ea555391b97a6f8e4b85e46e2))
+* added more events ([2c42743](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/2c427432a7b084050de58d113925821ce6cdd8c3))
+* added more favicons ([acdf0d6](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/acdf0d6f221535de4627b6fb6721991e8b84b4fb))
+* added pokemon mcp server ([9e2c52f](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/9e2c52ffbe1030dda76281da05947787332fda4b))
+* added pokemon menu icon scraping ([32d5a17](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/32d5a17594a27bbf502ab93aafaf8aadab8d21d2))
+* added predicate functions ([a4c9433](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a4c9433342152d2f07b50637adb6c6dec0c26cfe))
+* added react-compiler ([057bfed](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/057bfed3e76fc050903de335c1b9b081d1ca5ea7))
+* added scroll to location ([8333708](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/8333708fabed578979a90f491aa3249c918af0ed))
+* added small dot version of types ([f4ff7d0](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f4ff7d097390c01c956114d2b902618435306602))
+* added sprite icons to evolution context ([9d40e20](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/9d40e20def80dd4f72335573165135640786d513))
+* added spritesheet generation ([18841d2](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/18841d20ff903845014d69b322b01f98967e2a78))
+* added spritesheet generation ([cd2ce8f](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/cd2ce8f2c73929e8ec9ed39943eb346f57aba29d))
+* added team member context menu ([66b1a76](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/66b1a7656548b4517ada29424ede37670eb4309e))
+* added team slot skeleton ([982bca9](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/982bca9a39cba1bc66902dbeafa272b2b99bfe2d))
+* added tests for import/export ([2eea7b2](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/2eea7b21c90ea799ca5101a3d812ea0076da31e2))
+* added type pills to location selector ([aba044d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/aba044deb0a266ea3f58baea523cd06902bf9629))
+* added type tooltip start ([f626484](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f62648424e8e97fc9b3ccdf306cb0e79a417b8f8))
+* added vitest mcp ([9aa2aec](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/9aa2aecad5d9fba6ab93a9ac0ae56e490406f6a1))
+* addede quick actions to change status of both pokemon ([e2177a4](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/e2177a452d7ec2d4d838b7646acfbd307469aa23))
+* adjust draggable area ([47e86d3](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/47e86d356a40f8ce5a177ddbcc5edbd87fa04013))
+* adjust game mode selector ([c70b9a5](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/c70b9a57427e6d8e013390370863fbcc1259da10))
+* adjust logic for fusion animation ([5b89abb](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/5b89abbc7ec97e163bc88af2ebb35490e0565049))
+* adjust rules and fix combining ([c06e46e](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/c06e46e822e59a0e900a87065cf0129897a09846))
+* adjust styling of types ([b68b8c2](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/b68b8c2651b850769b6e1cd8f43a9366254c4699))
+* adjustments to location modal ([7cdd511](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/7cdd511179e600951284e22e01a07adb4bd2dcdf))
+* allow for changing team members from sheet ([3a2a986](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/3a2a986271d24d1609dc8387053c4a8c5e443fc0))
+* clear team member ([44f2cd5](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/44f2cd5c0c37543559eacd1e6c76d7f5be4e5d7c))
+* **config:** add vercel mcp configuration ([e5dbe7e](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/e5dbe7e592e038859c833f10d9eeb018db9288c1))
+* **config:** wire Vercel MCP and worktree auto-link setup ([22b7dd3](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/22b7dd3072ee039b0162cdcd7316da97a450d2ac))
+* cursor rule for quick actions ([15ba3a4](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/15ba3a43ec9ec1844fcd8b4bbabb7f64cfc63edc))
+* disable drag and drop if setting is disabled ([47d9b2f](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/47d9b2f0fd2919919e765189cb19bcba3bf814b3))
+* empty slot handling in sheet ([7a5d08e](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/7a5d08e88ad37bf5efb60209746d18b5f01a1e1b))
+* fine tuned interactions ([63396f2](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/63396f20e6a2a2fc334296a1b4caddeea16b32ab))
+* gen7 spritesheet ([7bf16bd](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/7bf16bd27f3b749665083fcd61b1f10aabcc9f17))
+* go to encounter location ([cf8a915](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/cf8a915de45071d5bcd433add00d3528608cc4cf))
+* handle split status ([7b2cca6](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/7b2cca6691e2cdbe0f039ff44a8bb2ca53ff3cae))
+* highlight on click ([a6a8cb4](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a6a8cb464c7582a92c7dfbc5d28c34b48d360cd6))
+* improve layout ([db5ed1e](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/db5ed1e9a8f674f1feb80a25e41b89f6d4f687a6))
+* improved notices ([594ea0a](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/594ea0ad994db7ebe1bfde7245b7f2fc2fa01b8f))
+* **inf-46:** expand sitemap and canonical strategy ([1de99d5](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/1de99d50eb104eb7ae3c8dc88a31570319fa05bc))
+* **inf-54:** add release-please automation workflow ([eb1250d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/eb1250d90655a56685584945c6e9497b0582b779))
+* initial implementation of graveyard ([eda182c](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/eda182c25976a6c3d2e41fec6d12c1619ad82644))
+* inverse fusion in team member ([a1e735f](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a1e735f5c16b5b84c988ee15d7dfc972fef00ef2))
+* more adjustments to graveyard ([c4925d1](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/c4925d1ec1b9edb066bce18b2b5d1cc4deae1e44))
+* originially encounter at tooltip ([adf9166](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/adf9166a7c770f798ec4c6800c028c46f3c61862))
+* progress on evolution context menu ([b9cafe0](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/b9cafe05c79c87bbf4885c35492921bdd731d4bd))
+* progress on evolution context menu ([bdcada8](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/bdcada86de40d1cc853a706fb74f5fe4b11caf08))
+* progress on location selector ([f2e8ecd](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f2e8ecd9fa82b6fba344678726f583cf84b4e882))
+* progress on metadata adjustments ([1ac5873](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/1ac58733dbd815e9bb7d737631c310f403ead755))
+* progress on nested evolution context menu ([c78c213](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/c78c21310d8615050c4200c2f53726f81a255479))
+* progress on pc sheet ([fdc6ccc](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/fdc6ccc03e4cc964376003dc706f469adbc82269))
+* progress on select team member modal ([e6fb695](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/e6fb695cf843b8add6c9b30eb3ba0d8c7461d506))
+* progress on spritesheet ([f2184c0](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f2184c0dc1ba3ed3c1c73b3721e105142861e099))
+* progress on status separator ([272440d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/272440dba47a15b9811cc2bf1dba7ed36488c6c1))
+* progress on team member rendering ([642996d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/642996d8f42eda03ff0fe605bd5bcab3dda2e744))
+* progress on team member selection by UID ([4e8105e](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/4e8105e21912e17e11f5689a75bd7d3d54874ae2))
+* progress on team member selector ([d6124e3](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/d6124e3db83a5a80f5fd29e308aedd66a11c7ca5))
+* progress on team member selector ([1a206a5](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/1a206a50588863bb37c9c3ccbb9050deedf3d3a6))
+* progress on team view ([57df223](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/57df22336c573c61baaedd5a485f37ccd75f1d27))
+* progress on types ([029cbda](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/029cbda25b6ef0162ff004e517321705fb31f22d))
+* progress on ui for playthrough export ([702f8c3](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/702f8c3b2bb6c56eda6ac73f0bf9e470e8f989ef))
+* quick actions ([7e3c5e3](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/7e3c5e3eb359be765f64f6693724bef16ac244f3))
+* **react-doctor:** add react doctor score badge ([ac24939](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/ac24939a874a18b182a1fd533636cb6a40bdc795))
+* **react-doctor:** add react doctor score badge ([5102e79](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/5102e7901f8db1cf5c91d31d770dbf87905b6c17))
+* refactor team sheet in pc ([4fd5a0e](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/4fd5a0e6c43024ea34f11fc302a4aaf368184e44))
+* restrict moving of encounters based on setting ([0a4a5a5](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/0a4a5a5b2747d432ece17cd1408c3f2fa49cb604))
+* show animation when fusing ([637ddf8](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/637ddf8820df1a10f106101f3ce19cb74eb00cc3))
+* **skills:** migrate cursor rules to skill format ([eddcb8d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/eddcb8d1b6cf8630cda5cd06fcf12602883221eb))
+* team member context sprite evolution options ([dd77ce0](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/dd77ce0e7125dabcde6677fc6b0e499b424ad0d6))
+* team member tooltip content ([46f0646](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/46f064699f446b97f53d914ae77d2c62bcee9c3d))
+* use preferred variant state in link ([c827b04](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/c827b045857c87a413177589b4e7f9c05d07bc36))
+* visual only context item ([19f2ae1](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/19f2ae142f0534d5c0dd2920b6775fb958484143))
+
+
+### Bug Fixes
+
+* **a11y:** allow pinch zoom on mobile ([60ebfde](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/60ebfdee7a638c84fffdb4e1d715013dea12f13f))
+* active button styling ([32e8d53](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/32e8d53c4f3360d8a2470e00362c2e8147f61559))
+* added sprite padding ([5497e6c](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/5497e6cf2bdf8bad05d4361724c17d0a54eb340f))
+* adjust based on feedback ([dfdc931](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/dfdc931164c735dc6abbab61fa299ae5fa1c6287))
+* adjust logic for slot moving ([ef5bf3b](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/ef5bf3bed1a08bf4713810d1a509cae7071dd6c8))
+* adjust pc sheet animation smoothness ([340695c](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/340695c26dcd29cf5d1d9ea64b5d8fb06e4f8881))
+* adjust pc sheet animation smoothness ([996193d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/996193d4c3f5e5eb67f37d026efacd7465743a53))
+* allow mobile viewport zoom (INF-22) ([a8e9f0d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a8e9f0dfa05c6bb66bfa09c437f4742c38a63f6a))
+* animation ([e612396](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/e61239622cdf0ccb770e3463f6b0bca39c92f393))
+* animation triggers ([de4cb30](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/de4cb30b8fa4c6e00a00e2d168e94f5c419000aa))
+* auto select mode ([2b95613](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/2b9561342d7983b459491f1fecdbb79ce703fe29))
+* body slot ([586e5a6](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/586e5a60193c5537ccf77c90e3e84847952c695d))
+* body slot only type ([f3d1383](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f3d1383a30dc064883c78cd25adcee7115841c80))
+* build ([3310eb6](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/3310eb6fd8a5b48958239360e2c4a15f0779aa5e))
+* build ([f3abdda](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f3abddab733cdf184e96272d9483fdb11ca332e0))
+* build ([511d9ba](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/511d9bacb1dcca4adb1e65f5e34794e303806506))
+* build ([1ca7d89](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/1ca7d89fbdb48bca366d9b9f0433c7e5edfd71c6))
+* build ([6d06591](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/6d06591a200fb54d243b2cf0aaece35cd07107c3))
+* build ([ed6d4e6](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/ed6d4e6b5672205146972d1a6e71f005e2a7daa5))
+* build ([f53d181](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f53d181b8d2cc20e5c0add134a17fb4ba31b0cb4))
+* build ([4cdb7dd](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/4cdb7dd52a34348ac047302fb8213d643ebd1385))
+* build ([028f858](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/028f858d40b406e4fc82206a1c286852c5db7b62))
+* build ([3ccd2f2](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/3ccd2f27d89cddd793d23ff65b2ffc6713bb7b2d))
+* build ([5c65737](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/5c65737694f7918f99a836b8d688be130f313331))
+* build and context menu separator ([2ca8aea](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/2ca8aea07b6bf06b2bc208c5391cd8266aee87c6))
+* build and lint warnings ([ef66f5e](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/ef66f5ea9d068a16c765aaa8f44873fdadb323f4))
+* cache busting ([c2b820d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/c2b820dc448f97622d0311a9251f38a3d440794c))
+* **ci:** defer pnpm version to packageManager ([fe0a83b](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/fe0a83bbf2c8332e47bc6515a129a1a361430f1f))
+* **ci:** install pnpm before enabling pnpm cache ([2a2f0ce](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/2a2f0ce71cd943517350546b169c4e4dfa9fb471))
+* **ci:** normalize branch triggers and enforce release gate checks ([8fdf3d3](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/8fdf3d3eb331116d25e87732167c33dc278cd565))
+* **ci:** normalize branch triggers and enforce release gates ([559168d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/559168ddbe62546ad78a2b2780f7a08602064c93))
+* clearing of team slot ([18c740c](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/18c740c6bd3b73a2e6e5195cd6f1cb070eb9aef3))
+* click to scroll to item from pc sheet ([6f6382f](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/6f6382f102052dfc4b19f22091a17c285b0d9524))
+* close location selector on selection ([032d526](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/032d526f0f7e5312ba2f6ac8c61ef759c1db4655))
+* **config:** add vercel login check pre-start hook ([72979fe](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/72979fe595de38c43f017959ee93724796d74464))
+* **config:** harden worktree vercel link setup ([8219887](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/8219887df21845f170a6c70563d9374b1aadf9ff))
+* context menu position ([d8d64ec](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/d8d64ec5ccae7e80aa8203a803fb1349cab2ed59))
+* context menu position ([3bb8940](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/3bb8940b2cd6118248d7f1c1bba4c3eafa75a0d3))
+* contradiction ([6e43a09](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/6e43a09cb70f866ba409feca1197e406db4521ef))
+* cursor rule globs ([a2ce8d8](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a2ce8d8272538bef2e3ec48d0e7e3ab9c9230d55))
+* cursor tooltip ([f6d9df8](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f6d9df821316d5592ae757a7b23b9c0e034a16c9))
+* displayed type ([4a91936](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/4a9193676235a2f3243651b55941b50ec359fdbf))
+* displayed type ([27fa28c](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/27fa28cde494dd0e6fb24d4b1ec243ba61f71612))
+* dont show tooltip when dragging ([32d0c56](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/32d0c56d6727993d3b2e403a490c9a87e6b9a929))
+* draggable tooltip offset ([adcb719](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/adcb719aacc95a36a614f2580f66288b4b722cbe))
+* dragging sprite ([f2d17fa](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f2d17fac47557c6ebb891081acc3a9e12e09dea1))
+* dragging sprite ([87fff81](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/87fff817ad35d86182ac6ca23ab9488933cbe068))
+* egg and tooltip flickering ([5bb2233](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/5bb2233973461bd5cb020c417bb558fcf43a08af))
+* egg schema ([73384c3](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/73384c3ec82f419c7f9537996ef88486300b8c0a))
+* encounter test ([b3aac59](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/b3aac596968a19cd0a5f22854768d1a4f3088afd))
+* evolution animation ([004d918](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/004d9183dee087bd4aa7f426803d010f760a5cf3))
+* evolution animation ([f9272aa](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f9272aa5cbcccd14da8cc746c59cf06a1d172412))
+* feedback ([cd11fc6](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/cd11fc63c022e9bf4777b29a33781d524023556f))
+* feedback issues ([7c4684d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/7c4684d39b2b61beeb200cbc00e17605950853ac))
+* feedback issues ([a50555b](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a50555bf94812e63251a1214f03fec49cf49422a))
+* font issue ([5cbf451](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/5cbf451c033ce0e830a63ad7a8a811c0a423720c))
+* fusion preview ([8dd4da9](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/8dd4da90d2c182122bacc493ae916b2980285f23))
+* fusion sprite animation ([46ed881](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/46ed881dd8a861e4e5833d94602ed3ac8445e19e))
+* fusion sprite bug ([40f2efe](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/40f2efefed0b30165aa38735a127d67e68602303))
+* fusion typing again ([ad47e7d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/ad47e7da68d8966d48263cbc7c73c3e470cd9c4c))
+* fusion typing bug ([5b57fe8](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/5b57fe8c351602acd253f6d3b1161a39e1b8b5cf))
+* fusion typing bug ([02060f7](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/02060f7fce49992c89097ce4e51b8c46385a0d07))
+* hook ([54b24a0](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/54b24a0f142f104d440a69cafa5a58b657188714))
+* hover animation ([758a3e5](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/758a3e5ca874df176d8cf03c062bc7d882d112ce))
+* **inf-18:** remove circular store import workaround ([970f4a9](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/970f4a942c9e091192eb060263e7d97bdd9a7531))
+* **inf-30:** address PR [#92](https://github.com/fbosch/infinite-fusion-nuzlocke/issues/92) review feedback ([30923e5](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/30923e5efb61f4486a9ad15e322199caa17fd045))
+* **inf-31:** remove deprecated throwing sprite hooks ([c52fcd7](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/c52fcd7e807a072b72917eb05fcb691d619e67cd))
+* **inf-54:** pin release-please action version ([8dd70cf](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/8dd70cf46379e7a7921977e3bb84415ed958e8a4))
+* **inf-57:** keep team state consistent on encounter replacement ([76d29d2](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/76d29d22c3b3dd88e7d47a941d9ed9ff70cd4f3f))
+* **inf-57:** keep team state consistent on encounter replacement ([0eaedbd](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/0eaedbda64ccd83b104d82ed66c70331261fbe00))
+* **inf-58:** address PR [#97](https://github.com/fbosch/infinite-fusion-nuzlocke/issues/97) review feedback ([ef7a277](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/ef7a27760b51e89d30b8b9df009769e9c8e9052c))
+* **inf-58:** replace effect-driven state mirrors in UI flows ([dbaae2d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/dbaae2d9dd4a3fe528e47ffb7162d4f64c9f81cb))
+* **inf-59:** remove render-time ref reads in core UI flows ([21429c2](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/21429c2d9cedd9399993087c1febaa0772c35bf8))
+* **inf-59:** remove render-time ref reads in core UI flows ([93bee64](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/93bee64f503bb6ad6dbeb549cf3ceafd1fb35f09))
+* **inf-60:** remove impure render-time Date.now usage ([4f8bc89](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/4f8bc898d65c18fc2b98e86ca6c67882d1f22bbb))
+* **inf-60:** remove render-time Date.now fallback state ([a749ff7](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a749ff74a67f17c17c4e45b32eaf788f02874e80))
+* **inf-61:** align memo deps with captured values ([a4db327](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a4db327a4ece6d050c6e26c39b83f2d8005feefd))
+* **inf-62:** unblock compiler skips in scoped components ([7c3398d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/7c3398d6aea9a59f95b425fbff9225496f07cd68))
+* **inf-63:** remove derived state sync in scoped UI flows ([4630f6f](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/4630f6f4e2e036b677c3a4b758c070b7305703db))
+* **inf-64:** resolve accessibility issues in modal and context menu ([b78fd8b](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/b78fd8b9a30198561cfbf3941a18fd10b7297c4d))
+* **inf-64:** resolve accessibility issues in modal flows ([03fb5d0](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/03fb5d017e028a16d45545a8c2f5467f62caadac))
+* **inf-66:** preserve pokemon option prop compatibility ([3c7a4f4](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/3c7a4f4417174e4d74e7cffc6a4abd3651d230b4))
+* **inf-66:** replace unstable list index keys ([b589996](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/b5899969599d8ea58aef5a85c39759ab39cbf7c0))
+* **inf-66:** replace unstable list index keys ([47cdb2d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/47cdb2d592d124785a17d862d38e93e885bf63b6))
+* **inf-67:** split draggable combobox tooltip into subcomponent ([05a9184](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/05a9184701a7274b30aa35c911a3cf07e1831bb1))
+* **inf-68:** address PR [#105](https://github.com/fbosch/infinite-fusion-nuzlocke/issues/105) review feedback ([3f71b05](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/3f71b05b72d8eac455cd0fa6fc44f52780dce931))
+* **inf-68:** apply nextjs metadata/link/image platform fixes ([e6d969a](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/e6d969a05f9d5dfc9f4f315338ea93fb20f5617d))
+* **inf-68:** guard process env access in browser tests ([7bede06](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/7bede06649d3311ffd96ca81c1d8b4e1cd867f6e))
+* invert fusion without both slots ([9b912dc](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/9b912dcbe94d05fcbc51cc2db1bd65e557d99ca3))
+* keyboard navigation ([dac41c7](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/dac41c7cadc75a12822deacef75f835ca419c9ab))
+* linting ([ce68e27](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/ce68e2743a14a8eb670ddbd864a32c9bb46cf291))
+* **locations:** add fallback support for missing encounter routes ([32ee8f5](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/32ee8f5129b1155c3ec522bfea2e5553a18087b2))
+* **locations:** address PR feedback on loading and trash-cans ([262edaf](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/262edafe30422dd00cd05ede140823d696d1e42f))
+* **locations:** normalize gate route names ([6a30f00](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/6a30f00f7d9df183e80e8e78757034e06a352992))
+* **logging:** remove debug output from encounters ([738d66b](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/738d66bca14058f87cdc4fe7c05197bc05c4c008))
+* logic ([8875a52](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/8875a52247af97894c5ebff843dbd7b7737c9203))
+* migration script ([5ddb91e](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/5ddb91ea5e4e1717d7e31d308d1af308215890a0))
+* migration script ([6b73393](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/6b73393bae0546f71e2099aca01933e4f2bc86ba))
+* migrations ([dcfdc70](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/dcfdc70efaf3365f08f2da4c3874671b4cc707c1))
+* minor tweaks ([9b84da7](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/9b84da719116673a70577988047b831006f69375))
+* modal state ([31f9fc3](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/31f9fc381cd88ea84cdb3634bbd2606b0b59ab4b))
+* nested button error ([e8716f4](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/e8716f4dde3b7ac214993047a8c0196c327f3191))
+* nickname ([dbdc2b8](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/dbdc2b847611c05e941c401e25c40e0f5e4b11f1))
+* nickname field on swap ([4c1dbc6](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/4c1dbc6379d6bbf28a23018aaf26ca71d4f83cfe))
+* nickname issue ([6188356](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/6188356e0a8008ac3e40fe49ab30f860e6fe79eb))
+* pc animation ([bf12b14](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/bf12b145b76279fb18398aad2fed15b6bc18ae15))
+* pc sheet ([1579046](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/15790460b16f6a032e38c1f1eaaddd88d6eb1763))
+* **playthroughs:** address INF-21 review feedback ([bc5cec1](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/bc5cec182edd509d7aa47d9bcced4d2ecc5ed685))
+* **playthroughs:** harden uid-index lookup fallback ([3b35ec7](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/3b35ec720e4264c2310887f2ed07831c4d78659d))
+* **playthroughs:** resolve remaining INF-21 drag/drop review issues ([d55a3d2](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/d55a3d2f84b55f310958ab64f4cc4d6f0b352b2d))
+* **playthroughs:** use uid index for team member lookup ([0ab9eaa](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/0ab9eaa4a4de3b774b0eb4016ac1a4e93e102d35))
+* pokedex scraping ([9da6cfb](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/9da6cfb49f6026abd8dd70099a6e20d34a308bd2))
+* pr feedback ([bb78659](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/bb78659f202991cfd1e2674bfc55d7d5ab1fb285))
+* predicate ([5fd0133](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/5fd013358c91eae5d4b1bca659e9a5a462275967))
+* preferred variant resolution ([ec044fd](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/ec044fd556c0f6873a3e9eacca0b5135a2ebf3ad))
+* prevent egg fusion ([47c5388](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/47c53887b0ae38679e0293fc4b06399e2b5299c6))
+* prevent egg fusion ([2ce37b4](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/2ce37b4531ac828088b68347d5a6112c0e85e6fa))
+* prevent egg fusions ([55adfca](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/55adfca04ea81d47ef43623fa94a3548fc4809c6))
+* query cache ([a6a0bcb](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a6a0bcb698e289aeef91892917039dd40abf17ec))
+* refresh settings defaults after playthrough hydration ([c4f6179](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/c4f61790c12b09414204a0f8fe1d30894d08d53f))
+* reimplement the cycle artwork variant button ([ab560da](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/ab560daccb096de307e84b9f4c7cb6da5f94c5fc))
+* reimplement the cycle artwork variant button ([11215c2](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/11215c233fb9005f62e1a69a1e2ff66964ad2a2f))
+* remove production debug logging from encounters ([160c106](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/160c10649de6a49c782cc84a224db0a55dc89faa))
+* restore missing default locations and fallback options ([294c329](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/294c329de6270a29d4c3292199decf71a7047b0c))
+* **scraper:** backfill missing route encounter pages ([63c8985](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/63c8985c14f471965ccfa68d3af5d26ff8f38333))
+* **scraper:** capture gate and route variant locations ([49ae531](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/49ae531740c329094e409213538492d182589469))
+* **scraper:** expand trash can statics to route locations ([6021365](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/602136586145a55fa6b373ef2097ab4692322b0a))
+* **scraper:** validate and force route article backfill ([a89be45](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a89be4552ddfd8757c36eb5043574cbf6c1b5048))
+* scrollable area in pc sheet ([185767d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/185767dc23ce4981f0a4424a968551aefff451f4))
+* scrollable area in pc sheet and fusion typing refactor ([3713d45](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/3713d457bd9cee63fc50f9ef495d58945733f2e8))
+* scrolling when clicking pokemon in pc sheet ([f276816](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f27681611d7e63abcc25f972bb20328cf8ab4011))
+* scrolling when clicking pokemon in pc sheet ([e58b1dd](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/e58b1dd742c5f7d5a97e1e52dd30a1894a829492))
+* **settings:** refresh defaults after playthrough hydration ([cff785f](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/cff785f0a8b1bd56e4e5afee69d5b2a79d26212c))
+* sprite ([c390faa](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/c390faaeeb6b6c9067a16b0fdb2c8a1fddf74b9e))
+* sprite height ([f484b2f](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f484b2f4b2021efa8999163711dd4c333e420790))
+* sprite height ([5ba48ff](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/5ba48ffcef7e06b48f6e1e546d4a2992d7216bb9))
+* sprite wrapper ([825802a](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/825802a8d940355ad8acbeeb873e1aadcfc999c7))
+* spritesheet ([3454875](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/3454875ae1884b2072459bd6eccae1bd333815ef))
+* spritesheet generation ([badd283](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/badd2839d4b31a18e3c723e9376d7f8c254e833f))
+* styles ([b1b1437](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/b1b1437f517421eefffcf2fb9081d74b7b5dad85))
+* **summary-card:** assign displayName outside render ([78db9b1](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/78db9b14cc75a55c5dec25c53f4f1db988112848))
+* **summary-card:** move displayName assignment out of render (INF-28) ([d9675cb](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/d9675cb3dd45d16c6aba110ff1b656e6d1aec98e))
+* sw build id ([244ec39](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/244ec392fd1ea07c915edcd731d4252fd1551b49))
+* team member lookup ([a8ce1c1](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a8ce1c124d240996c87db18357137ba6acf6956f))
+* team member select ([a504591](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a50459141d5c04d88db7a41c7a83034781a6c2dd))
+* team member select ignoring encounter slot ([f7c4f6b](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f7c4f6bc6e6886b96b77a7f314a130578fb84822))
+* team slot ([a0f083e](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/a0f083ec9b732168306416420283acc13c35d41f))
+* test ([fd74764](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/fd747647a68bf0886bcc40aea2af5d464800757a))
+* test ([21feb55](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/21feb55011623d0cbe1c2f17741b3ef4913b7905))
+* tests ([5ea1081](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/5ea108137ae036a22ad3c369950dc28f14ec5f5b))
+* tests ([4ea33c6](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/4ea33c6c642178e5e1ac9e1ee70102563d2a96ec))
+* tooltip for team member slots ([36a4b89](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/36a4b899d346b969e9dc33e40adfb9f0b59da9f2))
+* type ([c0189eb](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/c0189ebc5964aa4cab8a9d43a27dc2dc05b67bb8))
+* type error ([c90965d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/c90965db392f5988ade6c99fd08b23fe59f3dc3e))
+* type errors ([f2e5464](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f2e54644997f871c330215214270c28fea79a747))
+* type errors ([0155aa7](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/0155aa71c78a083d819cf625b1a22b7a3d1e28e6))
+* type for untoggled fusions ([f32539b](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/f32539bcf86800212691da52e860b70cd49b94e1))
+* type for untoggled fusions ([8589403](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/85894034dde7b8a5c9c7b0c1bec1f369a2dbfe2f))
+* **types:** add svg module declarations ([766a55e](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/766a55e91fe965bdcd5b028cbe4994faf9fe47eb))
+* **types:** declare svg modules for typecheck ([5102faf](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/5102fafd8900cab0a616212d2e8835df31d3e399))
+* updating of nickname duplicating pokemon ([af9a3e9](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/af9a3e90dac4fdb70065677ef70b25b049cbf0c6))
+* upgrade Next.js to 16.0.7 and update React Compiler config ([5614741](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/5614741e00197d6682daba4bfa12f357521a9ee9))
+* upgrade Next.js to 16.0.7 and update React Compiler config ([846b471](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/846b4719f0cefdc81ad20df25206a17abee8a264))
+* use tooltip component for pc toggle ([3ec4f5d](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/3ec4f5d149465020b7256875950545cbe135f0b2))
+* use uid index for team member lookup ([09ec39b](https://github.com/fbosch/infinite-fusion-nuzlocke/commit/09ec39b97a9f13fe95bde42e0f090073b84ae4e1))

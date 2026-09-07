@@ -9,6 +9,7 @@ elem.click()
 element = driver.find_element(By.CLASS_NAME, "space-y-2")
 elements = driver.find_element(By.TAG_NAME, "input")
 
+#run a loop to input all party/box mons from a save
 
 elements.send_keys("Sliggoo")
 selection = driver.find_element(By.CLASS_NAME, "max-h-64")
@@ -16,3 +17,6 @@ selection.click()
 elements.clear()
 #driver.quit()
 
+driver = webdriver.Firefox()
+driver.get("http://localhost:4000/")
+driver.implicitly_wait(0.5)

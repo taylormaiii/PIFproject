@@ -1,0 +1,75 @@
+import { beforeEach, vi } from "vitest";
+
+const indexedDbStore = new Map<string, unknown>();
+
+vi.mock("idb-keyval", () => ({
+  createStore: vi.fn(() => ({ name: "mock-store" })),
+  del: vi.fn((key: string) =>
+    Promise.resolve(indexedDbStore.delete(String(key))),
+  ),
+  get: vi.fn(async (key: string) => indexedDbStore.get(String(key))),
+  keys: vi.fn(async () => Array.from(indexedDbStore.keys())),
+  set: vi.fn((key: string, value: unknown) =>
+    Promise.resolve(indexedDbStore.set(String(key), value)),
+  ),
+}));
+
+beforeEach(() => {
+  indexedDbStore.clear();
+});
+
+function hasUsableLocalStorage() {
+  if (typeof globalThis.localStorage === "undefined") {
+    return false;
+  }
+
+  return (
+    typeof globalThis.localStorage.getItem === "function" &&
+    typeof globalThis.localStorage.setItem === "function" &&
+    typeof globalThis.localStorage.removeItem === "function" &&
+    typeof globalThis.localStorage.clear === "function"
+  );
+}
+
+function createLocalStorageMock(): Storage {
+  const store = new Map<string, string>();
+
+  return {
+    clear() {
+      store.clear();
+    },
+    getItem(key: string) {
+      return store.get(String(key)) ?? null;
+    },
+    key(index: number) {
+      return Array.from(store.keys())[index] ?? null;
+    },
+    get length() {
+      return store.size;
+    },
+    removeItem(key: string) {
+      store.delete(String(key));
+    },
+    setItem(key: string, value: string) {
+      store.set(String(key), String(value));
+    },
+  };
+}
+
+if (hasUsableLocalStorage() === false) {
+  const localStorageMock = createLocalStorageMock();
+
+  Object.defineProperty(globalThis, "localStorage", {
+    configurable: true,
+    value: localStorageMock,
+    writable: true,
+  });
+
+  if (typeof window !== "undefined") {
+    Object.defineProperty(window, "localStorage", {
+      configurable: true,
+      value: localStorageMock,
+      writable: true,
+    });
+  }
+}

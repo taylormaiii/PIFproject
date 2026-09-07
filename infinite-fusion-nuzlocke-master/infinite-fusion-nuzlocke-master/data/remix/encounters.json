@@ -1,0 +1,8447 @@
+[
+  {
+    "routeName": "Route 1",
+    "encounters": [
+      {
+        "pokemonId": 132,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 161,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 163,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 235,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 252,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 294,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 388,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 417,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 417,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Secret Garden",
+    "encounters": [
+      {
+        "pokemonId": 10,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 13,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 16,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 19,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 133,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 172,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 174,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 259,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 384,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 399,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 431,
+        "encounterType": "grass"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 2",
+    "encounters": [
+      {
+        "pokemonId": 10,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 13,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 16,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 19,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 66,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 114,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 161,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 163,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 165,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 167,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 285,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 294,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 388,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 417,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 438,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 442,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 451,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 489,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 495,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 417,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Hidden Forest",
+    "encounters": [
+      {
+        "pokemonId": 12,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 15,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 17,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 25,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 43,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 49,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 133,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 164,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 198,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 204,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 234,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 338,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 384,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 399,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 439,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 490,
+        "encounterType": "grass"
+      }
+    ]
+  },
+  {
+    "routeName": "Viridian River",
+    "encounters": [
+      {
+        "pokemonId": 17,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 41,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 83,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 164,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 193,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 204,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 239,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 240,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 419,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 438,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 489,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 496,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 183,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 194,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 195,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 496,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 119,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 183,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 184,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 194,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 195,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 4",
+    "encounters": [
+      {
+        "pokemonId": 7,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 23,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 163,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 191,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 193,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 198,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 201,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 214,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 236,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 408,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 413,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 474,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 170,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 171,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 201,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 314,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 387,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 201,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 223,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 382,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 5",
+    "encounters": [
+      {
+        "pokemonId": 1,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 52,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 174,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 177,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 198,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 204,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 327,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 402,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 404,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 432,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 476,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 175,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 6",
+    "encounters": [
+      {
+        "pokemonId": 16,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 21,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 25,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 48,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 56,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 66,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 69,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 165,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 167,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 198,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 235,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 260,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 495,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 74,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 496,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 120,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 474,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 496,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 497,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 385,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 7",
+    "encounters": [
+      {
+        "pokemonId": 25,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 29,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 32,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 37,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 48,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 58,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 183,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 198,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 209,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 228,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 327,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 373,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 430,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 476,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 402,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 8",
+    "encounters": [
+      {
+        "pokemonId": 27,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 37,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 41,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 152,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 172,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 215,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 228,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 236,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 258,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 310,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 330,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 384,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 385,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 399,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 433,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 491,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 388,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 9",
+    "encounters": [
+      {
+        "pokemonId": 4,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 21,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 39,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 81,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 84,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 86,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 95,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 177,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 190,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 198,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 207,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 231,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 241,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 290,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 310,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 330,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 371,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 382,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 389,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 392,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 456,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 390,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 10",
+    "encounters": [
+      {
+        "pokemonId": 81,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 84,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 92,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 179,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 215,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 220,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 234,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 290,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 411,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 412,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 422,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 456,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 74,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 111,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 185,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 390,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 117,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 131,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 90,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 224,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 397,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 11",
+    "encounters": [
+      {
+        "pokemonId": 43,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 48,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 96,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 100,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 397,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 402,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 412,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 420,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 459,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 491,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 493,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 382,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 12",
+    "encounters": [
+      {
+        "pokemonId": 43,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 69,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 168,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 401,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 403,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 408,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 427,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 440,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 442,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 488,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 74,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 75,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 204,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 222,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 387,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 129,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 211,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 222,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 408,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Flooded Cave",
+    "encounters": [
+      {
+        "pokemonId": 72,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 223,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 475,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 194,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 207,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 138,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 140,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 148,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 147,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 148,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 14",
+    "encounters": [
+      {
+        "pokemonId": 194,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 200,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 260,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 286,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 385,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 408,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 423,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 439,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 440,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 442,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 451,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 452,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 490,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 74,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 88,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 261,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 335,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 387,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 412,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 15",
+    "encounters": [
+      {
+        "pokemonId": 54,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 88,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 102,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 168,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 187,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 188,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 194,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 198,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 222,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 225,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 282,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 357,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 370,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 382,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 405,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 438,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 439,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 457,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 489,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 490,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 89,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 370,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 420,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 406,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Creepy House",
+    "encounters": [
+      {
+        "pokemonId": 312,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 365,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 405,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 421,
+        "encounterType": "cave"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 16",
+    "encounters": [
+      {
+        "pokemonId": 58,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 66,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 77,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 96,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 155,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 198,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 327,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 423,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 427,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 428,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 451,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 177,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 17",
+    "encounters": [
+      {
+        "pokemonId": 41,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 77,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 88,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 89,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 108,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 207,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 227,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 383,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 397,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 401,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 408,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 423,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 428,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 195,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 227,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 455,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 371,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 18",
+    "encounters": [
+      {
+        "pokemonId": 22,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 84,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 162,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 200,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 203,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 234,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 241,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 279,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 452,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 120,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 224,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 223,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 455,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 413,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 13",
+    "encounters": [
+      {
+        "pokemonId": 16,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 46,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 64,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 83,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 170,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 177,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 190,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 211,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 402,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 416,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 440,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 442,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 459,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 474,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 475,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 138,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 140,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 261,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 335,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 387,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 408,
+        "encounterType": "pokeradar"
+      },
+      {
+        "pokemonId": 412,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 19",
+    "encounters": [
+      {
+        "pokemonId": 86,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 90,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 170,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 171,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 370,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 120,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 335,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 20",
+    "encounters": [
+      {
+        "pokemonId": 86,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 170,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 171,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 211,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 90,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 223,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 226,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 22",
+    "encounters": [
+      {
+        "pokemonId": 21,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 29,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 32,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 216,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 218,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 231,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 257,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 258,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 311,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 438,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 463,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 489,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 55,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 261,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 387,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 170,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 194,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 387,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 294,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 24",
+    "encounters": [
+      {
+        "pokemonId": 54,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 63,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 179,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 187,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 406,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 420,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 442,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 74,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 314,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 387,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 223,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 335,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 403,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Cerulean Cape",
+    "encounters": [
+      {
+        "pokemonId": 54,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 61,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 130,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Bill's garden",
+    "encounters": [
+      {
+        "pokemonId": 201,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 137,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 201,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 201,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 23",
+    "encounters": [
+      {
+        "pokemonId": 17,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 41,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 56,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 75,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 81,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 86,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 106,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 107,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 228,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 231,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 260,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 383,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 418,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 457,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 90,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 131,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 171,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 224,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 335,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 335,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 384,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 26",
+    "encounters": [
+      {
+        "pokemonId": 122,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 185,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 205,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 217,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 232,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 312,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 332,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 357,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 452,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 478,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 184,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 224,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 314,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 170,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 171,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 194,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 223,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 224,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 314,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 335,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 310,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 27",
+    "encounters": [
+      {
+        "pokemonId": 122,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 185,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 205,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 217,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 232,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 312,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 332,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 357,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 452,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 477,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 119,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 224,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 261,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 314,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 170,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 171,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 194,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 223,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 224,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 314,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 310,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Tohjo Falls",
+    "encounters": [
+      {
+        "pokemonId": 142,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 195,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 306,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 308,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 326,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 426,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 475,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 142,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 195,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 302,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 304,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 475,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 131,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 139,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 141,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 474,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 21",
+    "encounters": [
+      {
+        "pokemonId": 42,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 114,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 120,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 122,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 211,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 222,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 224,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 316,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 360,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 387,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 407,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 423,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 431,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 433,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 451,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 452,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 475,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 488,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 496,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 222,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 224,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 222,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 223,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 335,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 206,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 3",
+    "encounters": [
+      {
+        "pokemonId": 108,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 173,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 175,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 201,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 220,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 238,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 239,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 240,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 330,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 409,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 427,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 457,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 74,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 204,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 325,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 498,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 400,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Pallet Town",
+    "encounters": [
+      {
+        "pokemonId": 1,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 2,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 3,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 4,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 5,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 6,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 7,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 8,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 9,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 151,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 61,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 371,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Cerulean City",
+    "encounters": [
+      {
+        "pokemonId": 116,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 117,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 119,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 129,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 223,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 371,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 455,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Vermillion City",
+    "encounters": [
+      {
+        "pokemonId": 90,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 222,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 382,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 73,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 120,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 120,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 129,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 130,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 211,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 371,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 474,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Celadon City",
+    "encounters": [
+      {
+        "pokemonId": 41,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 52,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 88,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 109,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 133,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 198,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 228,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 365,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 456,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 88,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 89,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 194,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 88,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 89,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 371,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Celadon Sewers",
+    "encounters": [
+      {
+        "pokemonId": 19,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 52,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 81,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 88,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 109,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 129,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 137,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 158,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 383,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 409,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 88,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 129,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 158,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 194,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 371,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      }
+    ]
+  },
+  {
+    "routeName": "Pokemon Tower",
+    "encounters": [
+      {
+        "pokemonId": 92,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 96,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 104,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 200,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 255,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 295,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 365,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 405,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 411,
+        "encounterType": "cave"
+      }
+    ]
+  },
+  {
+    "routeName": "Hidden Tomb",
+    "encounters": [
+      {
+        "pokemonId": 295,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 311,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 358,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 365,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 433,
+        "encounterType": "cave"
+      }
+    ]
+  },
+  {
+    "routeName": "Cinnabar Island",
+    "encounters": [
+      {
+        "pokemonId": 116,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 120,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 170,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 171,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 222,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 223,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 371,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 488,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Crimson City",
+    "encounters": [
+      {
+        "pokemonId": 74,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 86,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 90,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 171,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 211,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 224,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 455,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 371,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Mt. Moon",
+    "encounters": [
+      {
+        "pokemonId": 17,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 22,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 35,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 36,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 39,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 115,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 180,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 201,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 498,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 19,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 35,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 92,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 95,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 111,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 173,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 206,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 220,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 236,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 253,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 257,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 300,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 390,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 421,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 478,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 74,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 95,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 325,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 413,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 498,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "rock_smash"
+      }
+    ]
+  },
+  {
+    "routeName": "Diglett's Cave",
+    "encounters": [
+      {
+        "pokemonId": 50,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 51,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 147,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 246,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 291,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 297,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 375,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 392,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 395,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 414,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 444,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 471,
+        "encounterType": "cave"
+      }
+    ]
+  },
+  {
+    "routeName": "Seafoam Islands",
+    "encounters": [
+      {
+        "pokemonId": 55,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 86,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 87,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 90,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 124,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 215,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 221,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 225,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 272,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 322,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 427,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 428,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 429,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 461,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 86,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 91,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 99,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 131,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 176,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 322,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 222,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 223,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 335,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Rock Tunnel",
+    "encounters": [
+      {
+        "pokemonId": 41,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 66,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 95,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 104,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 300,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 305,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 307,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 390,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 416,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 421,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 440,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 478,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 493,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 74,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 213,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 222,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 413,
+        "encounterType": "rock_smash"
+      }
+    ]
+  },
+  {
+    "routeName": "Area 1",
+    "encounters": [
+      {
+        "pokemonId": 10,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 13,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 29,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 32,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 48,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 53,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 108,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 111,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 114,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 123,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 127,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 214,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 276,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 357,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 363,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 384,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 386,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 420,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 183,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 226,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 147,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 148,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 455,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 395,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Area 2",
+    "encounters": [
+      {
+        "pokemonId": 30,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 33,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 48,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 53,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 84,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 102,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 111,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 113,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 115,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 123,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 127,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 185,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 289,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 290,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 356,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 366,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 370,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 386,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 413,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 120,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 183,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 226,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 420,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 147,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 148,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 455,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 414,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Area 3",
+    "encounters": [
+      {
+        "pokemonId": 12,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 15,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 44,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 49,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 70,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 111,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 113,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 123,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 128,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 205,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 213,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 214,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 286,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 310,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 355,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 386,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 452,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 183,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 226,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 129,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 147,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 148,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 455,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 375,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Area 4",
+    "encounters": [
+      {
+        "pokemonId": 47,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 49,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 53,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 84,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 102,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 108,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 111,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 113,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 115,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 123,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 127,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 128,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 192,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 195,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 205,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 214,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 234,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 266,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 300,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 355,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 366,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 386,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 407,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 120,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 183,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 420,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 147,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 148,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 223,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 455,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 246,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Area 5",
+    "encounters": [
+      {
+        "pokemonId": 22,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 111,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 392,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 393,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 409,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 416,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 457,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 28,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 392,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 393,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 411,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 416,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 419,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 457,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 393,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 410,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 425,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 120,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 183,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 226,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 147,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 148,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 223,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 335,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 475,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 471,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Victory Road",
+    "encounters": [
+      {
+        "pokemonId": 42,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 113,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 148,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 208,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 247,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 262,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 292,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 298,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 331,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 369,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 376,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 391,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 396,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 415,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 445,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 472,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 494,
+        "encounterType": "cave"
+      }
+    ]
+  },
+  {
+    "routeName": "Viridian Forest",
+    "encounters": [
+      {
+        "pokemonId": 10,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 13,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 16,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 41,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 46,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 52,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 400,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 404,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 412,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 419,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 422,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 438,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 476,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 489,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 404,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Cerulean Cave",
+    "encounters": [
+      {
+        "pokemonId": 26,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 42,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 65,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 76,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 97,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 132,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 242,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 296,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 333,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 338,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 363,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 364,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 367,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 369,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 374,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 455,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 455,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 90,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 147,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 149,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 224,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Mt. Silver",
+    "encounters": [
+      {
+        "pokemonId": 31,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 34,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 68,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 76,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 265,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 329,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 361,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 367,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 426,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 428,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 439,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 441,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 443,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 452,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 490,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 498,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 31,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 34,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 65,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 68,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 76,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 94,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 112,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 131,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 132,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 169,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 208,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 212,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 248,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 296,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 428,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 429,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 441,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 443,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 456,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 462,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 478,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 498,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 74,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 87,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 230,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 455,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 129,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 314,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 455,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Power Plant",
+    "encounters": [
+      {
+        "pokemonId": 81,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 100,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 135,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 172,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 239,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 292,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 389,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 397,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 420,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "cave"
+      }
+    ]
+  },
+  {
+    "routeName": "Pokémon Mansion",
+    "encounters": [
+      {
+        "pokemonId": 132,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 228,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 229,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 319,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 330,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 365,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 366,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 371,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 397,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 398,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 419,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 425,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 488,
+        "encounterType": "cave"
+      }
+    ]
+  },
+  {
+    "routeName": "Violet City",
+    "encounters": [
+      {
+        "pokemonId": 183,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 201,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 214,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 286,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 211,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 314,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 61,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 62,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 130,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 186,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 371,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Slowpoke Well",
+    "encounters": [
+      {
+        "pokemonId": 79,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 80,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 199,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 273,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 80,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 199,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Blackthorn City",
+    "encounters": [
+      {
+        "pokemonId": 207,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 227,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 232,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 376,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 415,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 445,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 456,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 61,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 117,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 117,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 129,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 147,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Dragon's Den",
+    "encounters": [
+      {
+        "pokemonId": 117,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 129,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 147,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 87,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 91,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 117,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 129,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 147,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 148,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 230,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Burned Tower",
+    "encounters": [
+      {
+        "pokemonId": 92,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 110,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 136,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 219,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 255,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 295,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 366,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 488,
+        "encounterType": "cave"
+      }
+    ]
+  },
+  {
+    "routeName": "Lake of Rage",
+    "encounters": [
+      {
+        "pokemonId": 115,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 202,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 204,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 439,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 490,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 496,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 261,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 496,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 226,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 261,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 497,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Ilex Forest",
+    "encounters": [
+      {
+        "pokemonId": 49,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 83,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 162,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 169,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 189,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 190,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 204,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 213,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 214,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 382,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 424,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 438,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 452,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 489,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 55,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 61,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 83,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 117,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 211,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 230,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 355,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Union Cave",
+    "encounters": [
+      {
+        "pokemonId": 28,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 76,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 208,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 213,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 421,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 441,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 478,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 194,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 195,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 119,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 211,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 36",
+    "encounters": [
+      {
+        "pokemonId": 37,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 58,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 125,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 126,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 203,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 234,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 310,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 452,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 456,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 185,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 34",
+    "encounters": [
+      {
+        "pokemonId": 40,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 64,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 97,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 132,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 164,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 196,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 197,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 210,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 407,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 452,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 456,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 492,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 73,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 99,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 129,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 170,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 455,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 286,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 33",
+    "encounters": [
+      {
+        "pokemonId": 188,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 189,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 198,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 255,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 256,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 273,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 371,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 373,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 383,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 452,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 389,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 31",
+    "encounters": [
+      {
+        "pokemonId": 29,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 32,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 71,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 164,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 166,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 168,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 203,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 452,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 464,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 465,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 477,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 120,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 61,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 62,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 117,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 186,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 182,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 30",
+    "encounters": [
+      {
+        "pokemonId": 12,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 15,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 45,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 164,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 166,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 168,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 289,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 339,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 363,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 372,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 452,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 61,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 62,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 91,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 186,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 383,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 29",
+    "encounters": [
+      {
+        "pokemonId": 22,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 162,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 166,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 168,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 254,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 383,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 401,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 418,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 452,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 294,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 46",
+    "encounters": [
+      {
+        "pokemonId": 40,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 42,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 162,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 207,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 232,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 273,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 386,
+        "encounterType": "grass"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 32",
+    "encounters": [
+      {
+        "pokemonId": 24,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 179,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 180,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 188,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 189,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 195,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 264,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 363,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 398,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 452,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 74,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 73,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 195,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 211,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 387,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 170,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 186,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 211,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 455,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 386,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Ruins of Alph",
+    "encounters": [
+      {
+        "pokemonId": 177,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 235,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 201,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 74,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 183,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 195,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 119,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 183,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 184,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 195,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 416,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Dark Cave",
+    "encounters": [
+      {
+        "pokemonId": 168,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 202,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 206,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 217,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 300,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 452,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 494,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 62,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 119,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 62,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 119,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 42",
+    "encounters": [
+      {
+        "pokemonId": 57,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 180,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 198,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 353,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 354,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 383,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 452,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 494,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 73,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 73,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 90,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 170,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 171,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 37",
+    "encounters": [
+      {
+        "pokemonId": 37,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 58,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 168,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 203,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 234,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 391,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 408,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 452,
+        "encounterType": "grass"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 43",
+    "encounters": [
+      {
+        "pokemonId": 49,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 178,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 287,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 288,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 383,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 439,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 496,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 226,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 261,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 496,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 194,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 195,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 226,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 261,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Ice Mountains",
+    "encounters": [
+      {
+        "pokemonId": 215,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 221,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 272,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 428,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 429,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 262,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Ice Cavern",
+    "encounters": [
+      {
+        "pokemonId": 215,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 221,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 272,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 428,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 429,
+        "encounterType": "cave"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 44",
+    "encounters": [
+      {
+        "pokemonId": 70,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 108,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 114,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 192,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 309,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 456,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 494,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 314,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 387,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 223,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 314,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 387,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 455,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 35",
+    "encounters": [
+      {
+        "pokemonId": 96,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 97,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 102,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 132,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 164,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 193,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 389,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 407,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 452,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 464,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 492,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 55,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 60,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 61,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 62,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 186,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 455,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 235,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "National Park",
+    "encounters": [
+      {
+        "pokemonId": 12,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 15,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 44,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 46,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 48,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 70,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 123,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 127,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 422,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 430,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 474,
+        "encounterType": "grass"
+      }
+    ]
+  },
+  {
+    "routeName": "Mt. Mortar",
+    "encounters": [
+      {
+        "pokemonId": 273,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 310,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 329,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 361,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 383,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 410,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 494,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 184,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 195,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 184,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 211,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Treasure Beach",
+    "encounters": [
+      {
+        "pokemonId": 25,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 370,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 425,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 459,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 117,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 130,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 131,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 129,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 130,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 134,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 370,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Kindle Road",
+    "encounters": [
+      {
+        "pokemonId": 44,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 70,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 84,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 210,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 325,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 457,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 458,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 459,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 479,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 493,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 74,
+        "encounterType": "rock_smash"
+      },
+      {
+        "pokemonId": 73,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 195,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 222,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 370,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 387,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 485,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 73,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 90,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 118,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 138,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 140,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 170,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 171,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 301,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 303,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 370,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 474,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 485,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 493,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Brine Road",
+    "encounters": [
+      {
+        "pokemonId": 55,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 98,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 188,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 189,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 235,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 356,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 459,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 211,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 222,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 226,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 387,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 73,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 90,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 120,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 170,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 171,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Deep Sea",
+    "encounters": [
+      {
+        "pokemonId": 98,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 117,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 171,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 175,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 176,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 211,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 222,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 224,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 254,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 269,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 387,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 455,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 459,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 475,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 73,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 222,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 73,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 90,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 170,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 171,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Bond Bridge",
+    "encounters": [
+      {
+        "pokemonId": 101,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 370,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 73,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 211,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 117,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 211,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Offshore Road",
+    "encounters": [
+      {
+        "pokemonId": 147,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 246,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 291,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 297,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 375,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 392,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 395,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 414,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 416,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 440,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 442,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 444,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 471,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 55,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 227,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 441,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 443,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 54,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 79,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 223,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 434,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 436,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 437,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 455,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Boon Island",
+    "encounters": [
+      {
+        "pokemonId": 84,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 210,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 232,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 370,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 418,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 457,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 458,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 459,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 211,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 222,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 226,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 90,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 170,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 171,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 356,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Kin Island",
+    "encounters": [
+      {
+        "pokemonId": 72,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 73,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 222,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 73,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 90,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 170,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 455,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Knot Island",
+    "encounters": [
+      {
+        "pokemonId": 222,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 387,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 469,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 485,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 73,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 90,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 170,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 171,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 183,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 370,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 454,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 474,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 485,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Chrono Island",
+    "encounters": [
+      {
+        "pokemonId": 79,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 133,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 178,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 206,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 310,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 370,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 459,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 222,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 358,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 72,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 73,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 90,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 170,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 171,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 453,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 290,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Berry Forest",
+    "encounters": [
+      {
+        "pokemonId": 36,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 48,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 102,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 143,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 234,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 260,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 266,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 424,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 55,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 370,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      }
+    ]
+  },
+  {
+    "routeName": "Mt. Ember",
+    "encounters": [
+      {
+        "pokemonId": 77,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 126,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 219,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 325,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 426,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 482,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 488,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 42,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 85,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 126,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 208,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 219,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 353,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 430,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 482,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 488,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 418,
+        "encounterType": "pokeradar"
+      }
+    ]
+  },
+  {
+    "routeName": "Sky Pillar",
+    "encounters": [
+      {
+        "pokemonId": 227,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 270,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 273,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 300,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 312,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 339,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 421,
+        "encounterType": "cave"
+      },
+      {
+        "pokemonId": 498,
+        "encounterType": "cave"
+      }
+    ]
+  },
+  {
+    "routeName": "P2 Laboratory",
+    "encounters": [
+      {
+        "pokemonId": 82,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 263,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 330,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 397,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 398,
+        "encounterType": "grass"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 230,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 501,
+        "encounterType": "surf"
+      },
+      {
+        "pokemonId": 116,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 117,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 211,
+        "encounterType": "fishing"
+      },
+      {
+        "pokemonId": 394,
+        "encounterType": "fishing"
+      }
+    ]
+  },
+  {
+    "routeName": "Debug Island",
+    "encounters": [
+      {
+        "pokemonId": 132,
+        "encounterType": "grass"
+      }
+    ]
+  },
+  {
+    "routeName": "Route 25",
+    "encounters": [
+      {
+        "pokemonId": 495,
+        "encounterType": "grass"
+      }
+    ]
+  }
+]

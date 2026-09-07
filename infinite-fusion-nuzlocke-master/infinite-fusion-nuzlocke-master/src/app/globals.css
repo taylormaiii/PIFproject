@@ -1,0 +1,483 @@
+@import "tailwindcss";
+
+@theme {
+  --spacing-location-row: 150px;
+  --color-primary: #3b82f6;
+  --color-primary-dark: #1d4ed8;
+  --font-family-sans:
+    var(--font-ibmplex), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  --font-family-mono: var(--font-dotgothic16), "Courier New", monospace;
+}
+
+.github-button-control,
+.github-button-control span {
+  display: flex;
+  line-height: 0;
+}
+
+.shadow-elevation-1 {
+  /* Subtle elevation - barely off the surface */
+  box-shadow:
+    0 1px 2px 0 hsl(0deg 0% 0% / 0.03),
+    0 1px 3px 1px hsl(0deg 0% 0% / 0.05);
+}
+
+.shadow-elevation-2 {
+  /* Low elevation - slight lift */
+  box-shadow:
+    0 1px 2px 0 hsl(0deg 0% 0% / 0.035),
+    0 1px 3px 1px hsl(0deg 0% 0% / 0.05),
+    0 2px 4px 2px hsl(0deg 0% 0% / 0.035);
+}
+
+.shadow-elevation-3 {
+  /* Medium elevation - noticeable lift */
+  box-shadow:
+    0 1px 3px 0 hsl(0deg 0% 0% / 0.05),
+    0 1px 2px 0 hsl(0deg 0% 0% / 0.035),
+    0 2px 4px 1px hsl(0deg 0% 0% / 0.04),
+    0 4px 8px 2px hsl(0deg 0% 0% / 0.035);
+}
+
+.shadow-elevation-4 {
+  /* High elevation - significant lift */
+  box-shadow:
+    0 2px 4px 0 hsl(0deg 0% 0% / 0.035),
+    0 4px 8px 1px hsl(0deg 0% 0% / 0.04),
+    0 8px 16px 2px hsl(0deg 0% 0% / 0.035),
+    0 16px 32px 4px hsl(0deg 0% 0% / 0.03);
+}
+
+.shadow-elevation-5 {
+  /* Very high elevation - floating above */
+  box-shadow:
+    0 4px 6px 0 hsl(0deg 0% 0% / 0.04),
+    0 8px 16px 1px hsl(0deg 0% 0% / 0.035),
+    0 16px 32px 2px hsl(0deg 0% 0% / 0.03),
+    0 32px 64px 4px hsl(0deg 0% 0% / 0.025);
+}
+
+.dark .shadow-elevation-1 {
+  box-shadow:
+    0 1px 2px 0 hsl(0deg 0% 0% / 0.02),
+    0 1px 3px 1px hsl(0deg 0% 0% / 0.0325);
+}
+
+.dark .shadow-elevation-2 {
+  box-shadow:
+    0 1px 2px 0 hsl(0deg 0% 0% / 0.025),
+    0 1px 3px 1px hsl(0deg 0% 0% / 0.0375),
+    0 2px 4px 2px hsl(0deg 0% 0% / 0.025);
+}
+
+.dark .shadow-elevation-3 {
+  box-shadow:
+    0 1px 3px 0 hsl(0deg 0% 0% / 0.0325),
+    0 1px 2px 0 hsl(0deg 0% 0% / 0.025),
+    0 2px 4px 1px hsl(0deg 0% 0% / 0.03),
+    0 4px 8px 2px hsl(0deg 0% 0% / 0.025);
+}
+
+.dark .shadow-elevation-4 {
+  box-shadow:
+    0 2px 4px 0 hsl(0deg 0% 0% / 0.03),
+    0 4px 8px 1px hsl(0deg 0% 0% / 0.035),
+    0 8px 16px 2px hsl(0deg 0% 0% / 0.025),
+    0 16px 32px 4px hsl(0deg 0% 0% / 0.02);
+}
+
+.dark .shadow-elevation-5 {
+  box-shadow:
+    0 4px 6px 0 hsl(0deg 0% 0% / 0.035),
+    0 8px 16px 1px hsl(0deg 0% 0% / 0.0275),
+    0 16px 32px 2px hsl(0deg 0% 0% / 0.02),
+    0 32px 64px 4px hsl(0deg 0% 0% / 0.015);
+}
+
+/* Interactive shadows - for hover and focus states */
+.shadow-elevation-1-hover {
+  box-shadow:
+    0 2px 4px 0 hsl(0deg 0% 0% / 0.02),
+    0 2px 6px 2px hsl(0deg 0% 0% / 0.03);
+}
+
+.shadow-elevation-2-hover {
+  box-shadow:
+    0 2px 4px 0 hsl(0deg 0% 0% / 0.025),
+    0 2px 6px 2px hsl(0deg 0% 0% / 0.0375),
+    0 4px 8px 4px hsl(0deg 0% 0% / 0.025);
+}
+
+.shadow-elevation-3-hover {
+  box-shadow:
+    0 2px 6px 0 hsl(0deg 0% 0% / 0.03),
+    0 2px 4px 0 hsl(0deg 0% 0% / 0.02),
+    0 4px 8px 2px hsl(0deg 0% 0% / 0.025),
+    0 8px 16px 4px hsl(0deg 0% 0% / 0.02);
+}
+
+.shadow-elevation-4-hover {
+  box-shadow:
+    0 4px 8px 0 hsl(0deg 0% 0% / 0.02),
+    0 8px 16px 2px hsl(0deg 0% 0% / 0.025),
+    0 16px 32px 4px hsl(0deg 0% 0% / 0.02),
+    0 32px 64px 8px hsl(0deg 0% 0% / 0.015);
+}
+
+.shadow-elevation-5-hover {
+  box-shadow:
+    0 6px 12px 0 hsl(0deg 0% 0% / 0.025),
+    0 12px 24px 2px hsl(0deg 0% 0% / 0.02),
+    0 24px 48px 4px hsl(0deg 0% 0% / 0.015),
+    0 48px 96px 8px hsl(0deg 0% 0% / 0.01);
+}
+
+/* Dark mode hover shadows */
+.dark .shadow-elevation-1-hover {
+  box-shadow:
+    0 2px 4px 0 hsl(0deg 0% 0% / 0.09),
+    0 2px 6px 2px hsl(0deg 0% 0% / 0.115);
+}
+
+.dark .shadow-elevation-2-hover {
+  box-shadow:
+    0 2px 4px 0 hsl(0deg 0% 0% / 0.1),
+    0 2px 6px 2px hsl(0deg 0% 0% / 0.125),
+    0 4px 8px 4px hsl(0deg 0% 0% / 0.1);
+}
+
+.dark .shadow-elevation-3-hover {
+  box-shadow:
+    0 2px 6px 0 hsl(0deg 0% 0% / 0.115),
+    0 2px 4px 0 hsl(0deg 0% 0% / 0.1),
+    0 4px 8px 2px hsl(0deg 0% 0% / 0.115),
+    0 8px 16px 4px hsl(0deg 0% 0% / 0.1);
+}
+
+.dark .shadow-elevation-4-hover {
+  box-shadow:
+    0 4px 8px 0 hsl(0deg 0% 0% / 0.1),
+    0 8px 16px 2px hsl(0deg 0% 0% / 0.115),
+    0 16px 32px 4px hsl(0deg 0% 0% / 0.1),
+    0 32px 64px 8px hsl(0deg 0% 0% / 0.09);
+}
+
+.dark .shadow-elevation-5-hover {
+  box-shadow:
+    0 6px 12px 0 hsl(0deg 0% 0% / 0.115),
+    0 12px 24px 2px hsl(0deg 0% 0% / 0.1),
+    0 24px 48px 4px hsl(0deg 0% 0% / 0.09),
+    0 48px 96px 8px hsl(0deg 0% 0% / 0.075);
+}
+
+/* Specialized shadows for specific use cases - using Josh's exact approach */
+.shadow-card {
+  box-shadow:
+    0 1px 3px 0 hsl(0deg 0% 0% / 0.06),
+    0 1px 2px 0 hsl(0deg 0% 0% / 0.04);
+}
+
+.shadow-card-hover {
+  box-shadow:
+    0 4px 6px 0 hsl(0deg 0% 0% / 0.05),
+    0 8px 16px 1px hsl(0deg 0% 0% / 0.04),
+    0 16px 32px 2px hsl(0deg 0% 0% / 0.03);
+}
+
+.shadow-dropdown {
+  box-shadow:
+    0 4px 6px 0 hsl(0deg 0% 0% / 0.05),
+    0 8px 16px 1px hsl(0deg 0% 0% / 0.04),
+    0 16px 32px 2px hsl(0deg 0% 0% / 0.03),
+    0 32px 64px 4px hsl(0deg 0% 0% / 0.025);
+}
+
+.shadow-modal {
+  box-shadow:
+    0 8px 16px 0 hsl(0deg 0% 0% / 0.02),
+    0 16px 32px 2px hsl(0deg 0% 0% / 0.015),
+    0 32px 64px 4px hsl(0deg 0% 0% / 0.01),
+    0 64px 128px 8px hsl(0deg 0% 0% / 0.005);
+}
+
+/* Dark mode specialized shadows */
+.dark .shadow-card {
+  box-shadow:
+    0 1px 3px 0 hsl(0deg 0% 0% / 0.075),
+    0 1px 2px 0 hsl(0deg 0% 0% / 0.065);
+}
+
+.dark .shadow-card-hover {
+  box-shadow:
+    0 4px 6px 0 hsl(0deg 0% 0% / 0.09),
+    0 8px 16px 1px hsl(0deg 0% 0% / 0.075),
+    0 16px 32px 2px hsl(0deg 0% 0% / 0.065);
+}
+
+.dark .shadow-dropdown {
+  box-shadow:
+    0 4px 6px 0 hsl(0deg 0% 0% / 0.09),
+    0 8px 16px 1px hsl(0deg 0% 0% / 0.075),
+    0 16px 32px 2px hsl(0deg 0% 0% / 0.065),
+    0 32px 64px 4px hsl(0deg 0% 0% / 0.05);
+}
+
+.dark .shadow-modal {
+  box-shadow:
+    0 8px 16px 0 hsl(0deg 0% 0% / 0.1),
+    0 16px 32px 2px hsl(0deg 0% 0% / 0.09),
+    0 32px 64px 4px hsl(0deg 0% 0% / 0.075),
+    0 64px 128px 8px hsl(0deg 0% 0% / 0.065);
+}
+
+/* Ensure DotGothic16 is available for font-mono */
+.font-ds {
+  font-family: var(--font-ds), "Courier New", monospace;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+  font-smooth: never;
+  font-size-adjust: 0.5;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@utility content-visibility-auto {
+  content-visibility: auto;
+}
+
+@utility content-visibility-hidden {
+  content-visibility: hidden;
+}
+
+@utility content-visibility-visible {
+  content-visibility: visible;
+}
+
+@utility contain-intrinsic-height-* {
+  contain-intrinsic-height: --value([length]);
+  contain-intrinsic-height: --value(integer) px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-family-sans);
+  background-color: #f9fafb;
+}
+
+.dark body {
+  background-color: #111827;
+  /* bg-gray-900 */
+}
+
+/* Ensure dark mode works with Tailwind v4 */
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+/* Custom scrollbar styles for virtualized components */
+.scrollbar-thin {
+  scrollbar-color: #d1d5db transparent;
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: #9ca3af;
+}
+
+/* Dark mode scrollbar */
+.dark .scrollbar-thin {
+  scrollbar-color: #4b5563 transparent;
+}
+
+.dark .scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+}
+
+.dark .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: #6b7280;
+}
+
+/* Image rendering utilities for pixel art sprites */
+.image-render-pixelated {
+  image-rendering: pixelated;
+}
+
+/* Ensure absolutely positioned canvas overlays match container size */
+.absolute > canvas.w-full.h-full {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.image-render-crisp-edges {
+  image-rendering: crisp-edges;
+}
+
+.image-render-auto {
+  image-rendering: auto;
+}
+
+.image-render-smooth {
+  image-rendering: smooth;
+}
+
+.image-render-high-quality {
+  image-rendering: high-quality;
+}
+
+/* Shimmer loading animation */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.shimmer {
+  position: relative;
+  overflow: hidden;
+  background: #f3f4f6;
+}
+
+.shimmer::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 100%
+  );
+  animation: shimmer 1.5s infinite ease-in-out;
+  will-change: transform;
+}
+
+.dark .shimmer {
+  background: #374151;
+}
+
+.dark .shimmer::before {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 100%
+  );
+}
+
+/* Tooltip animations - replicating framer-motion behavior */
+@keyframes tooltipEnter {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes tooltipExit {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+.tooltip-enter {
+  animation: tooltipEnter 0.05s ease-out forwards;
+  will-change: opacity, transform;
+}
+
+.tooltip-exit {
+  animation: tooltipExit 0.05s ease-out forwards;
+  will-change: opacity, transform;
+}
+
+/* Global button press animation */
+button {
+  @apply cursor-pointer transition-transform duration-150 ease-out enabled:active:scale-[.97];
+}
+
+/* Exclude buttons inside playthrough selector from global scale effect */
+[data-headlessui-state] > button,
+[role="menu"] > button,
+[role="menuitem"] > button {
+  @apply transform-none;
+}
+
+[data-headlessui-state] > button:active,
+[role="menu"] > button:active,
+[role="menuitem"] > button:active {
+  @apply scale-100;
+}
+
+[role="button"] {
+  @apply cursor-pointer transition-transform duration-150 ease-out;
+}
+
+[role="button"]:not([aria-disabled="true"]):active {
+  @apply scale-[.97];
+}
+
+button:disabled,
+[aria-disabled="true"] {
+  @apply cursor-not-allowed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:not([data-reduced-motion]),
+  html:not([data-reduced-motion]) * {
+    scroll-behavior: auto !important;
+  }
+
+  html:not([data-reduced-motion]) *,
+  html:not([data-reduced-motion]) *::before,
+  html:not([data-reduced-motion]) *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+html[data-reduced-motion="true"],
+html[data-reduced-motion="true"] * {
+  scroll-behavior: auto !important;
+}
+
+html[data-reduced-motion="true"] *,
+html[data-reduced-motion="true"] *::before,
+html[data-reduced-motion="true"] *::after {
+  transition: none !important;
+  animation: none !important;
+}

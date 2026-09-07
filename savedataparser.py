@@ -1,7 +1,6 @@
 import json
 from rubymarshal.reader import load as load_marshal
 
-
 def make_json_safe(obj, seen=None):
     if seen is None:
         seen = set()
@@ -52,9 +51,7 @@ def make_json_safe(obj, seen=None):
     return str(obj)
 
 def rxdata_to_json(rxdata_path, json_path):
-    # 1. Read the binary .rxdata file
     with open(rxdata_path, 'rb') as f:
-        # Load the Ruby Marshal binary into Python objects
         ruby_data = load_marshal(f)
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(make_json_safe(ruby_data),f,indent=2,ensure_ascii=False)
