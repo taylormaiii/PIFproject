@@ -1,9 +1,0 @@
-User-agent: *
-Allow: /
-
-Host: https://fusion.nuzlocke.io
-Sitemap: https://fusion.nuzlocke.io/sitemap.xml
-
-Disallow: /api/
-Disallow: /_next/
-Disallow: /admin/
