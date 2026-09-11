@@ -60,4 +60,4 @@ def rxdata_to_json(rxdata_path, json_path):
 
 save_slot = input("What letter save slot is it? ")
 rxdata_path = rf"C:\Users\tjkit\AppData\Roaming\infinitefusion\File {save_slot}.rxdata"
-rxdata_to_json(rxdata_path, f"output{save_slot}.json")
+rxdata_to_json(rxdata_path, f"script{save_slot}.json")
