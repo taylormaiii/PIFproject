@@ -1244,8 +1244,8 @@
         {
           "id": 169,
           "name": "crobat",
-          "trigger": "level-up",
-          "condition": "Happiness: 160"
+          "min_level": 40,
+          "trigger": "level-up"
         }
       ],
       "evolves_from": {
@@ -1807,8 +1807,14 @@
         {
           "id": 186,
           "name": "politoed",
-          "trigger": "trade",
-          "condition": "Holding kings-rock"
+          "item": "kings-rock",
+          "trigger": "use-item"
+        },
+        {
+          "id": 186,
+          "name": "politoed",
+          "min_level": 37,
+          "trigger": "level-up"
         }
       ],
       "evolves_from": {
@@ -1897,7 +1903,14 @@
         {
           "id": 65,
           "name": "alakazam",
-          "trigger": "trade"
+          "item": "linking-cord",
+          "trigger": "use-item"
+        },
+        {
+          "id": 65,
+          "name": "alakazam",
+          "min_level": 40,
+          "trigger": "level-up"
         }
       ],
       "evolves_from": {
@@ -1983,7 +1996,14 @@
         {
           "id": 68,
           "name": "machamp",
-          "trigger": "trade"
+          "item": "linking-cord",
+          "trigger": "use-item"
+        },
+        {
+          "id": 68,
+          "name": "machamp",
+          "min_level": 40,
+          "trigger": "level-up"
         }
       ],
       "evolves_from": {
@@ -2230,7 +2250,14 @@
         {
           "id": 76,
           "name": "golem",
-          "trigger": "trade"
+          "min_level": 40,
+          "trigger": "level-up"
+        },
+        {
+          "id": 76,
+          "name": "golem",
+          "item": "linking-cord",
+          "trigger": "use-item"
         }
       ],
       "evolves_from": {
@@ -2353,8 +2380,14 @@
         {
           "id": 199,
           "name": "slowking",
-          "trigger": "trade",
-          "condition": "Holding kings-rock"
+          "item": "water-stone",
+          "trigger": "use-item"
+        },
+        {
+          "id": 199,
+          "name": "slowking",
+          "item": "kings-rock",
+          "trigger": "use-item"
         }
       ]
     }
@@ -2443,8 +2476,8 @@
         {
           "id": 462,
           "name": "magnezone",
-          "location": "mt-coronet",
-          "trigger": "level-up"
+          "item": "magnet-stone",
+          "trigger": "use-item"
         }
       ],
       "evolves_from": {
@@ -2763,7 +2796,14 @@
         {
           "id": 94,
           "name": "gengar",
-          "trigger": "trade"
+          "item": "linking-cord",
+          "trigger": "use-item"
+        },
+        {
+          "id": 94,
+          "name": "gengar",
+          "min_level": 40,
+          "trigger": "level-up"
         }
       ],
       "evolves_from": {
@@ -2827,8 +2867,14 @@
         {
           "id": 208,
           "name": "steelix",
-          "trigger": "trade",
-          "condition": "Holding metal-coat"
+          "item": "metal-coat",
+          "trigger": "use-item"
+        },
+        {
+          "id": 208,
+          "name": "steelix",
+          "min_level": 40,
+          "trigger": "level-up"
         }
       ]
     }
@@ -3290,8 +3336,14 @@
         {
           "id": 464,
           "name": "rhyperior",
-          "trigger": "trade",
-          "condition": "Holding protector"
+          "min_level": 55,
+          "trigger": "level-up"
+        },
+        {
+          "id": 464,
+          "name": "rhyperior",
+          "item": "protector",
+          "trigger": "use-item"
         }
       ],
       "evolves_from": {
@@ -3322,8 +3374,8 @@
         {
           "id": 242,
           "name": "blissey",
-          "trigger": "level-up",
-          "condition": "Happiness: 160"
+          "min_level": 42,
+          "trigger": "level-up"
         }
       ],
       "evolves_from": {
@@ -3430,8 +3482,14 @@
         {
           "id": 230,
           "name": "kingdra",
-          "trigger": "trade",
-          "condition": "Holding dragon-scale"
+          "min_level": 50,
+          "trigger": "level-up"
+        },
+        {
+          "id": 230,
+          "name": "kingdra",
+          "item": "dragon-scale",
+          "trigger": "use-item"
         }
       ],
       "evolves_from": {
@@ -3609,8 +3667,14 @@
         {
           "id": 212,
           "name": "scizor",
-          "trigger": "trade",
-          "condition": "Holding metal-coat"
+          "item": "metal-coat",
+          "trigger": "use-item"
+        },
+        {
+          "id": 212,
+          "name": "scizor",
+          "min_level": 40,
+          "trigger": "level-up"
         },
         {
           "id": 900,
@@ -3671,8 +3735,14 @@
         {
           "id": 466,
           "name": "electivire",
-          "trigger": "trade",
-          "condition": "Holding electirizer"
+          "item": "electirizer",
+          "trigger": "use-item"
+        },
+        {
+          "id": 466,
+          "name": "electivire",
+          "min_level": 50,
+          "trigger": "level-up"
         }
       ],
       "evolves_from": {
@@ -3703,8 +3773,14 @@
         {
           "id": 467,
           "name": "magmortar",
-          "trigger": "trade",
-          "condition": "Holding magmarizer"
+          "item": "magmarizer",
+          "trigger": "use-item"
+        },
+        {
+          "id": 467,
+          "name": "magmortar",
+          "min_level": 50,
+          "trigger": "level-up"
         }
       ],
       "evolves_from": {
@@ -3896,32 +3972,32 @@
         {
           "id": 196,
           "name": "espeon",
-          "trigger": "level-up",
-          "condition": "Time: day"
+          "item": "sun-stone",
+          "trigger": "use-item"
         },
         {
           "id": 197,
           "name": "umbreon",
-          "trigger": "level-up",
-          "condition": "Time: night"
+          "item:": "moon-stone",
+          "trigger": "use-item"
         },
         {
           "id": 470,
           "name": "leafeon",
-          "location": "eterna-forest",
-          "trigger": "level-up"
+          "item": "leaf-stone",
+          "trigger": "use-item"
         },
         {
           "id": 471,
           "name": "glaceon",
-          "location": "sinnoh-route-217",
-          "trigger": "level-up"
+          "item": "ice-stone",
+          "trigger": "use-item"
         },
         {
           "id": 700,
           "name": "sylveon",
-          "trigger": "level-up",
-          "condition": "Knows fairy move"
+          "item": "shiny-stone",
+          "trigger": "use-item"
         }
       ]
     }
@@ -4023,8 +4099,8 @@
         {
           "id": 233,
           "name": "porygon2",
-          "trigger": "trade",
-          "condition": "Holding up-grade"
+          "item": "up-grade",
+          "trigger": "use-item"
         }
       ]
     }
@@ -5002,8 +5078,8 @@
         {
           "id": 25,
           "name": "pikachu",
-          "trigger": "level-up",
-          "condition": "Happiness: 220"
+          "min_level": 15,
+          "trigger": "level-up"
         }
       ]
     }
@@ -5030,8 +5106,8 @@
         {
           "id": 35,
           "name": "clefairy",
-          "trigger": "level-up",
-          "condition": "Happiness: 160"
+          "min_level": 15,
+          "trigger": "level-up"
         }
       ]
     }
@@ -5061,8 +5137,8 @@
         {
           "id": 39,
           "name": "jigglypuff",
-          "trigger": "level-up",
-          "condition": "Happiness: 160"
+          "min_level": 15,
+          "trigger": "level-up"
         }
       ]
     }
@@ -5089,8 +5165,8 @@
         {
           "id": 176,
           "name": "togetic",
-          "trigger": "level-up",
-          "condition": "Happiness: 160"
+          "min_level": 15,
+          "trigger": "level-up"
         }
       ]
     }
@@ -6012,8 +6088,8 @@
         {
           "id": 472,
           "name": "gliscor",
-          "trigger": "level-up",
-          "condition": "Holding razor-fang"
+          "item": "dusk-stone",
+          "trigger": "use-item"
         }
       ]
     }
@@ -6230,14 +6306,8 @@
         {
           "id": 461,
           "name": "weavile",
-          "trigger": "level-up",
-          "condition": "Holding razor-claw"
-        },
-        {
-          "id": 903,
-          "name": "sneasler",
-          "trigger": "level-up",
-          "condition": "Holding razor-claw"
+          "item": "ice-stone",
+          "trigger": "use-item"
         }
       ]
     }
@@ -6748,8 +6818,8 @@
         {
           "id": 474,
           "name": "porygon-z",
-          "trigger": "trade",
-          "condition": "Holding dubious-disc"
+          "item": "dubious-disk",
+          "trigger": "use-item"
         }
       ],
       "evolves_from": {
@@ -6896,7 +6966,7 @@
         {
           "id": 124,
           "name": "jynx",
-          "min_level": 30,
+          "min_level": 21,
           "trigger": "level-up"
         }
       ]
@@ -6924,7 +6994,7 @@
         {
           "id": 125,
           "name": "electabuzz",
-          "min_level": 30,
+          "min_level": 21,
           "trigger": "level-up"
         }
       ]
@@ -6952,7 +7022,7 @@
         {
           "id": 126,
           "name": "magmar",
-          "min_level": 30,
+          "min_level": 21,
           "trigger": "level-up"
         }
       ]
@@ -7262,8 +7332,8 @@
         {
           "id": 183,
           "name": "marill",
-          "trigger": "level-up",
-          "condition": "Happiness: 160"
+          "min_level": 15,
+          "trigger": "level-up"
         }
       ]
     }
@@ -7481,8 +7551,8 @@
         {
           "id": 143,
           "name": "snorlax",
-          "trigger": "level-up",
-          "condition": "Happiness: 160"
+          "min_level": 30,
+          "trigger": "level-up"
         }
       ]
     }
@@ -7512,6 +7582,7 @@
         {
           "id": 226,
           "name": "mantine",
+          "min_level": 20,
           "trigger": "level-up"
         }
       ]
@@ -7897,8 +7968,7 @@
       "evolves_from": {
         "id": 233,
         "name": "porygon2",
-        "trigger": "trade",
-        "condition": "Holding up-grade"
+        "trigger": "use-item"
       }
     }
   },
@@ -8980,8 +9050,14 @@
         {
           "id": 477,
           "name": "dusknoir",
-          "trigger": "trade",
-          "condition": "Holding reaper-cloth"
+          "min_level": 50,
+          "trigger": "level-up"
+        },
+        {
+          "id": 477,
+          "name": "dusknoir",
+          "item": "reaper-cloth",
+          "trigger": "use-item"
         }
       ],
       "evolves_from": {
@@ -9358,8 +9434,8 @@
         {
           "id": 476,
           "name": "probopass",
-          "location": "mt-coronet",
-          "trigger": "level-up"
+          "item": "magnet-stone",
+          "trigger": "use-item"
         }
       ]
     }
@@ -10955,8 +11031,8 @@
         {
           "id": 448,
           "name": "lucario",
-          "trigger": "level-up",
-          "condition": "Time: day"
+          "min_level": 30,
+          "trigger": "level-up"
         }
       ]
     }
@@ -11260,7 +11336,14 @@
         {
           "id": 350,
           "name": "milotic",
+          "min_level": 30,
           "trigger": "level-up"
+        },
+        {
+          "id": 350,
+          "name": "milotic",
+          "item": "prism scale",
+          "trigger": "use-item"
         }
       ]
     }
@@ -11438,8 +11521,8 @@
         {
           "id": 315,
           "name": "roselia",
-          "trigger": "level-up",
-          "condition": "Time: day"
+          "min_level": 15,
+          "trigger": "level-up"
         }
       ]
     }
@@ -11532,8 +11615,8 @@
         {
           "id": 428,
           "name": "lopunny",
-          "trigger": "level-up",
-          "condition": "Happiness: 160"
+          "min_level": 25,
+          "trigger": "level-up"
         }
       ]
     }
@@ -12558,7 +12641,14 @@
         {
           "id": 709,
           "name": "trevenant",
-          "trigger": "trade"
+          "min_level": 40,
+          "trigger": "level-up"
+        },
+        {
+          "id": 709,
+          "name": "trevenant",
+          "item": "linking-cord",
+          "trigger": "use-item"
         }
       ]
     }
@@ -13960,7 +14050,8 @@
         {
           "id": 711,
           "name": "gourgeist",
-          "trigger": "trade"
+          "min_level": 40,
+          "trigger": "level-up"
         }
       ]
     }
@@ -14015,8 +14106,8 @@
         {
           "id": 685,
           "name": "slurpuff",
-          "trigger": "trade",
-          "condition": "Holding whipped-dream"
+          "min_level": 35,
+          "trigger": "level-up"
         }
       ]
     }
@@ -16065,8 +16156,8 @@
         {
           "id": 528,
           "name": "swoobat",
-          "trigger": "level-up",
-          "condition": "Happiness: 160"
+          "min_level": 40,
+          "trigger": "level-up"
         }
       ]
     }

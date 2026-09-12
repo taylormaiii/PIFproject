@@ -1,8 +1,8 @@
 import json
 import requests
 
-
-#pokemon = input("whats pokemon? ")
+#To-do: check for game differences, auto-return both fusion versions, figure out the weakness chart algorithm
+pokemon = input("whats pokemon? ")
 
 
 def get_id(pokemon):
@@ -142,17 +142,28 @@ def get_bst(pokemon):
     return statdict
 
 def get_evos(pokemon):
-#needs to reference pokemon_data instead of the api
-    r = requests.get(f"https://pokeapi.co/api/v2/pokemon/{pokemon}").json()
-    re = requests.get(f"https://pokeapi.co/api/v2/pokemon-species/{pokemon}").json()
-    evo = requests.get(re['evolution_chain']['url']).json()
-    try:
-        evoinfo = [evo['chain']['species']['name'],evo['chain']['evolves_to'][0]['species']['name'],evo['chain']['evolves_to'][0]['evolves_to'][0]['species']['name']]
-    except IndexError:
-        try:
-            evoinfo = [evo['chain']['species']['name'],evo['chain']['evolves_to'][0]['species']['name']]
-        except IndexError:
-            evoinfo = evo['chain']['species']['name']
-    return evoinfo
+    with open("pokemon_data.json", "r") as pdj:
+        mons = json.load(pdj)
 
-#print(get_bst(pokemon))
+    for mon in mons:
+        if mon["name"].lower() == pokemon.lower():
+            evolution = mon.get("evolution", {})
+
+            previous = evolution.get("evolves_from")
+            next_evolutions = evolution.get("evolves_to", [])
+
+            return {"previous": previous["name"] if previous else None,
+                    "next": [{
+            "name": evo["name"],
+            "trigger": evo.get("trigger"),
+            "level": evo.get("min_level"),
+            "condition": evo.get("condition"),
+            "item": evo.get("item"),
+            "location": evo.get("location"),
+            }
+            for evo in next_evolutions],}
+
+    raise ValueError(f"Unknown Pokemon: {pokemon}")
+
+if __name__ == "__main__":
+    print(get_abilities(pokemon))

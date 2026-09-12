@@ -29,7 +29,7 @@ def calculate_type2():
 def calculate_base_stats():
   head_stats = pokeapitest.get_bst(head_pokemon)
   body_stats = pokeapitest.get_bst(body_pokemon)
-
+#compare head/body vs fused stats
   fused_stats = {}
 
 
@@ -86,11 +86,11 @@ def calculate_evolutions():
   fused_evolutions = []
 
   #body
-  for evolution in body_evolutions:
+  for evolution in body_evolutions["next"]:
     fused_evolutions.append(evolution)
   
   #head
-  for evolution in head_evolutions:
+  for evolution in head_evolutions["next"]:
     fused_evolutions.append(evolution)
   
   return fused_evolutions
@@ -127,24 +127,32 @@ def get_lowest_value(value1, value2):
 def combine_list(list1, list2):
   return zip(list1,list2)
 
+
+
 id = calculate_id()
 type1 = calculate_type1()
 type2 = calculate_type2()
 
-#Stats
+def return_types(type1, type2):
+  return [
+        pokemon_type
+        for pokemon_type in (type1, type2)
+        if pokemon_type is not None
+    ]
+
+
+
 #find a way to show stat loss + gain
 base_stats = calculate_base_stats()
-
-#Moves
 moves = calculate_moveset()
 tm_moves = calculate_tm_moves() # hash[:tutor_moves] || []
 egg_moves = calculate_egg_moves() # hash[:egg_moves] || []
-
-#Abilities
 abilities = calculate_abilities() # hash[:abilities] || []
 hidden_abilities = calculate_hidden_abilities() # hash[:hidden_abilities] || []
 
 evolutions = calculate_evolutions() # hash[:evolutions] || []
+types = return_types(type1,type2)
+
 #automatically show both options
 #add a weakness chart
-print(id,type1,type2,base_stats,abilities,evolutions)
+print(types)
