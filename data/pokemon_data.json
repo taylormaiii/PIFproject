@@ -2426,10 +2426,10 @@
     "name": "Magnemite",
     "types": [
       {
-        "name": "electric"
+        "name": "steel"
       },
       {
-        "name": "steel"
+        "name": "electric"
       }
     ],
     "species": {
@@ -2457,10 +2457,10 @@
     "name": "Magneton",
     "types": [
       {
-        "name": "electric"
+        "name": "steel"
       },
       {
-        "name": "steel"
+        "name": "electric"
       }
     ],
     "species": {
@@ -2609,10 +2609,10 @@
     "name": "Dewgong",
     "types": [
       {
-        "name": "water"
+        "name": "ice"
       },
       {
-        "name": "ice"
+        "name": "water"
       }
     ],
     "species": {
@@ -4111,10 +4111,10 @@
     "name": "Omanyte",
     "types": [
       {
-        "name": "rock"
+        "name": "water"
       },
       {
-        "name": "water"
+        "name": "rock"
       }
     ],
     "species": {
@@ -4142,10 +4142,10 @@
     "name": "Omastar",
     "types": [
       {
-        "name": "rock"
+        "name": "water"
       },
       {
-        "name": "water"
+        "name": "rock"
       }
     ],
     "species": {
@@ -6211,10 +6211,10 @@
     "name": "Scizor",
     "types": [
       {
-        "name": "bug"
+        "name": "steel"
       },
       {
-        "name": "steel"
+        "name": "bug"
       }
     ],
     "species": {
@@ -7289,10 +7289,10 @@
     "name": "Celebi",
     "types": [
       {
-        "name": "psychic"
+        "name": "grass"
       },
       {
-        "name": "grass"
+        "name": "psychic"
       }
     ],
     "species": {
@@ -7622,10 +7622,10 @@
     "name": "Magnezone",
     "types": [
       {
-        "name": "electric"
+        "name": "steel"
       },
       {
-        "name": "steel"
+        "name": "electric"
       }
     ],
     "species": {
@@ -8556,10 +8556,10 @@
     "name": "Spiritomb",
     "types": [
       {
-        "name": "ghost"
+        "name": "dark"
       },
       {
-        "name": "dark"
+        "name": "ghost"
       }
     ],
     "species": {
@@ -9388,10 +9388,10 @@
     "name": "Empoleon",
     "types": [
       {
-        "name": "water"
+        "name": "steel"
       },
       {
-        "name": "steel"
+        "name": "water"
       }
     ],
     "species": {
@@ -10456,10 +10456,10 @@
     "name": "Ferrothorn",
     "types": [
       {
-        "name": "grass"
+        "name": "steel"
       },
       {
-        "name": "steel"
+        "name": "grass"
       }
     ],
     "species": {
@@ -11904,10 +11904,10 @@
     "name": "Ferroseed",
     "types": [
       {
-        "name": "grass"
+        "name": "steel"
       },
       {
-        "name": "steel"
+        "name": "grass"
       }
     ],
     "species": {
@@ -12622,10 +12622,10 @@
     "name": "Phantump",
     "types": [
       {
-        "name": "ghost"
+        "name": "grass"
       },
       {
-        "name": "grass"
+        "name": "ghost"
       }
     ],
     "species": {
@@ -12659,10 +12659,10 @@
     "name": "Trevenant",
     "types": [
       {
-        "name": "ghost"
+        "name": "grass"
       },
       {
-        "name": "grass"
+        "name": "ghost"
       }
     ],
     "species": {
@@ -13198,10 +13198,10 @@
     "name": "Sandygast",
     "types": [
       {
-        "name": "ghost"
+        "name": "ground"
       },
       {
-        "name": "ground"
+        "name": "ghost"
       }
     ],
     "species": {
@@ -13229,10 +13229,10 @@
     "name": "Palossand",
     "types": [
       {
-        "name": "ghost"
+        "name": "ground"
       },
       {
-        "name": "ground"
+        "name": "ghost"
       }
     ],
     "species": {

@@ -1,25 +1,28 @@
 import json
+from functools import lru_cache
 import requests
 
 #To-do: check for game differences, auto-return both fusion versions, figure out the weakness chart algorithm
-pokemon = input("whats pokemon? ")
 
+@lru_cache(maxsize=None)
+def get_pokemon_data(pokemon):
+    return requests.get(f"https://pokeapi.co/api/v2/pokemon/{pokemon}").json()
 
 def get_id(pokemon):
-    with open("pokemon_data.json","r") as pdj:
+    with open(r"C:\Users\tjkit\Coding\PIFproject\data\pokemon_data.json", "r") as pdj:
         dexdata = json.load(pdj)
         for data in dexdata:
             if data['name'].lower() == pokemon:
                 id = data['id']
-    return id
+                return id
 
 
 def get_species(pokemon):
-    r = requests.get(f"https://pokeapi.co/api/v2/pokemon/{pokemon}").json()
+    r = get_pokemon_data(pokemon)
     return r['name']
 
 def get_abilities(pokemon):
-    r = requests.get(f"https://pokeapi.co/api/v2/pokemon/{pokemon}").json()
+    r = get_pokemon_data(pokemon)
     regular_abilities = [
         entry['ability']['name']
         for entry in r['abilities']
@@ -38,7 +41,7 @@ def get_abilities(pokemon):
     )
 
 def get_level_moves(pokemon):
-    r = requests.get(f"https://pokeapi.co/api/v2/pokemon/{pokemon}").json()
+    r = get_pokemon_data(pokemon)
     movetotal = []
     for move in r['moves']:
         for version in move['version_group_details']:
@@ -63,7 +66,7 @@ def get_level_moves(pokemon):
     return movetotal
 
 def get_egg_moves(pokemon):
-    r = requests.get(f"https://pokeapi.co/api/v2/pokemon/{pokemon}").json()
+    r = get_pokemon_data(pokemon)
     re = requests.get(f"https://pokeapi.co/api/v2/pokemon-species/{pokemon}").json()
     evo = requests.get(re['evolution_chain']['url']).json()
     movetotal = []
@@ -90,7 +93,7 @@ def get_egg_moves(pokemon):
     return movetotal
 
 def get_tm_moves(pokemon):
-    r = requests.get(f"https://pokeapi.co/api/v2/pokemon/{pokemon}").json()
+    r = get_pokemon_data(pokemon)
     re = requests.get(f"https://pokeapi.co/api/v2/pokemon-species/{pokemon}").json()
     evo = requests.get(re['evolution_chain']['url']).json()
     movetotal = []
@@ -118,7 +121,7 @@ def get_tm_moves(pokemon):
     
 
 def get_types(pokemon):
-    with open("pokemon_data.json","r") as pdj:
+    with open(r"C:\Users\tjkit\Coding\PIFproject\data\pokemon_data.json","r") as pdj:
         dexdata = json.load(pdj)
         for data in dexdata:
             if data['name'].lower() == pokemon:
@@ -129,7 +132,7 @@ def get_types(pokemon):
     
 def get_bst(pokemon):
 
-    r = requests.get(f"https://pokeapi.co/api/v2/pokemon/{pokemon}").json()
+    r = get_pokemon_data(pokemon)
     re = requests.get(f"https://pokeapi.co/api/v2/pokemon-species/{pokemon}").json()
     evo = requests.get(re['evolution_chain']['url']).json()
     hp = r['stats'][0]['base_stat']
@@ -142,7 +145,7 @@ def get_bst(pokemon):
     return statdict
 
 def get_evos(pokemon):
-    with open("pokemon_data.json", "r") as pdj:
+    with open(r"C:\Users\tjkit\Coding\PIFproject\data\pokemon_data.json", "r") as pdj:
         mons = json.load(pdj)
 
     for mon in mons:
@@ -164,6 +167,3 @@ def get_evos(pokemon):
             for evo in next_evolutions],}
 
     raise ValueError(f"Unknown Pokemon: {pokemon}")
-
-if __name__ == "__main__":
-    print(get_abilities(pokemon))
