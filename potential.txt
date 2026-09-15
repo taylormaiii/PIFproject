@@ -17,3 +17,13 @@
                     │ Moves           │
                     │ Sprite          │
                     └─────────────────┘
+
+> website starts w/ showing route inputs
+.scrollable list of locations; middle of the screen
+.party box, multiple saves; party left side(with weakness chart?) saves chosen at top
+> input pokemon + routes into tracker 
+.single or fused mons, caught or missed encounters; inside the locations area
+> pokemon labeled 'caught' get put through fusion engine
+.clickable "box" button on the webpage that opens a new mini window with fusion box functionality 
+> show all possible results w/ sprites, type, stat comparison, weaknesses, abilities, movesets
+.every fusion outcome sprite shown w/ typings, each one clickable to show stats, weaknesses, abilities, movesets

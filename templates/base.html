@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .flexbox {
+        display: flex;
+        align-items: stretch;
+        height: 100vh;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        background-color: darkslategray;
+    }
+    .trackerside {
+        flex: 1 1 50%;
+        width: auto;
+        float: none;
+        min-height: 0;
+        overflow-y: auto;
+        background-color: darkslategray;
+        padding: 5px;
+    }
+    .table-scroll-container {
+        overflow: visible;
+    }
+    .fusionside {
+        flex: 1 1 50%;
+        width: auto;
+        background-color: rgb(40, 101, 141);
+        padding: 5px;
+    }
+    td, th {
+        border: 1px solid #000000;
+        text-align: left;
+        padding: 8px;
+    }
+    .pc-box {
+        display: flex;
+        margin-left:auto;
+        margin-right:auto;
+        flex-direction:column;
+        padding-top: .5rem;
+        padding-bottom: .75rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        color: grey;
+
+    }
+    .mon-selector {
+        display:block
+    }
+    .box-selector {
+        margin: 5px;
+        flex: 1;
+
+    }
+    .box-info {
+        margin:5px;
+    }
+    .mons-in-box {
+        margin:5px
+    }
+    </style>
+</head>
+<body>
+<main id="main-content">
+    <div class="flexbox">
+        <section1 class="trackerside">
+            <h2 id="locations-heading">Game Locations</h2>
+            <div class="table-scroll-container">
+                <table>
+                        <colgroup>
+                            <col width="175px">
+                            <col width="155px">
+                            <col width="500px">
+                            <col width="60px">
+                        </colgroup>
+                        <thead class="tablehead">
+                            <tr>
+                                <th><span>Location</span></th>
+                                <th><span>Sprite</span></th>
+                                <th><span>Encounter</span></th>
+                                <th><span>Status</span></th>
+                            </tr>
+                        </thead>
+                        <tbody id="locations-table">
+                            {% for location in locations %}
+                            <tr data-location-id="{{ location.id }}" aria-rowindex="{{ loop.index + 1 }}">
+                                <td>
+                                    <div>
+                                        <h2>{{ location.name }}</h2>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                </table>
+            </div>
+        </section1>
+        <section2 class="fusionside" width="390px">
+            <h2>Fusion Box</h2>
+            <div width="100%" margin-bottom=".75rem;">
+                <div class="mon-selector">
+                    <div>Input Pokemon</div>
+                    <button class="clear-box">Clear Box</button>
+                </div>
+            </div>
+            <div class="pc-box">
+                <div class="box-selector"></div>
+                <div class="box-info"></div>
+                <div class="mons-in-box"></div>
+            </div>
+            
+        </section2>
+</div>
+</main>
+
+</body>
+
+</html>
