@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='bba922d03b528091.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='content_script.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='3c9f9bd2a030d0fc.css') }}">
+    <script>
+        const caughtmons = new Set();
+        function myFunction() {
+            caughtmons.add(value);
+        }
+    </script>
 <style>
         .flexbox {
             display: flex;
@@ -177,7 +183,7 @@
                                             <div class="relative dropdown" data-headlessui-state="">
                                                     <label for="select-status" margin="auto" vertical-align="center";>Status</label>
                                                     <select id="select-status" >
-
+                                                        <option>Select</option>
                                                         <option value="caught">Caught</option>
                                                         <option value="missed">Missed</option>
                                                         <option value="dead">Deceased</option>
