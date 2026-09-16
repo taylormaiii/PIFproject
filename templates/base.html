@@ -1,120 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html class="karla_4961aaed-module__ogPRNG__variable dsfont_ddb862b7-module__I1nSuG__variable dark" lang="en" style="color-scheme: dark;">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='07km9n8k-9rw4.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bba922d03b528091.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='content_script.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='3c9f9bd2a030d0fc.css') }}">
 <style>
-    .flexbox {
-        display: flex;
-        align-items: stretch;
-        height: 100vh;
-        overflow: hidden;
-        box-sizing: border-box;
-    }
-    body {
-        margin: 0;
-        background-color: darkslategray;
-    }
-    .trackerside {
-        flex: 1 1 50%;
-        width: auto;
-        float: none;
-        min-height: 0;
-        overflow-y: auto;
-        background-color: darkslategray;
-        padding: 5px;
-    }
-    .table-scroll-container {
-        overflow: visible;
-    }
-    .fusionside {
-        flex: 1 1 50%;
-        width: auto;
-        background-color: rgb(40, 101, 141);
-        padding: 5px;
-    }
-    td, th {
-        border: 1px solid #000000;
-        text-align: left;
-        padding: 8px;
-    }
-    .pc-box {
-        display: flex;
-        margin-left:auto;
-        margin-right:auto;
-        flex-direction:column;
-        padding-top: .5rem;
-        padding-bottom: .75rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-        color: grey;
+        .flexbox {
+            display: flex;
+            align-items: stretch;
+            height: 100vh;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .section1 {
+            flex: 1 1 50%;
+            width: auto;
+            float: none;
+            min-width: 0;
+            min-height: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            background-color: darkslategray;
+            padding: 5px;
+        }
+        .section1 > div {
+            flex: 1 1 auto;
+            min-height: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .section1 > div > div {
+            flex: 1 1 auto;
+            min-height: 0;
+            max-height: none;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        .section1 table {
+            width: 100%;
+            min-width: 0;
+            table-layout: fixed;
+        }
+        .section1 td,
+        .section1 th {
+            min-width: 0;
+            box-sizing: border-box;
+        }
+        .section2 {
+            flex: 1 1 50%;
+            width: auto;
+            background-color: rgb(40, 101, 141);
+            padding: 5px;
+        }
+        td, th {
+            border-radius: 15px;
+            border: 1px solid #000000;
+            text-align: left;
+            padding: 8px;
+        }
+        .dropdown {
+            position: relative;
+        }
 
-    }
-    .mon-selector {
-        display:block
-    }
-    .box-selector {
-        margin: 5px;
-        flex: 1;
+/* Style the dropdown button */
+        .dropbtn {
+            background-color: #2e382f;
+            color: white;
+            padding: 5px;
+            border: none;
+            cursor: pointer;
+        }
 
-    }
-    .box-info {
-        margin:5px;
-    }
-    .mons-in-box {
-        margin:5px
-    }
+        /* Dropdown content */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            padding: 0;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            font-size: inherit;
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Links inside dropdown content */
+        .dropdown-content a {
+            color: black;
+            padding: 5px 5px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Show the dropdown content on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change background color of dropdown button on hover */
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        .dropdown-content button {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+            border: 0;
+            text-align: left;
+        }
+        .clear-box {
+            background-color: gray;
+            padding: 4px;
+            border-radius: 5px;
+        }
     </style>
 </head>
-<body>
-<main id="main-content">
+<body class="antialiased font-sans">
+<main id="main-content" class="max-w-[1500px] mx-auto">
     <div class="flexbox">
-        <section1 class="trackerside">
-            <h2 id="locations-heading">Game Locations</h2>
-            <div class="table-scroll-container">
-                <table>
+        <section1 class="section1">
+            <h2 id="locations-heading" class="sr-only">Game Locations</h2>
+            <div class="overflow-hidden 2xl:rounded-lg border-y md:border border-gray-200 dark:border-gray-700 xl:shadow-sm">
+                <div class="max-h-[93.5vh] overflow-auto scrollbar-thin overscroll-x-none relative">
+                    <table class="w-full min-w-full table-fixed divide-y divide-gray-200 dark:divide-gray-700 overscroll-x-contain overscroll-y-auto" data-scroll-container="true" aria-label="Locations table" aria-rowcount="100">
                         <colgroup>
-                            <col width="175px">
-                            <col width="155px">
-                            <col width="500px">
-                            <col width="60px">
+                            <col width="20%">
+                            <col width="15%">
+                            <col width="45%">
+                            <col width="20%">
                         </colgroup>
-                        <thead class="tablehead">
+                        <thead class="bg-gray-50 dark:bg-gray-800 sticky top-0 z-50 shadow-[0_0.5px_0_0_rgb(229,231,235)] dark:shadow-[0_0.5px_0_0_rgb(55,65,81)]">
                             <tr>
-                                <th><span>Location</span></th>
-                                <th><span>Sprite</span></th>
-                                <th><span>Encounter</span></th>
-                                <th><span>Status</span></th>
+                                <th class="sticky top-0 z-20 bg-gray-50 dark:bg-gray-800 px-4 py-3 text-left text-xs  text-gray-500 dark:text-gray-300 uppercase tracking-wider transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset w-[125px]"><div class="flex items-center space-x-1"><div class="flex items-center w-full"><span>Location</span></div></div></th>
+                                <th class="sticky top-0 z-20 bg-gray-50 dark:bg-gray-800 px-4 py-3 text-left text-xs  text-gray-500 dark:text-gray-300 uppercase tracking-wider transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset w-[125px]"><div class="flex items-center space-x-1"><div class="flex items-center w-full"><span>Sprite</span></div></div></th>
+                                <th class="sticky top-0 z-20 bg-gray-50 dark:bg-gray-800 px-4 py-3 text-left text-xs  text-gray-500 dark:text-gray-300 uppercase tracking-wider transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset w-[125px]"><div class="flex items-center space-x-1"><div class="flex items-center w-full"><span>Encounter</span></div></div></th>
+                                <th class="sticky top-0 z-20 bg-gray-50 dark:bg-gray-800 px-4 py-3 text-left text-xs  text-gray-500 dark:text-gray-300 uppercase tracking-wider transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset w-[125px]"><div class="flex items-center space-x-1"><div class="flex items-center w-full"><span>Status</span></div></div></th>
                             </tr>
                         </thead>
-                        <tbody id="locations-table">
+                        <tbody id="location-table" class="bg-white dark:bg-gray-900 divide-y divide-gray-200 dark:divide-gray-700">
                             {% for location in locations %}
-                            <tr data-location-id="{{ location.id }}" aria-rowindex="{{ loop.index + 1 }}">
-                                <td>
-                                    <div>
-                                        <h2>{{ location.name }}</h2>
+                            <tr data-location-id="{{ location.id }}" aria-rowindex="{{ loop.index + 1 }}" class="h-location-row hover:bg-gray-50/60 dark:hover:bg-gray-800/60 transition-colors group/row">
+                                <td id="locations" class="px-4 py-3 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                                    <div class="text-gray-900 dark:text-white flex gap-x-2 items-center">
+                                        <h2 class="text-sm truncate rounded-md focus-within:ring-2 focus-within:ring-blue-400 focus-within:ring-offset-0.5 break-words block">{{ location.name }}</h2>
                                     </div>
                                 </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td id="sprites" class="p-1 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100 relative group">
+                                    <div class="text-gray-900 dark:text-white flex gap-x-2 items-center"></div>
+                                </td>
+                                <td id="Pokemon" class="w-full overflow-x-auto px-4 pt-8.5 pb-4 text-sm text-gray-900 dark:text-gray-100 ">
+                                    <div class="flex flex-row justify-center gap-4 w-full ">
+                                        <div class="flex-1 min-w-0 max-w-full ">
+                                            <div id="d9b035c1-8e26-4aa6-88c1-2fd0b82dba44" class="relative" data-uid="d9b035c1-8e26-4aa6-88c1-2fd0b82dba44">
+                                                <div class="absolute inset-0 bg-blue-500/20 border-2 border-blue-500/60 rounded-lg pointer-events-none z-10 opacity-0 transition-opacity duration-200 ease-in-out location-highlight-overlay max-w-screen" data-combobox-id="f47ac10b-58cc-4372-a567-0e02b2c3d479-single"></div>
+                                                <div data-headlessui-state="">
+                                                    <div class="relative">
+                                                        <input id="headlessui-combobox-input-_r_2hc_" class="rounded-t-md rounded-b-none border group/input w-full px-3 py-3.5 text-sm  bg-white text-gray-900 outline-none focus:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-blue-500 focus-visible:border-blue-500 disabled:opacity-50 disabled:cursor-not-allowed border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:focus-visible:ring-blue-400 focus:cursor-text hover:cursor-pointer pl-16" placeholder="Select Pokémon" spellcheck="false" autocomplete="off" role="combobox" aria-expanded="false" aria-autocomplete="list" data-headlessui-state="" type="text">
+                                                    </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td id="status" class="p-2 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                                    <div class="flex flex-col items-center justify-center gap-1 group-hover/row:opacity-100 transition-opacity duration-200 group-focus-within/row:opacity-100">
+                                        <div class="flex">
+                                            <div class="relative dropdown" data-headlessui-state="">
+                                                    <label for="select-status" margin="auto" vertical-align="center";>Status</label>
+                                                    <select id="select-status" >
+
+                                                        <option value="caught">Caught</option>
+                                                        <option value="missed">Missed</option>
+                                                        <option value="dead">Deceased</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
                             </tr>
                             {% endfor %}
                         </tbody>
                 </table>
+                </div>
             </div>
         </section1>
-        <section2 class="fusionside" width="390px">
+        <section2 class="section2" width="390px">
             <h2>Fusion Box</h2>
             <div width="100%" margin-bottom=".75rem;">
                 <div class="mon-selector">
-                    <div>Input Pokemon</div>
+                    <div>
+                        <div>
+                            <div style="overflow:hidden;gap:.25rem;align-items:center;flex-wrap:wrap;flex: 1 1 0%;display: flex;box-sizing: border-box; border: 0 solid #e5e7eb;">
+                                <span>Add Pokemon to your box</span>
+                            </div>
+                        </div>
+                    </div>
                     <button class="clear-box">Clear Box</button>
                 </div>
             </div>
             <div class="pc-box">
                 <div class="box-selector"></div>
                 <div class="box-info"></div>
-                <div class="mons-in-box"></div>
+                <div class="mons-in-box relative mx-auto flex min-h-[350px] w-full max-w-[1000px] flex-col rounded-lg border border-border bg-card text-card-foreground shadow-sm max-sm:px-6 max-sm:pb-3 max-sm:pt-2 sm:px-5 sm:pb-3 sm:pt-2">
+                    
+                </div>
             </div>
             
         </section2>
