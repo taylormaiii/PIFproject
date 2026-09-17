@@ -1,0 +1,32 @@
+Ability Order Switched
+
+The evolutionary lines of Pidgey, Ekans, Diglett, Growlithe, Machop, Geodude, Farfetch'd, 
+Onix, Krabby, Voltorb, Cubone, Hitmonchan (but not its family) Lapras, Snorlax, Aerodactyl, Chinchou, Marill, Dunsparce,
+Murkrow, Snubbull, Teddiursa, Absol, and Clefairy have their first and second abilities switched,
+for balance or other reasons (Tangled Feet makes more sense on a fusion with Pidgey's body than its head, for example).
+
+Some Pokemon's abilities do not match their main series counterparts:
+
+    Gengar has Levitate instead of Cursed Body
+    Delbird has Snow Warning as its Hidden Ability
+    Regigigas has Mold Breaker as its Hidden Ability
+    Zapdos has Lightning Rod instead of Static for its Hidden Ability
+    Raikou has Volt Absorb instead of Inner Focus for its Hidden Ability
+    Suicune has Water Absorb instead of Inner Focus for its Hidden Ability
+    Entei has Flash Fire instead of Inner Focus for its Hidden Ability
+    Chandelure line has Shadow Tag instead of Infiltrator for its Hidden Ability
+    Wigglytuff line doesn’t have Competitive
+    Milotic doesn’t have Competitive
+    Feebas doesn’t have Oblivious
+    Ferrothorn doesn’t have Anticipation
+    Unown has Mummy as its Hidden Ability
+    Koffing line has Stench as its Hidden Ability
+    Flygon has Dry Skin as Hidden Ability
+    Talonflame has Big Pecks instead of Flame Body for its Primary Ability
+    Mewtwo has Immunity instead of Unnerve for its Hidden Ability
+    Darkrai has White Smoke as its Hidden Ability
+    Kyurem has Ice Body as its Hidden Ability
+    Zekrom has Volt Absorb as its Hidden Ability
+    Reshiram has Flare Boost as its Hidden Ability
+    Hydreigon has Hustle as its Hidden Ability
+    Genesect has Motor Drive as its Hidden Ability
