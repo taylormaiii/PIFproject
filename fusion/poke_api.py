@@ -9,7 +9,7 @@ def get_pokemon_data(pokemon):
     return requests.get(f"https://pokeapi.co/api/v2/pokemon/{pokemon}").json()
 
 def get_id(pokemon):
-    with open(r"C:\Users\tjkit\Coding\PIFproject\data\pokemon_data.json", "r") as pdj:
+    with open(r"PIFproject\data\pokemon_data.json", "r") as pdj:
         dexdata = json.load(pdj)
         for data in dexdata:
             if data['name'].lower() == pokemon:
@@ -121,7 +121,7 @@ def get_tm_moves(pokemon):
     
 
 def get_types(pokemon):
-    with open(r"C:\Users\tjkit\Coding\PIFproject\data\pokemon_data.json","r") as pdj:
+    with open(r"PIFproject\data\pokemon_data.json","r") as pdj:
         dexdata = json.load(pdj)
         for data in dexdata:
             if data['name'].lower() == pokemon:
@@ -145,7 +145,7 @@ def get_bst(pokemon):
     return statdict
 
 def get_evos(pokemon):
-    with open(r"C:\Users\tjkit\Coding\PIFproject\data\pokemon_data.json", "r") as pdj:
+    with open(r"PIFproject\data\pokemon_data.json", "r") as pdj:
         mons = json.load(pdj)
 
     for mon in mons:
