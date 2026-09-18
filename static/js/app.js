@@ -13,6 +13,7 @@ function renderFusionBox() {
         card.className = "caught-mon";
         const nameLabel = document.createElement("span");
         nameLabel.textContent = name;
+        
 
         const cardImage = document.createElement("img");
         const option = Array.from(document.querySelectorAll("option"))
@@ -21,6 +22,7 @@ function renderFusionBox() {
         if (option?.dataset.pokemonId) {
             cardImage.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${option.dataset.pokemonId}.png`;
             cardImage.alt = `${name} sprite`;
+
         }
 
         card.append(cardImage, nameLabel);
@@ -32,6 +34,7 @@ document.addEventListener("change", (event) => {
     if (!event.target.matches(".status-select")) {
         return;
     }
+    
 
     const row = event.target.closest("tr");
     const inputs = row.querySelectorAll(".pokemon-input");
@@ -64,6 +67,18 @@ document.addEventListener("change", (event) => {
     renderFusionBox();
     });
 
+document.addEventListener("change", (event) => {
+    if (!event.target.matches(".pokemon-input")) {
+        return;
+    }
+
+    const input = event.target;
+    const row = input.closest("tr");
+    const name = input.value.trim();
+
+    renderRowSprites(row, name);
+});
+
 clearButton.addEventListener("click", () => {
     caughtmons.length = 0;
     document.querySelectorAll(".h-location-row").forEach(row => {
@@ -89,3 +104,20 @@ function onClickAdd(button) {
     }
 }
 
+function renderRowSprites(row, name) {
+    const spritecol = row.querySelector(".spriteimg");
+    const spriteimg = document.createElement("div");
+    spriteimg.className = "caught-sprite";
+    const spriteimgname = document.createElement("span");
+    spriteimgname.textContent = name;
+    const spriteimgimg = document.createElement("img");
+    const option = Array.from(document.querySelectorAll("option"))
+            .find((entry) => entry.value === name);
+    if (option?.dataset.pokemonId) {
+        spriteimgimg.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${option.dataset.pokemonId}.png`;
+        spriteimgimg.alt = `${name} sprite`; }
+
+    spriteimg.append(spriteimgimg, spriteimgname);
+    spritecol.append(spriteimg);
+
+}
