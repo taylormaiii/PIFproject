@@ -63,6 +63,21 @@
             text-align: left;
             padding: 8px;
         }
+        .encounter-inputs {
+            display: flex;
+            flex-direction: row;
+        }
+        .pokemon-input {
+            width: 140px;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        .encounter-inputs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+        }
         .dropdown {
             position: relative;
         }
@@ -172,15 +187,21 @@
                                     <div class="text-white flex gap-x-2 items-center" style="color: #f3f4f6;"></div>
                                 </td>
                                 <td id="Pokemon" class="w-full overflow-x-auto px-4 pt-8.5 pb-4 text-sm text-gray-100" style="color: #f3f4f6;">
-                                    <div class="flex flex-col items-center justify-center gap-1 group-hover/row:opacity-100 transition-opacity duration-200 group-focus-within/row:opacity-100">
-                                        <div class="relative dropdown" data-headlessui-state="">
-                                            <input class="pokemon-input" type="text" list="pokemon-options-{{ loop.index }}" />
-                                            <datalist id="pokemon-options-{{ loop.index }}" class="rounded-t-md rounded-b-none border group/input w-full px-3 py-3.5 text-sm bg-gray-800 text-white outline-none focus:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-blue-500 focus-visible:border-blue-500 disabled:opacity-50 disabled:cursor-not-allowed border-gray-600 focus:cursor-text hover:cursor-pointer pl-16" placeholder="Select Pokémon" spellcheck="false" autocomplete="off" role="combobox" aria-expanded="false" aria-autocomplete="list" data-headlessui-state="" type="text" style="background-color: #1f2937; color: #f3f4f6;">
-                                                {% for mon in pokemon_data %}
-                                                <option value="{{ mon.name }}" data-pokemon-id="{{ mon.id }}"></option>
-                                                {% endfor %}
-                                            </datalist>
+                                    <div class="encounter-container">
+                                        <div class="encounter-inputs">
+                                            <div class="relative dropdown encounter-input">
+                                                <input class="pokemon-input" type="text" list="pokemon-options-{{ loop.index }}"/>
+                                            </div>
                                         </div>
+                                        <button type="button" onclick="onClickAdd(this)" class="fuse-button"> Fuse </button>
+                                        <datalist id="pokemon-options-{{ loop.index }}">
+                                            {% for mon in pokemon_data %}
+                                                <option
+                                                    value="{{ mon.name }}"
+                                                    data-pokemon-id="{{ mon.id }}">
+                                                </option>
+                                            {% endfor %}
+                                        </datalist>
                                     </div>
                                 </td>
                                 <td id="status" class="p-2 whitespace-nowrap text-sm text-gray-100" style="color: #f3f4f6;">

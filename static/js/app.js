@@ -34,16 +34,58 @@ document.addEventListener("change", (event) => {
     }
 
     const row = event.target.closest("tr");
-    const nameInput = row.querySelector(".pokemon-input");
-    const name = nameInput.value.trim();
+    const inputs = row.querySelectorAll(".pokemon-input");
+    const names = Array.from(inputs)
+        .map(input => input.value.trim())
+        .filter(Boolean);
 
-    if (event.target.value === "caught" && name) {
-        caughtmons.push(name);
-        renderFusionBox();
+
+    const previousNames = row.dataset.caughtMons
+        ? JSON.parse(row.dataset.caughtMons)
+        : [];
+
+    previousNames.forEach(name => {
+        const index = caughtmons.indexOf(name);
+
+        if (index !== -1) {
+            caughtmons.splice(index, 1);
+        }
+    });
+
+    if (event.target.value === "caught") {
+        names.forEach(name => {
+            caughtmons.push(name);
+        });
+        row.dataset.caughtMons = JSON.stringify(names);
+    } else {
+        row.dataset.caughtMons = JSON.stringify([]);
     }
-});
+
+    renderFusionBox();
+    });
 
 clearButton.addEventListener("click", () => {
-    caughtmons.legnth = 0;
+    caughtmons.length = 0;
+    document.querySelectorAll(".h-location-row").forEach(row => {
+    row.dataset.caughtMons = JSON.stringify([]);
+    });
     renderFusionBox();
 });
+
+function onClickAdd(button) {
+    const container = button.closest(".encounter-container");
+    const inputsContainer = container.querySelector(".encounter-inputs");
+    const inputs = inputsContainer.querySelectorAll(".encounter-input");
+
+    if (inputs.length === 1) {
+        const clone = inputs[0].cloneNode(true);
+        const input = clone.querySelector(".pokemon-input");
+        input.value = "";
+        inputsContainer.appendChild(clone);
+        button.textContent = "Unfuse";
+    } else {
+        inputs[1].remove();
+        button.textContent = "Fuse";
+    }
+}
+
