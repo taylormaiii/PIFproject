@@ -110,6 +110,7 @@ def get_types(pokemon):
 
     return types[0], types[1]
 
+
 #############################  UTIL METHODS ###############################
 
 def calculate_fused_stats(dominantStat, otherStat):
@@ -145,8 +146,9 @@ if __name__ == "__main__":
   id = calculate_id(head_pokemon, body_pokemon)
   type1 = calculate_type1(head_pokemon, body_pokemon)
   type2 = calculate_type2(head_pokemon, body_pokemon)
+  sprite = f"https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/{id}.png"
 
-  #find a way to show stat loss + gain
+  #find a way to show stat loss + gain vs other option
   base_stats = calculate_base_stats(head_pokemon, body_pokemon)
   moves = calculate_moveset(head_pokemon, body_pokemon)
   tm_moves = calculate_tm_moves(head_pokemon, body_pokemon) # hash[:tutor_moves] || []
@@ -159,7 +161,6 @@ if __name__ == "__main__":
 
 #automatically show both options
 #add a weakness chart
-#maybe connect this to an output formatter code?
 #checker for custom abilities in pif
 def calculate_fusion(head_pokemon, body_pokemon):
   return {

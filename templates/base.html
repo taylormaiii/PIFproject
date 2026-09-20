@@ -149,9 +149,23 @@
         .spriteimg {
             border: 1px solid black;
             padding: .375rem;
+            display: flex;
+            justify-content: center;
             align-items: center;
         }
-        .clear-box {
+        .spriteimg div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+        .spriteimg img {
+            display: block;
+            margin: 0 auto;
+        }
+        button {
             background-color: gray;
             padding: 4px;
             border-radius: 5px;
@@ -199,7 +213,7 @@
                                             </div>
                                         </div>
                                         <button type="button" onclick="onClickAdd(this)" class="fuse-button"> Fuse </button>
-                                        <datalist id="pokemon-options-{{ loop.index }}">
+                                        <datalist id="pokemon-options-{{ loop.index }}" name="headbody">
                                             {% for mon in pokemon_data %}
                                                 <option
                                                     value="{{ mon.name }}"
@@ -220,6 +234,9 @@
                                                         <option value="missed">Missed</option>
                                                         <option value="dead">Deceased</option>
                                                     </select>
+                                                    <div class="flex">
+                                                        <button type="button" class="clear-row" onclick="onClickDel(this)"> Clear Encounter </button>
+                                                    </div>
                                             </div>
                                         </div>
                                     </div>
