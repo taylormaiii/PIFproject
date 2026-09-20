@@ -167,6 +167,7 @@ def calculate_fusion(head_pokemon, body_pokemon):
     "id": calculate_id(head_pokemon, body_pokemon),
     "head": head_pokemon,
     "body": body_pokemon,
+    "sprite": f"https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/{id}.png",
     "types": return_types(
     calculate_type1(head_pokemon, body_pokemon),
     calculate_type2(head_pokemon, body_pokemon),),

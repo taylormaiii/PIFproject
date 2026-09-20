@@ -9,13 +9,13 @@ def get_pokemon_data(pokemon):
     return requests.get(f"https://pokeapi.co/api/v2/pokemon/{pokemon}").json()
 
 def get_id(pokemon):
-    with open(r"PIFproject\data\pokemon_data.json", "r") as pdj:
+    with open(r"data\pokemon_data.json", "r") as pdj:
         dexdata = json.load(pdj)
         for data in dexdata:
-            if data['name'].lower() == pokemon:
+            if data['name'].lower() == pokemon.lower():
                 id = data['id']
                 return id
-
+    raise ValueError(f"Unknown Pokemon: {pokemon}")
 
 def get_species(pokemon):
     r = get_pokemon_data(pokemon)
@@ -121,10 +121,10 @@ def get_tm_moves(pokemon):
     
 
 def get_types(pokemon):
-    with open(r"PIFproject\data\pokemon_data.json","r") as pdj:
+    with open(r"data\pokemon_data.json","r") as pdj:
         dexdata = json.load(pdj)
         for data in dexdata:
-            if data['name'].lower() == pokemon:
+            if data['name'].lower() == pokemon.lower():
                 types = tuple(type_data['name'] for type_data in data['types'])
                 return types[0], types[1] if len(types) > 1 else None
 
@@ -145,7 +145,7 @@ def get_bst(pokemon):
     return statdict
 
 def get_evos(pokemon):
-    with open(r"PIFproject\data\pokemon_data.json", "r") as pdj:
+    with open(r"data\pokemon_data.json", "r") as pdj:
         mons = json.load(pdj)
 
     for mon in mons:

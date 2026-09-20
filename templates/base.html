@@ -136,7 +136,7 @@
             gap: .5rem;
         }
         .mons-in-box div {
-            background: #abadaf;
+            background: #ffffff;
             border: 1px solid black;
             padding: .375rem;
             border-width: 1px;
@@ -145,6 +145,10 @@
             flex-direction: column;
             display: flex;
             position: relative;
+        }
+        .fused-possible {
+            background: black;
+            
         }
         .spriteimg {
             border: 1px solid black;
@@ -253,14 +257,16 @@
             <div width="100%" margin-bottom=".75rem;">
                 <button type="button" class="clear-box">Clear Box</button>
             </div>
-            <div class="pc-box min-h-0 flex-1 overflow-y-auto overflow-x-hidden overscroll-y-contain pr-1 pt-[5px] [-webkit-overflow-scrolling:touch]">
+            <div class="pc-box min-h-0 flex-1 overflow-y-auto min-h-[350px] overflow-x-hidden overscroll-y-contain pr-1 pt-[5px] [-webkit-overflow-scrolling:touch]">
                 <div class="box-selector"></div>
                 <div class="box-info"></div>
-                <div class="mons-in-box relative mx-auto flex min-h-[350px] grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 w-full max-w-[1000px] flex-col rounded-lg border border-border bg-card text-card-foreground shadow-sm">
+                <div class="mons-in-box relative mx-auto flex grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 w-full max-w-[1000px] flex-col rounded-lg border border-border bg-card text-card-foreground shadow-sm">
                     <span></span>
                 </div>
             </div>
-            
+            <div class="fused-possible flex-1 overflow-y-auto overflow-x-hidden">
+
+            </div>
         </section2>
 </div>
 </main>

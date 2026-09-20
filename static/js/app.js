@@ -3,8 +3,9 @@ const caughtmons = [];
 const fusionBox = document.querySelector(".mons-in-box");
 const clearButton = document.querySelector(".clear-box");
 const clearRow = document.querySelector(".clear-row")
-// button to reset each row
-// update the table sprite in real time?
+
+// undo button next to clear box if pressed
+
 function renderFusionBox() {
     fusionBox.replaceChildren();
 
@@ -13,6 +14,10 @@ function renderFusionBox() {
         card.className = "caught-mon";
         const nameLabel = document.createElement("span");
         nameLabel.textContent = name;
+        const hide = document.createElement("button");
+        hide.id = "hideButton"
+        hide.style.backgroundColor = "black"
+        hide.onclick = () => onClickHide(hide);
         
 
         const cardImage = document.createElement("img");
@@ -25,7 +30,7 @@ function renderFusionBox() {
 
         }
 
-        card.append(cardImage, nameLabel);
+        card.append(cardImage, nameLabel, hide);
         fusionBox.append(card);
     });
 }
@@ -69,6 +74,18 @@ function onClickDel(button) {
     renderFusionBox();
 }
 
+function onClickHide(button) {
+    const pokeCard = button.closest(".caught-mon");
+
+    if (!pokeCard) {
+        return;
+    }
+
+    pokeCard.style.backgroundColor = pokeCard.style.backgroundColor === "grey"
+        ? ""
+        : "grey";
+}
+
 document.addEventListener("change", (event) => {
     if (!event.target.matches(".status-select")) {
         return;
@@ -104,6 +121,7 @@ document.addEventListener("change", (event) => {
     }
 
     renderFusionBox();
+    submitFusion();
     });
 
 document.addEventListener("change", (event) => {
@@ -173,3 +191,39 @@ function renderRowSprites(row) {
     spritecol.append(spriteimg);
 
 }
+
+async function submitFusion() {
+    if (caughtmons.length < 2) {
+        return;
+    }
+    const formData = new FormData();
+
+    caughtmons.forEach(name => {
+        formData.append("caughtmon", name);
+    });
+
+    const response = await fetch("/", {
+        method: "POST",
+        body: formData
+    });
+
+    const data = await response.json();
+
+    renderFusionResults(data.results)
+}
+
+function renderFusionResults(results) {
+    results.forEach(result => {
+    const fusedCard = document.createElement("div");
+    fusedCard.className = "possible-fusions";
+    const fusedCardSprite = document.createElement("img");
+    fusedCardSprite.src = `https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/${result['id']}.png`;
+    const fusedCardName = document.createElement("span");
+    fusedCardName.textContent = `${result.head} + ${result.body}`;
+    const fusedCardType = document.createElement("span");
+    fusedCardType.textContent = `${result.types}`;
+
+
+    fusedCard.append(fusedCardSprite, fusedCardName, fusedCardType);
+    document.querySelector(".fused-possible").append(fusedCard);
+    })}
