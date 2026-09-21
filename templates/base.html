@@ -148,7 +148,33 @@
         }
         .fused-possible {
             background: black;
-            
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-columns: repeat(8,minmax(0,1fr));
+        }
+        .fused-possible div {
+            display: flex;
+            position: relative;
+            width: 100%;
+            overflow: visible;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: .375rem;
+            box-sizing: border-box;
+            color: white;
+        }
+        .fused-type-solo {
+            width: 48;
+            height: 16;
+            color: transparent;
+        }
+        .fused-type-duo {
+            width: 48;
+            height: 16;
+            color: transparent;
         }
         .spriteimg {
             border: 1px solid black;
@@ -182,7 +208,7 @@
         <section1 class="section1">
             <h2 id="locations-heading" class="sr-only">Game Locations</h2>
             <div class="overflow-hidden 2xl:rounded-lg border-y md:border border-gray-700 xl:shadow-sm" style="border-color: #374151;">
-                <div class="max-h-[93.5vh] overflow-auto scrollbar-thin overscroll-x-none relative" style="background-color: #111827;">
+                <div class="overflow-auto scrollbar-thin overscroll-x-none relative" style="background-color: #111827;">
                     <table class="w-full min-w-full table-fixed divide-y divide-gray-700 overscroll-x-contain overscroll-y-auto" style="background-color: #111827; color: #f3f4f6;" data-scroll-container="true" aria-label="Locations table" aria-rowcount="100">
                         <colgroup>
                             <col width="20%">
@@ -257,15 +283,15 @@
             <div width="100%" margin-bottom=".75rem;">
                 <button type="button" class="clear-box">Clear Box</button>
             </div>
-            <div class="pc-box min-h-0 flex-1 overflow-y-auto min-h-[350px] overflow-x-hidden overscroll-y-contain pr-1 pt-[5px] [-webkit-overflow-scrolling:touch]">
+            <div class="pc-box min-h-0 flex-1 overflow-y-auto overflow-x-hidden overscroll-y-contain pr-1 pt-[5px] [-webkit-overflow-scrolling:touch]" padding-bottom="5px">
                 <div class="box-selector"></div>
                 <div class="box-info"></div>
                 <div class="mons-in-box relative mx-auto flex grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 w-full max-w-[1000px] flex-col rounded-lg border border-border bg-card text-card-foreground shadow-sm">
                     <span></span>
                 </div>
             </div>
-            <div class="fused-possible flex-1 overflow-y-auto overflow-x-hidden">
-
+            <div class="fused-possible flex-1 mx-auto w-full max-w-none px-2 sm:px-3 md:px-5 overflow-y-auto overflow-x-hidden">
+                
             </div>
         </section2>
 </div>

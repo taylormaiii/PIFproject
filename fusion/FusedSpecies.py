@@ -140,13 +140,13 @@ def return_types(type1, type2):
 
 
 if __name__ == "__main__":
-  head_pokemon = input("Head pokemon ")
-  body_pokemon = input("Body pokemon ")
+  head_pokemon = input("Head pokemon: ")
+  body_pokemon = input("Body pokemon: ")
 
-  id = calculate_id(head_pokemon, body_pokemon)
+  fusionid = calculate_id(head_pokemon, body_pokemon)
   type1 = calculate_type1(head_pokemon, body_pokemon)
   type2 = calculate_type2(head_pokemon, body_pokemon)
-  sprite = f"https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/{id}.png"
+  sprite = f"https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/{fusionid}.png"
 
   #find a way to show stat loss + gain vs other option
   base_stats = calculate_base_stats(head_pokemon, body_pokemon)
@@ -162,16 +162,24 @@ if __name__ == "__main__":
 #automatically show both options
 #add a weakness chart
 #checker for custom abilities in pif
-def calculate_fusion(head_pokemon, body_pokemon):
+def calculate_fusion_summary(head_pokemon, body_pokemon):
+  fusion_id = calculate_id(head_pokemon, body_pokemon)
+
   return {
-    "id": calculate_id(head_pokemon, body_pokemon),
+    "fusionid": fusion_id,
     "head": head_pokemon,
     "body": body_pokemon,
-    "sprite": f"https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/{id}.png",
+    "sprite": f"https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/{fusion_id}.png",
     "types": return_types(
     calculate_type1(head_pokemon, body_pokemon),
-    calculate_type2(head_pokemon, body_pokemon),),
-    "stats": calculate_base_stats(head_pokemon, body_pokemon),
+    calculate_type2(head_pokemon, body_pokemon),)}
+
+
+
+def calculate_fusion_details(head_pokemon, body_pokemon):
+    result = calculate_fusion_summary(head_pokemon,body_pokemon)
+
+    result.update({"stats": calculate_base_stats(head_pokemon, body_pokemon),
     "abilities": calculate_abilities(head_pokemon, body_pokemon),
     "hidden abilities": calculate_hidden_abilities(head_pokemon, body_pokemon),
     "moves": {
@@ -180,4 +188,5 @@ def calculate_fusion(head_pokemon, body_pokemon):
         "egg": calculate_egg_moves(head_pokemon, body_pokemon)
     },
     "evolutions": calculate_evolutions(head_pokemon, body_pokemon)
-}
+})
+    return result

@@ -6,7 +6,10 @@ import requests
 
 @lru_cache(maxsize=None)
 def get_pokemon_data(pokemon):
-    return requests.get(f"https://pokeapi.co/api/v2/pokemon/{pokemon}").json()
+    try:
+        return requests.get(f"https://pokeapi.co/api/v2/pokemon/{pokemon}").json()
+    except requests.exceptions.ConnectionError as e:
+        print(f"{e} : Timed out")
 
 def get_id(pokemon):
     with open(r"data\pokemon_data.json", "r") as pdj:

@@ -211,19 +211,59 @@ async function submitFusion() {
 
     renderFusionResults(data.results)
 }
-
+// find a way to remove duplicates
 function renderFusionResults(results) {
+    document.querySelector(".fused-possible").replaceChildren();
     results.forEach(result => {
     const fusedCard = document.createElement("div");
-    fusedCard.className = "possible-fusions";
+    fusedCard.className = "possible-fusions relative z-0 flex shrink-0 flex-col items-stretch overflow-hidden rounded-lg transition-all duration-200";
     const fusedCardSprite = document.createElement("img");
-    fusedCardSprite.src = `https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/${result['id']}.png`;
+    fusedCardSprite.className = "fusion-sprite relative z-10 w-full overflow-visible"
+    fusedCardSprite.src = `https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/${result['fusionid']}.png`;
     const fusedCardName = document.createElement("span");
+    fusedCardName.className = "fusion-name relative z-10 w-full flex-col flex px-1 "
     fusedCardName.textContent = `${result.head} + ${result.body}`;
-    const fusedCardType = document.createElement("span");
-    fusedCardType.textContent = `${result.types}`;
+    const types = Array.isArray(result.types) ? result.types : [];
+    if (types.length === 1) {
+        const fusedCardType = document.createElement("img");
+        fusedCardType.src = `https://fusioncalc.com/images/type/card/${types[0]}.png`;
+        fusedCardType.className = "fused-type-solo relative z-10 w-full justify-center mt-0.5 gap-1 flex"
+        fusedCard.append(fusedCardName, fusedCardSprite, fusedCardType);
+    } else if (types.length >= 2) {
+        const fusedCardTypes1 = document.createElement("img");
+        const fusedCardTypes2 = document.createElement("img");
+        const type1 = types[0];
+        const type2 = types[1];
+        fusedCardTypes1.src = `https://fusioncalc.com/images/type/card/${type1}.png`;
+        fusedCardTypes2.src = `https://fusioncalc.com/images/type/card/${type2}.png`;
+        fusedCardTypes1.className = "fused-type-duo relative z-10 w-full justify-center mt-0.5 gap-1 flex"
+        fusedCardTypes2.className = "fused-type-duo relative z-10 w-full justify-center mt-0.5 gap-1 flex"
+        fusedCard.append(fusedCardName, fusedCardSprite, fusedCardTypes1, fusedCardTypes2);
+    }
+    fusedCard.dataset.head = result.head;
+    fusedCard.dataset.body = result.body;
+    fusedCard.addEventListener("click", openFusionDetails);
 
-
-    fusedCard.append(fusedCardSprite, fusedCardName, fusedCardType);
     document.querySelector(".fused-possible").append(fusedCard);
     })}
+
+async function openFusionDetails(event) {
+    const card = event.currentTarget;
+
+    const response = await fetch("/api/fusion-details", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            head: card.dataset.head,
+            body: card.dataset.body
+        })
+    });
+
+    const details = await response.json();
+
+    // Open a modal or details panel here.
+    console.log(details);
+}
+// TYPE IMAGES https://fusioncalc.com/images/type/card/poison.png https://fusioncalc.com/images/type/card/${result.types}.png

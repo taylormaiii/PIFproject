@@ -13,15 +13,13 @@ with open("data/pokemon_data.json", encoding="utf-8") as pokemon_file:
     pokemon_data = json.load(pokemon_file)
 
 @app.route("/", methods=['GET', 'POST'])
-
-
 def fusion():
     if request.method == 'POST':
         pokemoncaught = request.form.getlist("caughtmon")
         pokelist = list(combinations(pokemoncaught, 2))
         result = []
         for head,body in pokelist:
-            result.append(fs.calculate_fusion(head, body))
+            result.append(fs.calculate_fusion_summary(head, body))
         return jsonify({"results":result})
 
     return render_template("base.html", locations=locations, pokemon_data=pokemon_data)
@@ -45,3 +43,13 @@ def combinations(iterable, r):
             indices[j] = indices[j-1] + 1
         yield tuple(pool[i] for i in indices)
 
+@app.route("/api/fusion-details", methods=["POST"])
+def fusion_details():
+    data = request.get_json()
+
+    result = fs.calculate_fusion_details(
+        data["head"],
+        data["body"],
+    )
+
+    return jsonify(result)
