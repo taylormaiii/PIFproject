@@ -214,7 +214,7 @@ async function submitFusion() {
 // find a way to remove duplicates
 function renderFusionResults(results) {
     document.querySelector(".fused-possible").replaceChildren();
-    results.forEach(result => {
+    results.forEach(pair => pair.variants.forEach(result => {
     const fusedCard = document.createElement("div");
     fusedCard.className = "possible-fusions relative z-0 flex shrink-0 flex-col items-stretch overflow-hidden rounded-lg transition-all duration-200";
     const fusedCardSprite = document.createElement("img");
@@ -245,7 +245,7 @@ function renderFusionResults(results) {
     fusedCard.addEventListener("click", openFusionDetails);
 
     document.querySelector(".fused-possible").append(fusedCard);
-    })}
+    }))}
 
 async function openFusionDetails(event) {
     const card = event.currentTarget;

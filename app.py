@@ -19,7 +19,13 @@ def fusion():
         pokelist = list(combinations(pokemoncaught, 2))
         result = []
         for head,body in pokelist:
-            result.append(fs.calculate_fusion_summary(head, body))
+            result.append({
+                "pair": [head, body],
+                "variants": [
+                    fs.calculate_fusion_summary(head, body),
+                    fs.calculate_fusion_summary(body, head),
+                ],
+            })
         return jsonify({"results":result})
 
     return render_template("base.html", locations=locations, pokemon_data=pokemon_data)
