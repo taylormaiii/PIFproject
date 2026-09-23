@@ -172,14 +172,16 @@ def calculate_fusion_summary(head_pokemon, body_pokemon):
     "sprite": f"https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/{fusion_id}.png",
     "types": return_types(
     calculate_type1(head_pokemon, body_pokemon),
-    calculate_type2(head_pokemon, body_pokemon),)}
+    calculate_type2(head_pokemon, body_pokemon),),
+    "stats": calculate_base_stats(head_pokemon, body_pokemon),
+    }
 
 
 
 def calculate_fusion_details(head_pokemon, body_pokemon):
     result = calculate_fusion_summary(head_pokemon,body_pokemon)
 
-    result.update({"stats": calculate_base_stats(head_pokemon, body_pokemon),
+    result.update({
     "abilities": calculate_abilities(head_pokemon, body_pokemon),
     "hidden abilities": calculate_hidden_abilities(head_pokemon, body_pokemon),
     "moves": {

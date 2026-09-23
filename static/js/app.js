@@ -2,9 +2,20 @@ const caughtmons = [];
 
 const fusionBox = document.querySelector(".mons-in-box");
 const clearButton = document.querySelector(".clear-box");
-const clearRow = document.querySelector(".clear-row")
+const clearRow = document.querySelector(".clear-row");
+let lastClearedBox = null;
+const sortOptions = document.querySelector(".sortOptions");
+let currentSort = "TOTAL";
+let lastFusionResults = [];
 
-// undo button next to clear box if pressed
+
+if (sortOptions) {
+  sortOptions.addEventListener("change", (event) => {
+    currentSort = event.target.value;
+    if (lastFusionResults.length) {
+      renderFusionResults(lastFusionResults);
+    }
+  })};
 
 function renderFusionBox() {
     fusionBox.replaceChildren();
@@ -134,13 +145,45 @@ document.addEventListener("change", (event) => {
     renderRowSprites(row);
 });
 
-clearButton.addEventListener("click", () => {
+function saveBoxState() {
+    lastClearedBox = {
+    mons: [...caughtmons],
+    rows: Array.from(document.querySelectorAll(".h-location-row")).map(row => ({
+        row,
+        caughtMons: row.dataset.caughtMons
+    }))
+}}
+
+function clearBox() {
+    saveBoxState();
     caughtmons.length = 0;
     document.querySelectorAll(".h-location-row").forEach(row => {
     row.dataset.caughtMons = JSON.stringify([]);
     });
     renderFusionBox();
-});
+    document.querySelector(".fused-possible").replaceChildren();
+};
+
+clearButton.addEventListener("click", clearBox);
+
+function undoClearBox() {
+    if (!lastClearedBox) {
+        return;
+    }
+
+    caughtmons.length = 0;
+    caughtmons.push(...lastClearedBox.mons);
+
+    lastClearedBox.rows.forEach(({ row, caughtMons }) => {
+        row.dataset.caughtMons = caughtMons;
+    });
+
+    renderFusionBox();
+    lastClearedBox = null;
+};
+
+const undoButton = document.querySelector(".undo-box");
+undoButton.addEventListener("click", undoClearBox);
 
 function onClickAdd(button) {
     const container = button.closest(".encounter-container");
@@ -211,10 +254,20 @@ async function submitFusion() {
 
     renderFusionResults(data.results)
 }
-// find a way to remove duplicates
+
+
 function renderFusionResults(results) {
+    lastFusionResults = results
+    const allCards = results.flatMap(pair => pair.variants)
+    allCards.sort((a, b) => {
+    const valueA = Number(a.stats?.[currentSort] ?? 0);
+    const valueB = Number(b.stats?.[currentSort] ?? 0);
+    return valueB - valueA;
+  });
+    
+
     document.querySelector(".fused-possible").replaceChildren();
-    results.forEach(pair => pair.variants.forEach(result => {
+    allCards.forEach(result => {
     const fusedCard = document.createElement("div");
     fusedCard.className = "possible-fusions relative z-0 flex shrink-0 flex-col items-stretch overflow-hidden rounded-lg transition-all duration-200";
     const fusedCardSprite = document.createElement("img");
@@ -245,7 +298,7 @@ function renderFusionResults(results) {
     fusedCard.addEventListener("click", openFusionDetails);
 
     document.querySelector(".fused-possible").append(fusedCard);
-    }))}
+})}
 
 async function openFusionDetails(event) {
     const card = event.currentTarget;
@@ -266,4 +319,3 @@ async function openFusionDetails(event) {
     // Open a modal or details panel here.
     console.log(details);
 }
-// TYPE IMAGES https://fusioncalc.com/images/type/card/poison.png https://fusioncalc.com/images/type/card/${result.types}.png

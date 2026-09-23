@@ -8,25 +8,35 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='content_script.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='3c9f9bd2a030d0fc.css') }}">
 <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+        #main-content {
+            width:100%;
+            max-width: none;
+            margin: 0;
+        }
         .flexbox {
             display: flex;
             align-items: stretch;
+            width: 100%;
             height: 100vh;
             overflow: hidden;
             box-sizing: border-box;
         }
-        .section1 {
-            flex: 1 1 50%;
-            width: auto;
-            float: none;
+        .section1, .section2 {
+            flex: 1 1 0;
             min-width: 0;
             min-height: 0;
-            overflow: hidden;
+            box-sizing: border-box;
+
+        }
+        .section1 {
             display: flex;
             flex-direction: column;
-            background-color: #1f2d2d;
-            color: #f3f4f6;
-            padding: 5px;
+            overflow: hidden;
         }
         .section1 > div {
             flex: 1 1 auto;
@@ -52,10 +62,21 @@
             box-sizing: border-box;
         }
         .section2 {
-            flex: 1 1 50%;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            overflow-x: hidden;
             width: auto;
-            background-color: rgb(40, 101, 141);
+            background-color: #111827;
             padding: 5px;
+        }
+        .pc-box {
+            overflow-y: auto;
+        }
+        .section2 .pc-box,
+        .section2 .fused-possible {
+            overflow-y: visible;
+            flex: 0 0 auto;
         }
         td, th {
             border-radius: 15px;
@@ -151,6 +172,7 @@
             display: grid;
             grid-template-columns: auto auto auto;
             grid-template-columns: repeat(8,minmax(0,1fr));
+            gap: 1rem;
         }
         .fused-possible div {
             display: flex;
@@ -172,9 +194,20 @@
             border-color: white;
             color: black;
             padding: 1px;
+            min-width: 0;
+            container-type: inline-size;
         }
         .fusion-name {
             color:#000000;
+            min-width: 0;
+            max-width: 100%;
+            box-sizing: border-box;
+            white-space: normal;
+            overflow-wrap: anywhere;
+            word-break: break-word;
+            text-align: center;
+            line-height: 1.1;
+            font-size: clamp(0.8rem, 10cqi, 1rem);
         }
         .fusion-sprite {
             display: grid;
@@ -291,10 +324,11 @@
                 </div>
             </div>
         </section1>
-        <section2 class="section2" width="390px">
-            <h2>Fusion Box</h2>
+        <section2 class="section2 overflow-auto scrollbar-thin overscroll-x-none overscroll-y-auto relative" width="390px">
+            <h2 color="white">PC Box</h2>
             <div width="100%" margin-bottom=".75rem;">
                 <button type="button" class="clear-box">Clear Box</button>
+                <button type="button" class="undo-box">Undo Clear</button>
             </div>
             <div class="pc-box min-h-0 flex-1 overflow-y-auto overflow-x-hidden overscroll-y-contain pr-1 pt-[5px] [-webkit-overflow-scrolling:touch]" padding-bottom="5px">
                 <div class="box-selector"></div>
@@ -302,6 +336,19 @@
                 <div class="mons-in-box relative mx-auto flex grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 w-full max-w-[1000px] flex-col rounded-lg border border-border bg-card text-card-foreground shadow-sm">
                     <span></span>
                 </div>
+            </div>
+            <div class="sort-divider my-2 h-px w-full bg-white/20"></div>
+            <div class="relative dropdown flex items-center justify-center gap-2" data-headlessui-state="">
+                <label for="sortCards" margin="auto" vertical-align="center";>Sort Fusions</label>
+                <select class="sortOptions" color="white">
+                    <option value="TOTAL">Total</option>
+                    <option value="HP">HP</option>
+                    <option value="ATTACK">Attack</option>
+                    <option value="DEFENSE">Defense</option>
+                    <option value="SPECIAL_ATTACK">Special Attack</option>
+                    <option value="SPECIAL_DEFENSE">Special Defense</option>
+                    <option value="SPEED">Speed</option>
+                </select>
             </div>
             <div class="fused-possible flex-1 mx-auto w-full max-w-none px-2 sm:px-3 md:px-5 overflow-y-auto overflow-x-hidden">
                 

@@ -4,18 +4,31 @@ import requests
 
 #To-do: check for game differences, auto-return both fusion versions, figure out the weakness chart algorithm
 
+def normalize_pokemon_name(pokemon):
+    normalized = str(pokemon).strip().lower()
+    normalized = normalized.replace("♀", "-f")
+    normalized = normalized.replace("♂", "-m")
+    normalized = normalized.replace("’", "")
+    normalized = normalized.replace("'", "")
+    normalized = normalized.replace(".", "")
+    normalized = normalized.replace(" ", "-")
+    normalized = normalized.replace("-", "-")
+    return normalized
+
 @lru_cache(maxsize=None)
 def get_pokemon_data(pokemon):
+    normalized_pokemon = normalize_pokemon_name(pokemon)
     try:
-        return requests.get(f"https://pokeapi.co/api/v2/pokemon/{pokemon}").json()
+        return requests.get(f"https://pokeapi.co/api/v2/pokemon/{normalized_pokemon}").json()
     except requests.exceptions.ConnectionError as e:
         print(f"{e} : Timed out")
 
 def get_id(pokemon):
+    normalized_pokemon = normalize_pokemon_name(pokemon)
     with open(r"data\pokemon_data.json", "r") as pdj:
         dexdata = json.load(pdj)
         for data in dexdata:
-            if data['name'].lower() == pokemon.lower():
+            if normalize_pokemon_name(data['name']) == normalized_pokemon:
                 id = data['id']
                 return id
     raise ValueError(f"Unknown Pokemon: {pokemon}")
@@ -124,10 +137,11 @@ def get_tm_moves(pokemon):
     
 
 def get_types(pokemon):
+    normalized_pokemon = normalize_pokemon_name(pokemon)
     with open(r"data\pokemon_data.json","r") as pdj:
         dexdata = json.load(pdj)
         for data in dexdata:
-            if data['name'].lower() == pokemon.lower():
+            if normalize_pokemon_name(data['name']) == normalized_pokemon:
                 types = tuple(type_data['name'] for type_data in data['types'])
                 return types[0], types[1] if len(types) > 1 else None
 
@@ -148,11 +162,12 @@ def get_bst(pokemon):
     return statdict
 
 def get_evos(pokemon):
+    normalized_pokemon = normalize_pokemon_name(pokemon)
     with open(r"data\pokemon_data.json", "r") as pdj:
         mons = json.load(pdj)
 
     for mon in mons:
-        if mon["name"].lower() == pokemon.lower():
+        if normalize_pokemon_name(mon["name"]) == normalized_pokemon:
             evolution = mon.get("evolution", {})
 
             previous = evolution.get("evolves_from")
