@@ -200,7 +200,6 @@ textarea {
   font-weight:inherit;
   line-height:inherit;
   letter-spacing:inherit;
-  color:inherit;
   margin:0;
   padding:0
 }
@@ -370,7 +369,6 @@ video {
   border-color:hsl(var(--border))
 }
 body {
-  color:hsl(var(--foreground));
   background-color:transparent
 }
 .\!container {

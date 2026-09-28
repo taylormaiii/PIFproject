@@ -17,6 +17,22 @@ if (sortOptions) {
     }
   })};
 
+
+const evolutionToggle = document.querySelector("#evolution-toggle");
+let includeEvolutions = false;
+
+if (evolutionToggle) {
+    evolutionToggle.addEventListener("change", (event) => {
+        includeEvolutions = event.target.checked;
+
+        if (caughtmons.length >= 2) {
+            submitFusion();
+        }
+    });
+}
+
+
+
 function renderFusionBox() {
     fusionBox.replaceChildren();
 
@@ -239,11 +255,14 @@ async function submitFusion() {
     if (caughtmons.length < 2) {
         return;
     }
+
     const formData = new FormData();
 
     caughtmons.forEach(name => {
         formData.append("caughtmon", name);
     });
+
+    formData.append("include_evolutions", includeEvolutions);
 
     const response = await fetch("/", {
         method: "POST",
@@ -252,8 +271,11 @@ async function submitFusion() {
 
     const data = await response.json();
 
-    renderFusionResults(data.results)
+    renderFusionResults(data.results);s
 }
+
+
+
 
 
 function renderFusionResults(results) {
@@ -270,7 +292,8 @@ function renderFusionResults(results) {
     allCards.forEach(result => {
     const fusedCard = document.createElement("div");
     fusedCard.className = "possible-fusions relative z-0 flex shrink-0 flex-col items-stretch overflow-hidden rounded-lg transition-all duration-200";
-    const fusedCardSprite = document.createElement("img");
+    const fusedCardSprite = document.createElement("img")
+    fusedCardSprite.addEventListener("error", brokenCard);
     fusedCardSprite.className = "fusion-sprite relative z-10 w-full overflow-visible"
     fusedCardSprite.src = `https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/${result['fusionid']}.png`;
     const fusedCardName = document.createElement("span");
@@ -319,3 +342,24 @@ async function openFusionDetails(event) {
     // Open a modal or details panel here.
     console.log(details);
 }
+
+
+
+function brokenCard (event) {
+    const failedImageCard = event.currentTarget
+    const failedCard = failedImageCard.closest(".possible-fusions")
+    failedCard.classList.add("broken");
+    failedCard.classList.toggle("hidden", hideBrokenSprites);
+};
+
+
+
+function CustomToggle() {
+    const brokenCards = document.querySelectorAll(".possible-fusions.broken");
+    brokenCards.forEach(card => {
+        card.classList.toggle("hideCard");
+    });
+    renderFusionResults();
+}
+
+document.getElementById('toggle-custom').addEventListener('click', CustomToggle); 

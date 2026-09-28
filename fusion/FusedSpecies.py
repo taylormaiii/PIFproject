@@ -158,6 +158,7 @@ if __name__ == "__main__":
 
   evolutions = calculate_evolutions(head_pokemon, body_pokemon) # hash[:evolutions] || []
   types = return_types(type1,type2)
+  print(evolutions)
 
 #automatically show both options
 #add a weakness chart
@@ -174,6 +175,7 @@ def calculate_fusion_summary(head_pokemon, body_pokemon):
     calculate_type1(head_pokemon, body_pokemon),
     calculate_type2(head_pokemon, body_pokemon),),
     "stats": calculate_base_stats(head_pokemon, body_pokemon),
+    "evolutions": calculate_evolutions(head_pokemon, body_pokemon)
     }
 
 
@@ -188,7 +190,5 @@ def calculate_fusion_details(head_pokemon, body_pokemon):
         "level": calculate_moveset(head_pokemon, body_pokemon),
         "tm": calculate_tm_moves(head_pokemon, body_pokemon),
         "egg": calculate_egg_moves(head_pokemon, body_pokemon)
-    },
-    "evolutions": calculate_evolutions(head_pokemon, body_pokemon)
-})
+    }})
     return result

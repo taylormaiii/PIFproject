@@ -16,9 +16,17 @@ with open("data/pokemon_data.json", encoding="utf-8") as pokemon_file:
 def fusion():
     if request.method == 'POST':
         pokemoncaught = request.form.getlist("caughtmon")
+
+        include_evolutions = request.form.get("include_evolutions") == "true"
+
+        if include_evolutions:
+            pokemoncaught = add_future_evolutions(pokemoncaught)
+
         pokelist = list(combinations(pokemoncaught, 2))
+
         result = []
-        for head,body in pokelist:
+
+        for head, body in pokelist:
             result.append({
                 "pair": [head, body],
                 "variants": [
@@ -26,9 +34,40 @@ def fusion():
                     fs.calculate_fusion_summary(body, head),
                 ],
             })
-        return jsonify({"results":result})
 
-    return render_template("base.html", locations=locations, pokemon_data=pokemon_data)
+        return jsonify({"results": result})
+
+    return render_template("base.html",locations=locations,pokemon_data=pokemon_data)
+
+
+def add_future_evolutions(pokemon_list):
+    expanded = list(pokemon_list)
+    visited = set()
+
+    for pokemon in pokemon_list:
+        collect_evolutions(pokemon, expanded, visited)
+
+    return expanded
+
+
+def collect_evolutions(pokemon, expanded, visited):
+    if pokemon in visited:
+        return
+
+    visited.add(pokemon)
+
+    evolutions = fs.poke_api.get_evos(pokemon)
+
+    for evolution in evolutions["next"]:
+        evolution_name = evolution["name"]
+
+        if evolution_name not in expanded:
+            expanded.append(evolution_name)
+
+        collect_evolutions(evolution_name, expanded, visited)
+
+#find a way to make it so pokemon are not fused with the ones in their own evo group if they are not duplicates
+
 
 def combinations(iterable, r):
     pool = tuple(iterable)
@@ -59,3 +98,5 @@ def fusion_details():
     )
 
     return jsonify(result)
+
+

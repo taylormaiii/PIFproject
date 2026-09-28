@@ -25,7 +25,7 @@ def get_pokemon_data(pokemon):
 
 def get_id(pokemon):
     normalized_pokemon = normalize_pokemon_name(pokemon)
-    with open(r"data\pokemon_data.json", "r") as pdj:
+    with open(r"data\pokemon_data.json", "r", encoding="utf-8") as pdj:
         dexdata = json.load(pdj)
         for data in dexdata:
             if normalize_pokemon_name(data['name']) == normalized_pokemon:
@@ -138,7 +138,7 @@ def get_tm_moves(pokemon):
 
 def get_types(pokemon):
     normalized_pokemon = normalize_pokemon_name(pokemon)
-    with open(r"data\pokemon_data.json","r") as pdj:
+    with open(r"data\pokemon_data.json", "r", encoding="utf-8") as pdj:
         dexdata = json.load(pdj)
         for data in dexdata:
             if normalize_pokemon_name(data['name']) == normalized_pokemon:
@@ -150,8 +150,6 @@ def get_types(pokemon):
 def get_bst(pokemon):
 
     r = get_pokemon_data(pokemon)
-    re = requests.get(f"https://pokeapi.co/api/v2/pokemon-species/{pokemon}").json()
-    evo = requests.get(re['evolution_chain']['url']).json()
     hp = r['stats'][0]['base_stat']
     attack = r['stats'][1]['base_stat']
     defense = r['stats'][2]['base_stat']
@@ -163,7 +161,7 @@ def get_bst(pokemon):
 
 def get_evos(pokemon):
     normalized_pokemon = normalize_pokemon_name(pokemon)
-    with open(r"data\pokemon_data.json", "r") as pdj:
+    with open(r"data\pokemon_data.json", "r", encoding="utf-8") as pdj:
         mons = json.load(pdj)
 
     for mon in mons:

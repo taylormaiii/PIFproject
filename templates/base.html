@@ -171,7 +171,7 @@
             background: black;
             display: grid;
             grid-template-columns: auto auto auto;
-            grid-template-columns: repeat(8,minmax(0,1fr));
+            grid-template-columns: repeat(4,minmax(0,1fr));
             gap: 1rem;
         }
         .fused-possible div {
@@ -245,6 +245,12 @@
             background-color: gray;
             padding: 4px;
             border-radius: 5px;
+        }
+        .hideCard {
+            visibility: hidden;
+        }
+        .checkboxcontainer input {
+            color: white;
         }
     </style>
 </head>
@@ -338,8 +344,8 @@
                 </div>
             </div>
             <div class="sort-divider my-2 h-px w-full bg-white/20"></div>
-            <div class="relative dropdown flex items-center justify-center gap-2" data-headlessui-state="">
-                <label for="sortCards" margin="auto" vertical-align="center";>Sort Fusions</label>
+            <div class="relative dropdown flex items-center justify-center gap-2">
+                <label for="sortCards" margin="auto" vertical-align="center" horizontal-align="right";>Sort Fusions</label>
                 <select class="sortOptions" color="white">
                     <option value="TOTAL">Total</option>
                     <option value="HP">HP</option>
@@ -349,6 +355,14 @@
                     <option value="SPECIAL_DEFENSE">Special Defense</option>
                     <option value="SPEED">Speed</option>
                 </select>
+                <label class="checkboxcontainer">
+                    <input type="checkbox" id="evolution-toggle" color="white">
+                        Include future evolutions
+                </label>
+                <label class="checkboxcontainer">
+                    <input type="checkbox" id="toggle-custom" class="custom-toggle" color="white"> 
+                        Toggle Custom Only
+                </label>
             </div>
             <div class="fused-possible flex-1 mx-auto w-full max-w-none px-2 sm:px-3 md:px-5 overflow-y-auto overflow-x-hidden">
                 
