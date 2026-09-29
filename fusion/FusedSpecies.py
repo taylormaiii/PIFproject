@@ -79,6 +79,15 @@ def calculate_hidden_abilities(head_pokemon, body_pokemon):
   hidden_abilities_hash.append(ability2)
   return hidden_abilities_hash
 
+def calculate_evo_ids(head_pokemon,body_pokemon):
+  head_evo_id = poke_api.get_evo_id(head_pokemon)
+  body_evo_id = poke_api.get_evo_id(body_pokemon)
+
+  fused_ids = []
+  fused_ids.append(head_evo_id)
+  fused_ids.append(body_evo_id)
+  return fused_ids
+
 def calculate_evolutions(head_pokemon, body_pokemon):
   body_evolutions = poke_api.get_evos(body_pokemon)
   head_evolutions = poke_api.get_evos(head_pokemon)
@@ -157,8 +166,9 @@ if __name__ == "__main__":
   hidden_abilities = calculate_hidden_abilities(head_pokemon, body_pokemon) # hash[:hidden_abilities] || []
 
   evolutions = calculate_evolutions(head_pokemon, body_pokemon) # hash[:evolutions] || []
+  evo_ids = calculate_evo_ids(head_pokemon,body_pokemon)
   types = return_types(type1,type2)
-  print(evolutions)
+  print(evolutions,evo_ids)
 
 #automatically show both options
 #add a weakness chart
@@ -175,7 +185,8 @@ def calculate_fusion_summary(head_pokemon, body_pokemon):
     calculate_type1(head_pokemon, body_pokemon),
     calculate_type2(head_pokemon, body_pokemon),),
     "stats": calculate_base_stats(head_pokemon, body_pokemon),
-    "evolutions": calculate_evolutions(head_pokemon, body_pokemon)
+    "evolutions": calculate_evolutions(head_pokemon, body_pokemon),
+    "evo_ids": calculate_evo_ids(head_pokemon,body_pokemon)
     }
 
 

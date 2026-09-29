@@ -271,7 +271,7 @@ async function submitFusion() {
 
     const data = await response.json();
 
-    renderFusionResults(data.results);s
+    renderFusionResults(data.results);
 }
 
 

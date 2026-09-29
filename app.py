@@ -57,6 +57,7 @@ def collect_evolutions(pokemon, expanded, visited):
     visited.add(pokemon)
 
     evolutions = fs.poke_api.get_evos(pokemon)
+    evolution_ids = fs.poke_api.get_evo_id(pokemon)
 
     for evolution in evolutions["next"]:
         evolution_name = evolution["name"]
