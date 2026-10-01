@@ -188,6 +188,9 @@
             box-sizing: border-box;
             color: white;
         }
+        .fused-possible div.hideCard {
+            display: none;
+        }
         .possible-fusions {
             gap: 1rem;
             background-color: #969ca5;
@@ -228,9 +231,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            border-radius: 15px;
         }
         .spriteimg div {
             display: flex;
+            border-radius: 15px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -240,6 +245,7 @@
         .spriteimg img {
             display: block;
             margin: 0 auto;
+            border-radius: 15px;
         }
         button {
             background-color: gray;
@@ -247,7 +253,7 @@
             border-radius: 5px;
         }
         .hideCard {
-            visibility: hidden;
+            display:none;
         }
         .checkboxcontainer input {
             color: white;
@@ -295,7 +301,7 @@
                                             </div>
                                         </div>
                                         <button type="button" onclick="onClickAdd(this)" class="fuse-button"> Fuse </button>
-                                        <datalist id="pokemon-options-{{ loop.index }}" name="headbody">
+                                        <datalist id="pokemon-options-{{ loop.index }}" class="datalist-drop" name="headbody">
                                             {% for mon in pokemon_data %}
                                                 <option
                                                     value="{{ mon.name }}"

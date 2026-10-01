@@ -349,17 +349,17 @@ function brokenCard (event) {
     const failedImageCard = event.currentTarget
     const failedCard = failedImageCard.closest(".possible-fusions")
     failedCard.classList.add("broken");
-    failedCard.classList.toggle("hidden", hideBrokenSprites);
 };
 
 
-
 function CustomToggle() {
+    const toggle = document.getElementById('toggle-custom')
     const brokenCards = document.querySelectorAll(".possible-fusions.broken");
+    
     brokenCards.forEach(card => {
-        card.classList.toggle("hideCard");
+        card.classList.toggle("hideCard",toggle.checked && card.classList.contains("broken")
+);
     });
-    renderFusionResults();
 }
 
-document.getElementById('toggle-custom').addEventListener('click', CustomToggle); 
+document.getElementById("toggle-custom").addEventListener("change", CustomToggle);
