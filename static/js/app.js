@@ -32,7 +32,6 @@ if (evolutionToggle) {
 }
 
 
-
 function renderFusionBox() {
     fusionBox.replaceChildren();
 
@@ -339,8 +338,9 @@ async function openFusionDetails(event) {
 
     const details = await response.json();
 
-    // Open a modal or details panel here.
+    // Open a modal or details panel here. contain both head/body and body/head next to each other w/ stat comparisons
     console.log(details);
+
 }
 
 

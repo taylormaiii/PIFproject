@@ -16,17 +16,21 @@ with open("data/pokemon_data.json", encoding="utf-8") as pokemon_file:
 def fusion():
     if request.method == 'POST':
         pokemoncaught = request.form.getlist("caughtmon")
-
+        originals = enumerate(pokemoncaught)
         include_evolutions = request.form.get("include_evolutions") == "true"
 
         if include_evolutions:
-            pokemoncaught = add_future_evolutions(pokemoncaught)
-
-        pokelist = list(combinations(pokemoncaught, 2))
+            candidates = add_future_evolutions(originals)
+        else:
+            candidates = originals
+        pokelist = list(combinations(candidates, 2))
 
         result = []
 
-        for head, body in pokelist:
+        for (head_id, head), (body_id, body) in pokelist:
+            if head_id == body_id:
+                continue
+
             result.append({
                 "pair": [head, body],
                 "variants": [
@@ -40,34 +44,34 @@ def fusion():
     return render_template("base.html",locations=locations,pokemon_data=pokemon_data)
 
 
-def add_future_evolutions(pokemon_list):
-    expanded = list(pokemon_list)
-    visited = set()
+def add_future_evolutions(originals):
+    candidates = []
 
-    for pokemon in pokemon_list:
-        collect_evolutions(pokemon, expanded, visited)
+    for instance_id, pokemon_name in originals:
+        candidates.append((instance_id, pokemon_name))
+        visited = set()
+        collect_evolutions(pokemon_name, instance_id, candidates, visited)
 
-    return expanded
+    return candidates
 
 
-def collect_evolutions(pokemon, expanded, visited):
-    if pokemon in visited:
+def collect_evolutions(pokemon_name, instance_id, candidates, visited):
+    if pokemon_name in visited:
         return
 
-    visited.add(pokemon)
+    visited.add(pokemon_name)
 
-    evolutions = fs.poke_api.get_evos(pokemon)
-    evolution_ids = fs.poke_api.get_evo_id(pokemon)
+    evolutions = fs.poke_api.get_evos(pokemon_name)
+
 
     for evolution in evolutions["next"]:
         evolution_name = evolution["name"]
+        candidate = (instance_id, evolution_name)
 
-        if evolution_name not in expanded:
-            expanded.append(evolution_name)
+        if candidate not in candidates:
+            candidates.append(candidate)
 
-        collect_evolutions(evolution_name, expanded, visited)
-
-#find a way to make it so pokemon are not fused with the ones in their own evo group if they are not duplicates
+        collect_evolutions(evolution_name, instance_id, candidates, visited)
 
 
 def combinations(iterable, r):
