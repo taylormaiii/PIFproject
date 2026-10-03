@@ -258,6 +258,19 @@
         .checkboxcontainer input {
             color: white;
         }
+        .modal {
+            display:none;
+            position:fixed;
+            z-index: 1;
+            overflow: auto;
+        }
+        .modal-content {
+            margin: 15% auto;
+            display: flex;
+        }
+        .modal-close-button {
+            float:right;
+        }
     </style>
 </head>
 <body class="antialiased font-sans">
@@ -370,8 +383,29 @@
                         Toggle Custom Only
                 </label>
             </div>
-            <div class="fused-possible flex-1 mx-auto w-full max-w-none px-2 sm:px-3 md:px-5 overflow-y-auto overflow-x-hidden">
-                
+            <div class="fused-possible flex-1 mx-auto w-full max-w-none px-2 sm:px-3 md:px-5 overflow-y-auto overflow-x-hidden"></div>
+            <div class="modal"id="themodal">
+                <span class="modal-close-button">&times;</span>
+                <div class="modal-content">
+                    <div class="modalside1">
+                        <div class="modalnames1"></div>
+                        <div class="modalsprite1"></div>
+                        <div class="modaltypes1"></div>
+                        <div class="modalstats1"></div>
+                        <div class="modalabilities1"></div>
+                        <div class="modalweakness1"></div>
+                        <div class="moves1"></div>
+                    </div>
+                    <div class="modalside2">
+                        <div class="modalnames2"></div>
+                        <div class="modalsprite2"></div>
+                        <div class="modaltypes2"></div>
+                        <div class="modalstats2"></div>
+                        <div class="modalabilities2"></div>
+                        <div class="modalweakness2"></div>
+                        <div class="moves2"></div>
+                    </div>
+                </div>
             </div>
         </section2>
 </div>

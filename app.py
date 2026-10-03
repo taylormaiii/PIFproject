@@ -93,15 +93,21 @@ def combinations(iterable, r):
             indices[j] = indices[j-1] + 1
         yield tuple(pool[i] for i in indices)
 
-@app.route("/api/fusion-details", methods=["POST"])
+@app.route("/api/fusion-details", methods=['POST'])
 def fusion_details():
-    data = request.get_json()
+    if request.method == "POST":
+        data = request.get_json()
+        head = data["head"]
+        body = data["body"]
+        result = []
+        result.append({
+                    "pair": [head, body],
+                    "variants": [
+                        fs.calculate_fusion_details(head, body),
+                        fs.calculate_fusion_details(body, head),
+                    ],
+                })
 
-    result = fs.calculate_fusion_details(
-        data["head"],
-        data["body"],
-    )
-
-    return jsonify(result)
+        return jsonify(result)
 
 

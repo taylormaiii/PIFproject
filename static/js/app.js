@@ -331,8 +331,8 @@ async function openFusionDetails(event) {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            head: card.dataset.head,
-            body: card.dataset.body
+            "head":card.dataset.head,
+            "body":card.dataset.body
         })
     });
 
