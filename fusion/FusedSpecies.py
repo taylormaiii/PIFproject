@@ -42,15 +42,6 @@ def calculate_base_stats(head_pokemon, body_pokemon):
   fused_stats['TOTAL'] = fused_stats['HP'] + fused_stats['ATTACK'] + fused_stats['DEFENSE'] + fused_stats['SPECIAL_ATTACK'] + fused_stats['SPECIAL_DEFENSE'] + fused_stats['SPEED']
   return fused_stats
 
-def calculate_moveset(head_pokemon, body_pokemon):
-  return combine_list(poke_api.get_level_moves(head_pokemon), poke_api.get_level_moves(body_pokemon))
-
-def calculate_egg_moves(head_pokemon, body_pokemon):
-  return combine_list(poke_api.get_egg_moves(head_pokemon), poke_api.get_egg_moves(body_pokemon))
-
-def calculate_tm_moves(head_pokemon, body_pokemon):
-  return combine_list(poke_api.get_tm_moves(head_pokemon), poke_api.get_tm_moves(body_pokemon))
-
 def calculate_abilities(head_pokemon, body_pokemon):
   abilities_hash = []
 
@@ -159,9 +150,7 @@ if __name__ == "__main__":
 
   #find a way to show stat loss + gain vs other option
   base_stats = calculate_base_stats(head_pokemon, body_pokemon)
-  moves = calculate_moveset(head_pokemon, body_pokemon)
-  tm_moves = calculate_tm_moves(head_pokemon, body_pokemon) # hash[:tutor_moves] || []
-  egg_moves = calculate_egg_moves(head_pokemon, body_pokemon) # hash[:egg_moves] || []
+
   abilities = calculate_abilities(head_pokemon, body_pokemon) # hash[:abilities] || []
   hidden_abilities = calculate_hidden_abilities(head_pokemon, body_pokemon) # hash[:hidden_abilities] || []
 
@@ -196,10 +185,5 @@ def calculate_fusion_details(head_pokemon, body_pokemon):
 
     result.update({
     "abilities": calculate_abilities(head_pokemon, body_pokemon),
-    "hidden abilities": calculate_hidden_abilities(head_pokemon, body_pokemon),
-    "moves": {
-        "level": calculate_moveset(head_pokemon, body_pokemon),
-        "tm": calculate_tm_moves(head_pokemon, body_pokemon),
-        "egg": calculate_egg_moves(head_pokemon, body_pokemon)
-    }})
+    "hidden abilities": calculate_hidden_abilities(head_pokemon, body_pokemon),})
     return result

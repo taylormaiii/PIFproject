@@ -15,7 +15,7 @@ if (sortOptions) {
     if (lastFusionResults.length) {
       renderFusionResults(lastFusionResults);
     }
-  })};
+  })}
 
 
 const evolutionToggle = document.querySelector("#evolution-toggle");
@@ -274,7 +274,7 @@ async function submitFusion() {
 }
 
 
-
+// check if sprite has alternates ex. ${result['fusionid']}a.png or b or c etc and if a,b,c etc exist, give a swap sprite variant button and show that sprite instead
 
 
 function renderFusionResults(results) {
@@ -323,27 +323,78 @@ function renderFusionResults(results) {
 })}
 
 async function openFusionDetails(event) {
-    const card = event.currentTarget;
+  const card = event.currentTarget;
+  const modal = document.getElementById("themodal");
 
+  try {
     const response = await fetch("/api/fusion-details", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            "head":card.dataset.head,
-            "body":card.dataset.body
-        })
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        head: card.dataset.head,
+        body: card.dataset.body
+      })
     });
 
+    if (!response.ok) {
+      throw new Error(`Fusion details request failed: ${response.status}`);
+    }
+
     const details = await response.json();
+    const pairDetails = details[0];
+    const leftVariant = pairDetails.variants[0];
+    const rightVariant = pairDetails.variants[1];
 
-    // Open a modal or details panel here. contain both head/body and body/head next to each other w/ stat comparisons
-    console.log(details);
+    document.querySelector(".modalnames1").textContent = `${leftVariant.head} + ${leftVariant.body}`;
+    document.querySelector(".modalsprite1").innerHTML = `<img src="${leftVariant.sprite}" alt="${leftVariant.head} + ${leftVariant.body}">`;
+    document.querySelector(".modaltypes1").innerHTML = renderTypeImages(leftVariant.types);
+    document.querySelector(".modalstats1").textContent = JSON.stringify(leftVariant.stats, null, 2);
+    document.querySelector(".modalabilities1").textContent = [
+      ...(Array.isArray(leftVariant.abilities) ? leftVariant.abilities : []),
+      ...(Array.isArray(leftVariant["hidden abilities"]) ? leftVariant["hidden abilities"] : [])
+    ].filter(Boolean).join(", ");
 
+    document.querySelector(".modalnames2").textContent = `${rightVariant.head} + ${rightVariant.body}`;
+    document.querySelector(".modalsprite2").innerHTML = `<img src="${rightVariant.sprite}" alt="${rightVariant.head} + ${rightVariant.body}">`;
+    document.querySelector(".modaltypes2").innerHTML = renderTypeImages(rightVariant.types);
+    document.querySelector(".modalstats2").textContent = JSON.stringify(rightVariant.stats, null, 2);
+    document.querySelector(".modalabilities2").textContent = [
+      ...(Array.isArray(rightVariant.abilities) ? rightVariant.abilities : []),
+      ...(Array.isArray(rightVariant["hidden abilities"]) ? rightVariant["hidden abilities"] : [])
+    ].filter(Boolean).join(", ");
+
+    modal.classList.add("open");
+  } catch (error) {
+    console.error("Error loading fusion details:", error);
+  }
 }
 
+function renderTypeImages(types) {
+  return (Array.isArray(types) ? types : []).map(type => {
+    return `<img src="https://fusioncalc.com/images/type/card/${type}.png" alt="${type}" />`;
+  }).join("");
+}
 
+function closeFusionModal() {
+  const modal = document.getElementById("themodal");
+  if (modal) {
+    modal.classList.remove("open");
+  }
+}
+
+const modalCloseButton = document.querySelector(".modal-close-button");
+if (modalCloseButton) {
+  modalCloseButton.addEventListener("click", closeFusionModal);
+}
+
+const fusionModal = document.getElementById("themodal");
+if (fusionModal) {
+  fusionModal.addEventListener("click", (event) => {
+    if (event.target === fusionModal) {
+      closeFusionModal();
+    }
+  });
+}
 
 function brokenCard (event) {
     const failedImageCard = event.currentTarget

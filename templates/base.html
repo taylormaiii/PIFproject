@@ -259,17 +259,53 @@
             color: white;
         }
         .modal {
-            display:none;
-            position:fixed;
-            z-index: 1;
-            overflow: auto;
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.7);
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
         }
-        .modal-content {
-            margin: 15% auto;
+        .modal.open {
             display: flex;
         }
+        .modal-content {
+            position: relative;
+            width: min(1100px, 92vw);
+            max-height: 85vh;
+            overflow: auto;
+            background: #111827;
+            border: 1px solid #374151;
+            border-radius: 12px;
+            padding: 1rem;
+            color: white;
+        }
+        .modal-panel {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+        }
+        .modal-side {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            padding: 0.5rem;
+            border: 1px solid #374151;
+            border-radius: 8px;
+            background: rgba(17, 24, 39, 0.8);
+        }
         .modal-close-button {
-            float:right;
+            position: absolute;
+            top: 0.5rem;
+            right: 0.75rem;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            line-height: 1;
         }
     </style>
 </head>
@@ -383,33 +419,34 @@
                         Toggle Custom Only
                 </label>
             </div>
-            <div class="fused-possible flex-1 mx-auto w-full max-w-none px-2 sm:px-3 md:px-5 overflow-y-auto overflow-x-hidden"></div>
-            <div class="modal"id="themodal">
-                <span class="modal-close-button">&times;</span>
-                <div class="modal-content">
-                    <div class="modalside1">
-                        <div class="modalnames1"></div>
-                        <div class="modalsprite1"></div>
-                        <div class="modaltypes1"></div>
-                        <div class="modalstats1"></div>
-                        <div class="modalabilities1"></div>
-                        <div class="modalweakness1"></div>
-                        <div class="moves1"></div>
-                    </div>
-                    <div class="modalside2">
-                        <div class="modalnames2"></div>
-                        <div class="modalsprite2"></div>
-                        <div class="modaltypes2"></div>
-                        <div class="modalstats2"></div>
-                        <div class="modalabilities2"></div>
-                        <div class="modalweakness2"></div>
-                        <div class="moves2"></div>
-                    </div>
-                </div>
+            <div class="fused-possible flex-1 mx-auto w-full max-w-none px-2 sm:px-3 md:px-5 overflow-y-auto overflow-x-hidden">
+                
             </div>
         </section2>
 </div>
 </main>
+
+<div id="themodal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="fusion-modal-title">
+        <button type="button" class="modal-close-button" aria-label="Close fusion details">&times;</button>
+        <div class="modal-panel">
+            <div class="modal-side">
+                <h3 id="fusion-modal-title" class="modalnames1">Fusion 1</h3>
+                <div class="modalsprite1"></div>
+                <div class="modaltypes1"></div>
+                <div class="modalstats1"></div>
+                <div class="modalabilities1"></div>
+            </div>
+            <div class="modal-side">
+                <h3 class="modalnames2">Fusion 2</h3>
+                <div class="modalsprite2"></div>
+                <div class="modaltypes2"></div>
+                <div class="modalstats2"></div>
+                <div class="modalabilities2"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
 </body>

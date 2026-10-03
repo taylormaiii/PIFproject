@@ -97,8 +97,12 @@ def combinations(iterable, r):
 def fusion_details():
     if request.method == "POST":
         data = request.get_json()
+        if not data:
+            return jsonify({"error": "invalid json error"}), 400
         head = data["head"]
         body = data["body"]
+        if not head or not body:
+            return jsonify({"error": "missing head or body"}), 400
         result = []
         result.append({
                     "pair": [head, body],
