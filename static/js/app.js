@@ -345,20 +345,13 @@ async function openFusionDetails(event) {
     const leftVariant = pairDetails.variants[0];
     const rightVariant = pairDetails.variants[1];
 
+//left
+
     document.querySelector(".modalnames1").textContent = `${leftVariant.head} + ${leftVariant.body}`;
     document.querySelector(".modalsprite1").innerHTML = `<img src="${leftVariant.sprite}" alt="${leftVariant.head} + ${leftVariant.body}">`;
     document.querySelector(".modaltypes1").innerHTML = renderTypeImages(leftVariant.types);
 
-    const stats1 = document.querySelector(".modalstats1");
-    stats1.innerHTML = "";
-
-    const leftstats = leftVariant.stats || {};
-    Object.entries(leftstats).forEach(([key, value]) => {
-        const row = document.createElement("div");
-        row.className = "grid"
-        row.innerHTML = `<span>${key}</span><span>${value}</span>`;
-        stats1.append(row)
-    });
+    renderStatComparison(document.querySelector(".modalstats1"), leftVariant.stats, rightVariant.stats, "left");
 
     
     document.querySelector(".modalabilities1").textContent = `Abilities: ${[
@@ -366,25 +359,21 @@ async function openFusionDetails(event) {
       ...(Array.isArray(leftVariant["hidden abilities"]) ? leftVariant["hidden abilities"] : [])
     ].filter(Boolean).join(", ")}`;
 
+// right
+
     document.querySelector(".modalnames2").textContent = `${rightVariant.head} + ${rightVariant.body}`;
     document.querySelector(".modalsprite2").innerHTML = `<img src="${rightVariant.sprite}" alt="${rightVariant.head} + ${rightVariant.body}">`;
     document.querySelector(".modaltypes2").innerHTML = renderTypeImages(rightVariant.types);
 
-    const stats2 = document.querySelector(".modalstats1");
-    stats2.innerHTML = "";
+    renderStatComparison(document.querySelector(".modalstats2"), leftVariant.stats, rightVariant.stats, "right")
+    
 
-    const rightstats = rightVariant.stats || {};
-    Object.entries(rightstats).forEach(([key, value]) => {
-        const row = document.createElement("div");
-        row.className = "grid"
-        row.innerHTML = `<span>${key}</span><span>${value}</span>`;
-        stats1.append(row)
-    });
-
-    document.querySelector(".modalabilities2").textContent = [
+    document.querySelector(".modalabilities2").textContent = `Abilities: ${[
       ...(Array.isArray(rightVariant.abilities) ? rightVariant.abilities : []),
       ...(Array.isArray(rightVariant["hidden abilities"]) ? rightVariant["hidden abilities"] : [])
-    ].filter(Boolean).join(", ");
+    ].filter(Boolean).join(", ")}`;
+
+//construction
 
     modal.classList.add("open");
   } catch (error) {
@@ -392,25 +381,68 @@ async function openFusionDetails(event) {
   }
 }
 
-function renderStatComparison(container, primaryStats, secondaryStats, side) {
+//clean up html, add spacing and color
+
+function renderStatComparison(container, leftStats, rightStats, side) {
     container.innerHTML = "";
 
-    const statkeys = [Object.keys(leftStats), Object.keys(rightStats)]
+    const statkeys = [...new Set([...Object.keys(leftStats || {}), ...Object.keys(rightStats || {})])];
 
-    //statkeys.forEach((key)) => {
-    const leftStat = Number(primaryStats || {})
-    const rightStat = Number(secondaryStats || {})
+    statkeys.forEach((key) => {
+        const leftStat = Number(leftStats[key] ?? 0);
+        const rightStat = Number(rightStats[key] ?? 0);
 
-    const leftcomparison = leftStat - rightStat
-    const rightcomparison = rightStat - leftStat
+        let comparison = 0;
+        let operator = "";
 
-}
+        if (side == "left") {
+            comparison = leftStat - rightStat;
+        }
+        else {
+            comparison = rightStat - leftStat;
+        }
+
+        if (comparison > 0) {
+            operator = "+";
+        }
+        else if (comparison < 0) {
+            operator = "-";
+        }
+        else {
+            operator = "";
+        }
+
+        const row = document.createElement("div");
+        row.className = "grid";
+
+        if (side == "left") {
+            row.innerHTML = `<span>${key}</span>
+            <span>${leftStat}</span>
+            <span>${operator}${Math.abs(comparison)}</span>`;
+        }
+        else {
+            row.innerHTML = `<span>${key}</span>
+            <span>${rightStat}</span>
+            <span>${operator}${Math.abs(comparison)}</span>`;
+        }
+
+        container.append(row)
+})}
 
 
 function renderTypeImages(types) {
   return (Array.isArray(types) ? types : []).map(type => {
     return `<img src="https://fusioncalc.com/images/type/card/${type}.png" alt="${type}" />`;
   }).join("");
+}
+
+
+function findSpriteVariants(fusionid){
+    //check if variants (loop?), add event listener to check if broken?
+    //if variants, add a new class, create a button and attach to class
+    //if button pressed, cycle to the next variant
+    
+
 }
 
 function closeFusionModal() {
