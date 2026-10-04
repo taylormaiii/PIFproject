@@ -348,16 +348,39 @@ async function openFusionDetails(event) {
     document.querySelector(".modalnames1").textContent = `${leftVariant.head} + ${leftVariant.body}`;
     document.querySelector(".modalsprite1").innerHTML = `<img src="${leftVariant.sprite}" alt="${leftVariant.head} + ${leftVariant.body}">`;
     document.querySelector(".modaltypes1").innerHTML = renderTypeImages(leftVariant.types);
-    document.querySelector(".modalstats1").textContent = JSON.stringify(leftVariant.stats, null, 2);
-    document.querySelector(".modalabilities1").textContent = [
+
+    const stats1 = document.querySelector(".modalstats1");
+    stats1.innerHTML = "";
+
+    const leftstats = leftVariant.stats || {};
+    Object.entries(leftstats).forEach(([key, value]) => {
+        const row = document.createElement("div");
+        row.className = "grid"
+        row.innerHTML = `<span>${key}</span><span>${value}</span>`;
+        stats1.append(row)
+    });
+
+    
+    document.querySelector(".modalabilities1").textContent = `Abilities: ${[
       ...(Array.isArray(leftVariant.abilities) ? leftVariant.abilities : []),
       ...(Array.isArray(leftVariant["hidden abilities"]) ? leftVariant["hidden abilities"] : [])
-    ].filter(Boolean).join(", ");
+    ].filter(Boolean).join(", ")}`;
 
     document.querySelector(".modalnames2").textContent = `${rightVariant.head} + ${rightVariant.body}`;
     document.querySelector(".modalsprite2").innerHTML = `<img src="${rightVariant.sprite}" alt="${rightVariant.head} + ${rightVariant.body}">`;
     document.querySelector(".modaltypes2").innerHTML = renderTypeImages(rightVariant.types);
-    document.querySelector(".modalstats2").textContent = JSON.stringify(rightVariant.stats, null, 2);
+
+    const stats2 = document.querySelector(".modalstats1");
+    stats2.innerHTML = "";
+
+    const rightstats = rightVariant.stats || {};
+    Object.entries(rightstats).forEach(([key, value]) => {
+        const row = document.createElement("div");
+        row.className = "grid"
+        row.innerHTML = `<span>${key}</span><span>${value}</span>`;
+        stats1.append(row)
+    });
+
     document.querySelector(".modalabilities2").textContent = [
       ...(Array.isArray(rightVariant.abilities) ? rightVariant.abilities : []),
       ...(Array.isArray(rightVariant["hidden abilities"]) ? rightVariant["hidden abilities"] : [])
@@ -368,6 +391,21 @@ async function openFusionDetails(event) {
     console.error("Error loading fusion details:", error);
   }
 }
+
+function renderStatComparison(container, primaryStats, secondaryStats, side) {
+    container.innerHTML = "";
+
+    const statkeys = [Object.keys(leftStats), Object.keys(rightStats)]
+
+    //statkeys.forEach((key)) => {
+    const leftStat = Number(primaryStats || {})
+    const rightStat = Number(secondaryStats || {})
+
+    const leftcomparison = leftStat - rightStat
+    const rightcomparison = rightStat - leftStat
+
+}
+
 
 function renderTypeImages(types) {
   return (Array.isArray(types) ? types : []).map(type => {
