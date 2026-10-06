@@ -295,6 +295,12 @@ function renderFusionResults(results) {
     fusedCardSprite.addEventListener("error", brokenCard);
     fusedCardSprite.className = "fusion-sprite relative z-10 w-full overflow-visible"
     fusedCardSprite.src = `https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/${result['fusionid']}.png`;
+    findSpriteVariants(result["fusionid"], (spriteURLs) => {
+        if (spriteURLs.length > 0) {
+            spriteURLs.unshift(fusedCardSprite.src);
+            addSpriteCycleButton(fusedCard, fusedCardSprite, spriteURLs);
+        }
+    });
     const fusedCardName = document.createElement("span");
     fusedCardName.className = "fusion-name relative z-10 w-full flex-col flex px-1 "
     fusedCardName.textContent = `${result.head} + ${result.body}`;
@@ -348,7 +354,18 @@ async function openFusionDetails(event) {
 //left
 
     document.querySelector(".modalnames1").textContent = `${leftVariant.head} + ${leftVariant.body}`;
-    document.querySelector(".modalsprite1").innerHTML = `<img src="${leftVariant.sprite}" alt="${leftVariant.head} + ${leftVariant.body}">`;
+    const modalSprite1 = document.querySelector(".modalsprite1")
+    modalSprite1.innerHTML = `<img src="${leftVariant.sprite}" alt="${leftVariant.head} + ${leftVariant.body}">`;
+    const leftSpriteImage = modalSprite1.querySelector("img");
+
+    findSpriteVariants(leftVariant.fusionid, (spriteURLs) => {
+        if (spriteURLs.length > 0) {
+            spriteURLs.unshift(leftSpriteImage.src);
+            addSpriteCycleButton(modalSprite1, leftSpriteImage, spriteURLs);
+            console.log("Found alternates for", leftVariant.fusionid, spriteURLs);
+        }
+    });
+        
     document.querySelector(".modaltypes1").innerHTML = renderTypeImages(leftVariant.types);
 
     renderStatComparison(document.querySelector(".modalstats1"), leftVariant.stats, rightVariant.stats, "left");
@@ -362,7 +379,19 @@ async function openFusionDetails(event) {
 // right
 
     document.querySelector(".modalnames2").textContent = `${rightVariant.head} + ${rightVariant.body}`;
-    document.querySelector(".modalsprite2").innerHTML = `<img src="${rightVariant.sprite}" alt="${rightVariant.head} + ${rightVariant.body}">`;
+    const modalSprite2 = document.querySelector(".modalsprite2")
+    modalSprite2.innerHTML = `<img src="${rightVariant.sprite}" alt="${rightVariant.head} + ${rightVariant.body}">`;
+    const rightSpriteImage = modalSprite2.querySelector("img");
+    
+    findSpriteVariants(rightVariant.fusionid, (spriteURLs) => {
+        if (spriteURLs.length > 0) {
+            spriteURLs.unshift(rightSpriteImage.src);
+            addSpriteCycleButton(modalSprite2, rightSpriteImage, spriteURLs);
+            
+        }
+    });
+    
+    
     document.querySelector(".modaltypes2").innerHTML = renderTypeImages(rightVariant.types);
 
     renderStatComparison(document.querySelector(".modalstats2"), leftVariant.stats, rightVariant.stats, "right")
@@ -380,8 +409,6 @@ async function openFusionDetails(event) {
     console.error("Error loading fusion details:", error);
   }
 }
-
-//clean up html, add spacing and color
 
 function renderStatComparison(container, leftStats, rightStats, side) {
     container.innerHTML = "";
@@ -413,18 +440,37 @@ function renderStatComparison(container, leftStats, rightStats, side) {
         }
 
         const row = document.createElement("div");
-        row.className = "grid";
+        row.className = "stat-row";
 
         if (side == "left") {
-            row.innerHTML = `<span>${key}</span>
-            <span>${leftStat}</span>
-            <span>${operator}${Math.abs(comparison)}</span>`;
+            if (operator === "+") 
+                { row.innerHTML = `<span style="text-align:left; display:inline">${key.replace("_"," ")}</span>
+                <span style="text-align: right; display:inline">${leftStat}</span>
+                <span style="text-align:right; color:green; display:inline">${operator}${Math.abs(comparison)}</span>`}
+            else if (operator === "-") 
+                {row.innerHTML = `<span style="text-align:left; display:inline">${key.replace("_"," ")}</span>
+                <span style="text-align: right; display:inline">${leftStat}</span>
+                <span style="text-align:right; color:red; display:inline">${operator}${Math.abs(comparison)}</span>`}
+            else {row.innerHTML = `<span style="text-align:left; display:inline">${key.replace("_"," ")}</span>
+                <span style="text-align: right; display:inline">${leftStat}</span>
+                <span style="text-align:right; display:inline">${operator}${Math.abs(comparison)}</span>`
+
+            }
         }
         else {
-            row.innerHTML = `<span>${key}</span>
-            <span>${rightStat}</span>
-            <span>${operator}${Math.abs(comparison)}</span>`;
-        }
+            if (operator === "+") {
+                row.innerHTML = `<span style="text-align:left; display:inline">${key.replace("_"," ")}</span>
+                <span style="text-align:right; display:inline">${rightStat}</span>
+                <span style="text-align:right; color:green; display:inline">${operator}${Math.abs(comparison)}</span>`}
+            else if (operator === "-") {
+                row.innerHTML = `<span style="text-align:left; display:inline">${key.replace("_"," ")}</span>
+                <span style="text-align:right; display:inline">${rightStat}</span>
+                <span style="text-align:right; color:red; display:inline">${operator}${Math.abs(comparison)}</span>`}
+            else {
+                row.innerHTML = `<span style="text-align:left; display:inline">${key.replace("_"," ")}</span>
+                <span style="text-align:right; display:inline">${rightStat}</span>
+                <span style="text-align:right; display:inline">${operator}${Math.abs(comparison)}</span>`
+            };}
 
         container.append(row)
 })}
@@ -437,11 +483,54 @@ function renderTypeImages(types) {
 }
 
 
-function findSpriteVariants(fusionid){
-    //check if variants (loop?), add event listener to check if broken?
-    //if variants, add a new class, create a button and attach to class
-    //if button pressed, cycle to the next variant
+
+
+function findSpriteVariants(fusionid, whenDone) {
+    const spriteVariants = [];
+    let completedChecks = 0;
+    const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
     
+    function checkFinishedSprites(spriteURL) {
+        if (spriteURL !== null) {
+            spriteVariants.push(spriteURL);
+        }
+
+        completedChecks += 1;
+
+        if (completedChecks === alphabet.length) {
+            whenDone(spriteVariants);
+        }
+    }
+    
+    
+    alphabet.forEach((letter) => {
+
+        const spriteURL = `https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/${fusionid}${letter}.png`
+        const testImage = new Image();
+
+        testImage.onload = () => checkFinishedSprites(spriteURL);
+        testImage.onerror = () => checkFinishedSprites(null)
+        testImage.src = spriteURL;  
+            
+        })
+
+    
+}
+
+function addSpriteCycleButton(card,image,spriteURLs) {
+    if (spriteURLs.length < 1) {
+        return
+    }
+
+    let currentVariant = 0;
+    const spriteButton = document.createElement("button");
+    spriteButton.textContent = "Cycle Sprite Variants ⟳"
+    spriteButton.addEventListener("click", (event) => {
+        event.stopPropagation();
+        currentVariant = (currentVariant +1) % spriteURLs.length;
+        image.src = spriteURLs[currentVariant];
+    });
+    card.append(spriteButton)
 
 }
 

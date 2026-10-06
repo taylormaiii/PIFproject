@@ -310,6 +310,16 @@
             cursor: pointer;
             line-height: 1;
         }
+        .stat-row {
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: inherit;
+        }
+        .stat-row span {
+            font-size: inherit;
+        }
     </style>
 </head>
 <body class="antialiased font-sans">
@@ -435,14 +445,14 @@
         <div class="modal-panel">
             <div class="modal-side">
                 <h3 id="fusion-modal-title" class="modalnames1">Fusion 1</h3>
-                <div class="modalsprite1"></div>
+                <div class="modalsprite1" style="margin:auto;"></div>
                 <div class="modaltypes1"></div>
                 <div class="modalstats1"></div>
                 <div class="modalabilities1"></div>
             </div>
             <div class="modal-side">
                 <h3 class="modalnames2">Fusion 2</h3>
-                <div class="modalsprite2"></div>
+                <div class="modalsprite2" style="margin:auto;"></div>
                 <div class="modaltypes2"></div>
                 <div class="modalstats2"></div>
                 <div class="modalabilities2"></div>

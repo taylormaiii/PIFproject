@@ -65,7 +65,7 @@ def collect_evolutions(pokemon_name, instance_id, candidates, visited):
 
 
     for evolution in evolutions["next"]:
-        evolution_name = evolution["name"]
+        evolution_name = evolution["name"].title()
         candidate = (instance_id, evolution_name)
 
         if candidate not in candidates:
