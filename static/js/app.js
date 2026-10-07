@@ -1,4 +1,5 @@
 const caughtmons = [];
+const hiddenPokemon = new Set(JSON.parse(localStorage.getItem("hiddenmons") || "[]"));
 
 const fusionBox = document.querySelector(".mons-in-box");
 const clearRow = document.querySelector(".clear-row");
@@ -36,6 +37,14 @@ function renderFusionBox() {
     caughtmons.forEach((name) => {
         const card = document.createElement("div");
         card.className = "caught-mon";
+        card.dataset.name = name;
+
+        const isHidden = hiddenPokemon.has(name)
+        if (isHidden) {
+            card.style.backgroundColor = "grey"
+            card.classList.add("hiddensprite")
+        }
+
         const nameLabel = document.createElement("span");
         nameLabel.textContent = name;
         const hide = document.createElement("button");
@@ -107,11 +116,20 @@ function onClickHide(button) {
         return;
     }
 
-    pokeCard.style.backgroundColor = pokeCard.style.backgroundColor === "grey"
-        ? ""
-        : "grey";
+    const name = pokeCard.dataset.name;
+    if (!name) {
+        return;
+    }
 
-    // ACTUALLY HIDE THE CARD INSTEAD OF JUST SAYING IT, IDIOT
+    if (hiddenPokemon.has(name)) {
+        hiddenPokemon.delete(name);
+    } else {
+        hiddenPokemon.add(name);
+    }
+
+    renderFusionBox();
+    saveEntries();
+    submitFusion();
 }
 
 document.addEventListener("change", (event) => {
@@ -214,14 +232,19 @@ function renderRowSprites(row) {
     spritecol.append(spriteimg);
 }
 
+function isHiddenPokemon(name) {
+    return hiddenPokemon.has(name);
+}
+
 async function submitFusion() {
-    if (caughtmons.length < 2) {
+    const visibleNames = caughtmons.filter(name => !isHiddenPokemon(name));
+
+    if (visibleNames.length < 2) {
         return;
     }
 
     const formData = new FormData();
-
-    caughtmons.forEach(name => {
+    visibleNames.forEach(name => {
         formData.append("caughtmon", name);
     });
 
@@ -550,15 +573,22 @@ document.getElementById("toggle-custom").addEventListener("change", CustomToggle
 const storageKey = "pifproject-entries";
 
 function saveEntries() {
-    const rows = Array.from(document.querySelectorAll(".h-location-row")).map(row => ({id: row.dataset.locationId, names: Array.from(row.querySelectorAll(".pokemon-input")).map(input => input.value),
+    const rows = Array.from(document.querySelectorAll(".h-location-row")).map(row => ({
+        id: row.dataset.locationId,
+        names: Array.from(row.querySelectorAll(".pokemon-input")).map(input => input.value),
         status: row.querySelector(".status-select").value
     }));
 
     localStorage.setItem(storageKey, JSON.stringify(rows));
+    localStorage.setItem("hiddenmons", JSON.stringify([...hiddenPokemon]));
 }
 
 function loadEntries() {
     const savedRows = JSON.parse(localStorage.getItem(storageKey) || "[]");
+    const savedHidden = JSON.parse(localStorage.getItem("hiddenmons") || "[]");
+
+    hiddenPokemon.clear();
+    savedHidden.forEach(name => hiddenPokemon.add(name));
 
     savedRows.forEach(saved => {
         const row = Array.from(document.querySelectorAll(".h-location-row"))
@@ -576,7 +606,7 @@ function loadEntries() {
             input.value = saved.names[index] || "";
         });
 
-        row.querySelector(".status-select").value = saved.status;
+        row.querySelector(".status-select").value = saved.status || "Select";
         row.querySelector(".fuse-button").textContent = saved.names.length > 1 ? "Unfuse" : "Fuse";
     });
 
@@ -595,7 +625,6 @@ function loadEntries() {
         }
 
         renderRowSprites(row);
-        
     });
 
     renderFusionBox();
