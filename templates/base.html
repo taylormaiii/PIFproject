@@ -401,8 +401,6 @@
         <section2 class="section2 overflow-auto scrollbar-thin overscroll-x-none overscroll-y-auto relative" width="390px">
             <h2 color="white">PC Box</h2>
             <div width="100%" margin-bottom=".75rem;">
-                <button type="button" class="clear-box">Clear Box</button>
-                <button type="button" class="undo-box">Undo Clear</button>
             </div>
             <div class="pc-box min-h-0 flex-1 overflow-y-auto overflow-x-hidden overscroll-y-contain pr-1 pt-[5px] [-webkit-overflow-scrolling:touch]" padding-bottom="5px">
                 <div class="box-selector"></div>
@@ -425,7 +423,7 @@
                 </select>
                 <label class="checkboxcontainer">
                     <input type="checkbox" id="evolution-toggle" color="white">
-                        Include future evolutions
+                        Include Future Evolutions
                 </label>
                 <label class="checkboxcontainer">
                     <input type="checkbox" id="toggle-custom" class="custom-toggle" color="white"> 
@@ -440,8 +438,9 @@
 </main>
 
 <div id="themodal" class="modal" aria-hidden="true">
+    <button type="button" class="modal-close-button" aria-label="Close fusion details">&times;</button>
     <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="fusion-modal-title">
-        <button type="button" class="modal-close-button" aria-label="Close fusion details">&times;</button>
+        
         <div class="modal-panel">
             <div class="modal-side">
                 <h3 id="fusion-modal-title" class="modalnames1">Fusion 1</h3>

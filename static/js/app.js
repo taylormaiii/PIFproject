@@ -1,9 +1,7 @@
 const caughtmons = [];
 
 const fusionBox = document.querySelector(".mons-in-box");
-const clearButton = document.querySelector(".clear-box");
 const clearRow = document.querySelector(".clear-row");
-let lastClearedBox = null;
 const sortOptions = document.querySelector(".sortOptions");
 let currentSort = "TOTAL";
 let lastFusionResults = [];
@@ -51,7 +49,7 @@ function renderFusionBox() {
             .find((entry) => entry.value === name);
 
         if (option?.dataset.pokemonId) {
-            cardImage.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${option.dataset.pokemonId}.png`;
+            cardImage.src = `https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/${option.dataset.pokemonId}.png`;
             cardImage.alt = `${name} sprite`;
 
         }
@@ -97,7 +95,9 @@ function onClickDel(button) {
     row.dataset.caughtMons = JSON.stringify([]);
 
     renderRowSprites(row);
+    saveEntries();
     renderFusionBox();
+
 }
 
 function onClickHide(button) {
@@ -110,6 +110,8 @@ function onClickHide(button) {
     pokeCard.style.backgroundColor = pokeCard.style.backgroundColor === "grey"
         ? ""
         : "grey";
+
+    // ACTUALLY HIDE THE CARD INSTEAD OF JUST SAYING IT, IDIOT
 }
 
 document.addEventListener("change", (event) => {
@@ -148,6 +150,7 @@ document.addEventListener("change", (event) => {
 
     renderFusionBox();
     submitFusion();
+    saveEntries();
     });
 
 document.addEventListener("change", (event) => {
@@ -158,47 +161,9 @@ document.addEventListener("change", (event) => {
     const input = event.target;
     const row = input.closest("tr");
     renderRowSprites(row);
+    saveEntries()
 });
 
-function saveBoxState() {
-    lastClearedBox = {
-    mons: [...caughtmons],
-    rows: Array.from(document.querySelectorAll(".h-location-row")).map(row => ({
-        row,
-        caughtMons: row.dataset.caughtMons
-    }))
-}}
-
-function clearBox() {
-    saveBoxState();
-    caughtmons.length = 0;
-    document.querySelectorAll(".h-location-row").forEach(row => {
-    row.dataset.caughtMons = JSON.stringify([]);
-    });
-    renderFusionBox();
-    document.querySelector(".fused-possible").replaceChildren();
-};
-
-clearButton.addEventListener("click", clearBox);
-
-function undoClearBox() {
-    if (!lastClearedBox) {
-        return;
-    }
-
-    caughtmons.length = 0;
-    caughtmons.push(...lastClearedBox.mons);
-
-    lastClearedBox.rows.forEach(({ row, caughtMons }) => {
-        row.dataset.caughtMons = caughtMons;
-    });
-
-    renderFusionBox();
-    lastClearedBox = null;
-};
-
-const undoButton = document.querySelector(".undo-box");
-undoButton.addEventListener("click", undoClearBox);
 
 function onClickAdd(button) {
     const container = button.closest(".encounter-container");
@@ -241,13 +206,12 @@ function renderRowSprites(row) {
         spriteimgimg.src = `https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/${ids[0]}.${ids[1]}.png`;
         spriteimgimg.alt = `${names.join(" + ")} fused sprite`;
     } else if (ids[0]) {
-        spriteimgimg.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${ids[0]}.png`;
+        spriteimgimg.src = `https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/${ids[0]}.png`;
         spriteimgimg.alt = `${names[0]} sprite`;
     }
 
     spriteimg.append(spriteimgimg, spriteimgname);
     spritecol.append(spriteimg);
-
 }
 
 async function submitFusion() {
@@ -272,9 +236,6 @@ async function submitFusion() {
 
     renderFusionResults(data.results);
 }
-
-
-// check if sprite has alternates ex. ${result['fusionid']}a.png or b or c etc and if a,b,c etc exist, give a swap sprite variant button and show that sprite instead
 
 
 function renderFusionResults(results) {
@@ -370,11 +331,17 @@ async function openFusionDetails(event) {
 
     renderStatComparison(document.querySelector(".modalstats1"), leftVariant.stats, rightVariant.stats, "left");
 
-    
-    document.querySelector(".modalabilities1").textContent = `Abilities: ${[
-      ...(Array.isArray(leftVariant.abilities) ? leftVariant.abilities : []),
-      ...(Array.isArray(leftVariant["hidden abilities"]) ? leftVariant["hidden abilities"] : [])
-    ].filter(Boolean).join(", ")}`;
+    const leftAbilities = Array.isArray(leftVariant.abilities)
+        ? leftVariant.abilities.filter(Boolean).join(", ")
+        : "";
+
+    const leftHiddenAbilities = Array.isArray(leftVariant["hidden abilities"])
+        ? leftVariant["hidden abilities"].filter(Boolean).join(", ")
+        : "";
+
+
+    document.querySelector(".modalabilities1").textContent = `ABILITIES: ${leftAbilities}
+    HIDDEN ABILITIES: ${leftHiddenAbilities}`;
 
 // right
 
@@ -396,11 +363,17 @@ async function openFusionDetails(event) {
 
     renderStatComparison(document.querySelector(".modalstats2"), leftVariant.stats, rightVariant.stats, "right")
     
+    const rightAbilities = Array.isArray(rightVariant.abilities)
+        ? rightVariant.abilities.filter(Boolean).join(", ")
+        : "";
 
-    document.querySelector(".modalabilities2").textContent = `Abilities: ${[
-      ...(Array.isArray(rightVariant.abilities) ? rightVariant.abilities : []),
-      ...(Array.isArray(rightVariant["hidden abilities"]) ? rightVariant["hidden abilities"] : [])
-    ].filter(Boolean).join(", ")}`;
+    const rightHiddenAbilities = Array.isArray(rightVariant["hidden abilities"])
+        ? rightVariant["hidden abilities"].filter(Boolean).join(", ")
+        : "";
+
+
+    document.querySelector(".modalabilities2").textContent = `ABILITIES: ${rightAbilities}
+    HIDDEN ABILITIES: ${rightHiddenAbilities}`;
 
 //construction
 
@@ -573,3 +546,63 @@ function CustomToggle() {
 }
 
 document.getElementById("toggle-custom").addEventListener("change", CustomToggle);
+
+const storageKey = "pifproject-entries";
+
+function saveEntries() {
+    const rows = Array.from(document.querySelectorAll(".h-location-row")).map(row => ({id: row.dataset.locationId, names: Array.from(row.querySelectorAll(".pokemon-input")).map(input => input.value),
+        status: row.querySelector(".status-select").value
+    }));
+
+    localStorage.setItem(storageKey, JSON.stringify(rows));
+}
+
+function loadEntries() {
+    const savedRows = JSON.parse(localStorage.getItem(storageKey) || "[]");
+
+    savedRows.forEach(saved => {
+        const row = Array.from(document.querySelectorAll(".h-location-row"))
+            .find(row => row.dataset.locationId === saved.id);
+
+        if (!row) return;
+
+        const inputsContainer = row.querySelector(".encounter-inputs");
+
+        while (inputsContainer.querySelectorAll(".encounter-input").length < saved.names.length) {
+            onClickAdd(row.querySelector(".fuse-button"));
+        }
+
+        row.querySelectorAll(".pokemon-input").forEach((input, index) => {
+            input.value = saved.names[index] || "";
+        });
+
+        row.querySelector(".status-select").value = saved.status;
+        row.querySelector(".fuse-button").textContent = saved.names.length > 1 ? "Unfuse" : "Fuse";
+    });
+
+    caughtmons.length = 0;
+
+    document.querySelectorAll(".h-location-row").forEach(row => {
+        const names = Array.from(row.querySelectorAll(".pokemon-input"))
+            .map(input => input.value.trim())
+            .filter(Boolean);
+
+        const isCaught = row.querySelector(".status-select").value === "caught";
+        row.dataset.caughtMons = JSON.stringify(isCaught ? names : []);
+
+        if (isCaught) {
+            caughtmons.push(...names);
+        }
+
+        renderRowSprites(row);
+        
+    });
+
+    renderFusionBox();
+
+    if (caughtmons.length >= 2) {
+        submitFusion();
+    }
+}
+
+loadEntries()

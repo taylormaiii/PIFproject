@@ -12438,7 +12438,7 @@
     "name": "Oricorio Pom-Pom Style",
     "types": [
       {
-        "name": "fire"
+        "name": "electric"
       },
       {
         "name": "flying"
@@ -12462,7 +12462,7 @@
     "name": "Oricorio Pa'u Style",
     "types": [
       {
-        "name": "fire"
+        "name": "psychic"
       },
       {
         "name": "flying"
@@ -12486,7 +12486,7 @@
     "name": "Oricorio Sensu Style",
     "types": [
       {
-        "name": "fire"
+        "name": "ghost"
       },
       {
         "name": "flying"
@@ -13423,7 +13423,7 @@
         "name": "normal"
       },
       {
-        "name": "psychic"
+        "name": "fighting"
       }
     ],
     "species": {
@@ -13490,6 +13490,9 @@
     "types": [
       {
         "name": "psychic"
+      },
+      {
+        "name": "dragon"
       }
     ],
     "species": {
@@ -15793,7 +15796,7 @@
     "name": "Castform Sunny",
     "types": [
       {
-        "name": "normal"
+        "name": "fire"
       }
     ],
     "species": {
@@ -15814,7 +15817,7 @@
     "name": "Castform Rainy",
     "types": [
       {
-        "name": "normal"
+        "name": "water"
       }
     ],
     "species": {
@@ -15835,7 +15838,7 @@
     "name": "Castform Snowy",
     "types": [
       {
-        "name": "normal"
+        "name": "ice"
       }
     ],
     "species": {
