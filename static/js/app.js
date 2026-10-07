@@ -106,6 +106,7 @@ function onClickDel(button) {
     renderRowSprites(row);
     saveEntries();
     renderFusionBox();
+    submitFusion();
 
 }
 
@@ -240,6 +241,8 @@ async function submitFusion() {
     const visibleNames = caughtmons.filter(name => !isHiddenPokemon(name));
 
     if (visibleNames.length < 2) {
+        lastFusionResults = [];
+        document.querySelector(".fused-possible").replaceChildren();
         return;
     }
 
