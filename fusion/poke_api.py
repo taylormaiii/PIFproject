@@ -1,8 +1,9 @@
 import json
 from functools import lru_cache
 import requests
+from pathlib import Path
 
-#To-do: check for game differences, figure out the weakness chart algorithm
+POKEMON_DATA_PATH = Path(__file__).resolve().parent.parent / "data" / "pokemon_data.json"
 
 def normalize_pokemon_name(pokemon):
     normalized = str(pokemon).strip().lower()
@@ -43,7 +44,7 @@ def get_pokemon_data(pokemon):
 
 def get_id(pokemon):
     normalized_pokemon = normalize_pokemon_name(pokemon)
-    with open(r"data\pokemon_data.json", "r", encoding="utf-8") as pdj:
+    with open(POKEMON_DATA_PATH, "r", encoding="utf-8") as pdj:
         dexdata = json.load(pdj)
         for data in dexdata:
             if normalize_pokemon_name(data['name']) == normalized_pokemon:
@@ -84,7 +85,7 @@ def get_abilities(pokemon):
 
 def get_types(pokemon):
     normalized_pokemon = normalize_pokemon_name(pokemon)
-    with open(r"data\pokemon_data.json", "r", encoding="utf-8") as pdj:
+    with open(POKEMON_DATA_PATH, "r", encoding="utf-8") as pdj:
         dexdata = json.load(pdj)
         for data in dexdata:
             if normalize_pokemon_name(data['name']) == normalized_pokemon:
@@ -107,7 +108,7 @@ def get_bst(pokemon):
 
 def get_evos(pokemon):
     normalized_pokemon = normalize_pokemon_name(pokemon)
-    with open(r"data\pokemon_data.json", "r", encoding="utf-8") as pdj:
+    with open(POKEMON_DATA_PATH, "r", encoding="utf-8") as pdj:
         mons = json.load(pdj)
 
     for mon in mons:
