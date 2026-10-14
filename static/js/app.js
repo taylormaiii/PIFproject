@@ -221,12 +221,26 @@ function renderRowSprites(row) {
     const spriteimgname = document.createElement("span");
     spriteimgname.textContent = names.join(" + ");
     const spriteimgimg = document.createElement("img");
+    let spriteId;
     if (isFusion) {
-        spriteimgimg.src = `https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/${ids[0]}.${ids[1]}.png`;
+        spriteId = `${ids[0]}.${ids[1]}`;
         spriteimgimg.alt = `${names.join(" + ")} fused sprite`;
     } else if (ids[0]) {
-        spriteimgimg.src = `https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/${ids[0]}.png`;
+        spriteId = ids[0];
         spriteimgimg.alt = `${names[0]} sprite`;
+    }
+
+    if (spriteId) {
+        spriteimgimg.addEventListener("error", () => {
+            if (spriteimgimg.dataset.fallbackTried === "true") {
+                return;
+            }
+
+            spriteimgimg.dataset.fallbackTried = "true";
+            spriteimgimg.src = `https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/generated/${spriteId}.png`;
+        });
+
+        spriteimgimg.src = `https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/${spriteId}.png`;
     }
 
     spriteimg.append(spriteimgimg, spriteimgname);
