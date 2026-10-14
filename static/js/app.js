@@ -279,7 +279,8 @@ function renderFusionResults(results) {
     const fusedCard = document.createElement("div");
     fusedCard.className = "possible-fusions relative z-0 flex shrink-0 flex-col items-stretch overflow-hidden rounded-lg transition-all duration-200";
     const fusedCardSprite = document.createElement("img")
-    fusedCardSprite.addEventListener("error", brokenCard);
+    fusedCardSprite.addEventListener("error", (event) => {
+    brokenCard(event, result.fusionid);});
     fusedCardSprite.className = "fusion-sprite relative z-10 w-full overflow-visible"
     fusedCardSprite.src = `https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/${result['fusionid']}.png`;
     findSpriteVariants(result["fusionid"], (spriteURLs) => {
@@ -486,34 +487,31 @@ function renderTypeImages(types) {
 
 function findSpriteVariants(fusionid, whenDone) {
     const spriteVariants = [];
-    let completedChecks = 0;
-    const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
+    const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
     
-    function checkFinishedSprites(spriteURL) {
-        if (spriteURL !== null) {
-            spriteVariants.push(spriteURL);
-        }
-
-        completedChecks += 1;
-
-        if (completedChecks === alphabet.length) {
+    function checkFinishedSprites(index) {
+        if (index >= alphabet.length) {
             whenDone(spriteVariants);
+            return
         }
-    }
-    
-    
-    alphabet.forEach((letter) => {
 
-        const spriteURL = `https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/${fusionid}${letter}.png`
+        const spriteURL = `https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/custom/${fusionid}${alphabet[index]}.png`
         const testImage = new Image();
 
-        testImage.onload = () => checkFinishedSprites(spriteURL);
-        testImage.onerror = () => checkFinishedSprites(null)
+        testImage.onload = () => {
+            spriteVariants.push(spriteURL);
+            checkFinishedSprites(index + 1)
+        };
+
+        testImage.onerror = () => {
+            whenDone(spriteVariants)
+        };
+
         testImage.src = spriteURL;  
             
-        })
+        }
 
-    
+    checkFinishedSprites(0);
 }
 
 function addSpriteCycleButton(card,image,spriteURLs) {
@@ -554,10 +552,19 @@ if (fusionModal) {
   });
 }
 
-function brokenCard (event) {
+function brokenCard (event, fusionid) {
     const failedImageCard = event.currentTarget
+    
     const failedCard = failedImageCard.closest(".possible-fusions")
     failedCard.classList.add("broken");
+
+    if (failedImageCard.dataset.fallbackTried === "true") {
+        return
+    }
+
+    failedImageCard.dataset.fallbackTried = "true";
+    failedImageCard.src = `https://ifd-spaces.sfo2.cdn.digitaloceanspaces.com/generated/${fusionid}.png`
+
 };
 
 
